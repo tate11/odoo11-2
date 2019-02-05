@@ -1,0 +1,543 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hubi_bom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-31 08:52+0000\n"
+"PO-Revision-Date: 2019-01-31 08:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_product_product__bom_count
+#: model:ir.model.fields,field_description:hubi_bom.field_product_template__bom_count
+msgid "# Bill of Material"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_product_product__used_in_bom_count
+msgid "# BoM Where Used"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_product_template__used_in_bom_count
+msgid "# of BoM Where is Used"
+msgstr ""
+
+#. module: hubi_bom
+#: code:addons/hubi_bom/models/mrp_bom.py:274
+#, python-format
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                        Click to upload files to your product.\n"
+"                    </p><p>\n"
+"                        Use this feature to store any files, like drawings or specifications.\n"
+"                    </p>"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_needaction
+msgid "Action Needed"
+msgstr "Nécessite une action"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: hubi_bom
+#: sql_constraint:mrp.bom.line:0
+msgid "All product quantities must be greater or equal to 0.\n"
+"Lines with 0 quantities can be used as optional lines. \n"
+"You should install the mrp_byproduct module if you want to manage extra products on BoMs !"
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: hubi_bom
+#: code:addons/hubi_bom/models/mrp_bom.py:266
+#, python-format
+msgid "Attachments"
+msgstr "Pièces Jointes"
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom_line__attribute_value_ids
+msgid "BOM Product Variants needed form apply this line."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__child_line_ids
+msgid "BOM lines of the referred bom"
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_line_filter
+msgid "Bill Of Material"
+msgstr "Nomenclature"
+
+#. module: hubi_bom
+#: model:ir.model,name:hubi_bom.model_mrp_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_form_view
+msgid "Bill of Material"
+msgstr "Nomenclature"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_line_view_form
+msgid "Bill of Material line"
+msgstr "Ligne de Nomenclature"
+
+#. module: hubi_bom
+#: model:ir.actions.act_window,name:hubi_bom.product_open_bom
+#: model:ir.actions.act_window,name:hubi_bom.template_open_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_product_product__bom_ids
+#: model:ir.model.fields,field_description:hubi_bom.field_product_template__bom_ids
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_tree_view
+#: model_terms:ir.ui.view,arch_db:hubi_bom.product_product_form_view_bom_button
+#: model_terms:ir.ui.view,arch_db:hubi_bom.product_template_form_view_bom_button
+msgid "Bill of Materials"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.actions.act_window,name:hubi_bom.mrp_bom_form_action
+#: model:ir.ui.menu,name:hubi_bom.menu_mrp_bom_form_action
+msgid "Bills of Materials"
+msgstr "Nomenclatures"
+
+#. module: hubi_bom
+#: model_terms:ir.actions.act_window,help:hubi_bom.mrp_bom_form_action
+msgid "Bills of Materials allow you to define the list of required raw\n"
+"                materials used to make a finished product; through a manufacturing\n"
+"                order or a pack of products."
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.product_template_search_view_procurment
+msgid "BoM Components"
+msgstr "Composants de nomenclature"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__bom_line_ids
+msgid "BoM Lines"
+msgstr "Lignes de nomenclature"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__type
+msgid "BoM Type"
+msgstr "Type de nomenclature"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_line_view_form
+msgid "BoM details"
+msgstr ""
+
+#. module: hubi_bom
+#: code:addons/hubi_bom/models/mrp_bom.py:54
+#, python-format
+msgid "BoM line product %s should not be same as BoM product."
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.actions.act_window,help:hubi_bom.mrp_bom_form_action
+msgid "Click to create a bill of material."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_component_tree_view
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+msgid "Components"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.ui.menu,name:hubi_bom.menu_mrp_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__create_uid
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__create_date
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_line_filter
+msgid "Default Unit of Measure"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__display_name
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__display_name
+#: model:ir.model.fields,field_description:hubi_bom.field_report_mrp_mrp_bom_cost_report__display_name
+#: model:ir.model.fields,field_description:hubi_bom.field_report_mrp_mrp_bom_structure_report__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Abonnés (Canaux)"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (Partenaires)"
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__sequence
+msgid "Gives the sequence order when displaying a list of bills of material."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom_line__sequence
+msgid "Gives the sequence order when displaying."
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_line_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__has_attachments
+msgid "Has Attachments"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__id
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__id
+#: model:ir.model.fields,field_description:hubi_bom.field_report_mrp_mrp_bom_cost_report__id
+#: model:ir.model.fields,field_description:hubi_bom.field_report_mrp_mrp_bom_structure_report__id
+msgid "ID"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__product_id
+msgid "If a product variant is defined the BOM is available only for this product."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__message_unread
+msgid "If checked new messages require your attention."
+msgstr "Si coché, de nouveaux messages demandent votre attention."
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si coché, de nouveaux messages demandent votre attention."
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si actif, certains messages ont une erreur de livraison."
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__active
+msgid "If the active field is set to False, it will allow you to hide the bills of material without removing it."
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_form_view
+msgid "If the product is a finished product: When processing a sales\n"
+"                                    order for this product, the delivery order will contain the raw\n"
+"                                    materials, instead of the finished product."
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_form_view
+msgid "If the product is a semi-finished product: When processing a\n"
+"                                    manufacturing order that contains that product as component,\n"
+"                                    the raw materials of that product will be added to the\n"
+"                                    manufacturing order of the final product."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_is_follower
+msgid "Is Follower"
+msgstr "Est un abonné"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+#: selection:mrp.bom,type:0
+msgid "Kit"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom____last_update
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line____last_update
+#: model:ir.model.fields,field_description:hubi_bom.field_report_mrp_mrp_bom_cost_report____last_update
+#: model:ir.model.fields,field_description:hubi_bom.field_report_mrp_mrp_bom_structure_report____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__write_uid
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__write_date
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: hubi_bom
+#: model:ir.model,name:hubi_bom.model_mrp_bom_line
+msgid "Line for Bill"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Pièce jointe principale"
+
+#. module: hubi_bom
+#: selection:mrp.bom,type:0
+msgid "Manufacture this product"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.ui.menu,name:hubi_bom.menu_mrp_root
+msgid "Manufacturing"
+msgstr "Hubi BOM"
+
+#. module: hubi_bom
+#: model:ir.ui.menu,name:hubi_bom.menu_mrp_bom
+msgid "Master Data"
+msgstr "Données de base"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur d'envoi du message"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_form_view
+msgid "Miscellaneous"
+msgstr "Divers"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+msgid "Normal"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_has_error_counter
+msgid "Number of error"
+msgstr "Nombre d'erreurs"
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Nombre de messages exigeant une action"
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec des erreurs d'envoi"
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Nombre de messages non lus"
+
+#. module: hubi_bom
+#: model_terms:ir.actions.act_window,help:hubi_bom.mrp_bom_form_action
+msgid "Odoo uses these BoMs to automatically propose manufacturing\n"
+"                orders according to procurement needs."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.ui.menu,name:hubi_bom.menu_mrp_manufacturing
+msgid "Operations"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__bom_id
+msgid "Parent BoM"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.ui.menu,name:hubi_bom.mrp_planning_menu_root
+msgid "Planning"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model,name:hubi_bom.model_product_product
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__product_tmpl_id
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__product_id
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_line_view_form
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_line_filter
+msgid "Product"
+msgstr "Article"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__product_qty
+msgid "Product Quantity"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model,name:hubi_bom.model_product_template
+msgid "Product Template"
+msgstr "Modèle d'article"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__product_uom_id
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__product_uom_id
+msgid "Product Unit of Measure"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__product_id
+msgid "Product Variant"
+msgstr "Variante d'article"
+
+#. module: hubi_bom
+#: model:ir.actions.act_window,name:hubi_bom.product_template_action
+#: model:ir.ui.menu,name:hubi_bom.menu_mrp_product_form
+msgid "Products"
+msgstr "Articles"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__product_qty
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_form_view
+#: model_terms:ir.ui.view,arch_db:hubi_bom.mrp_bom_line_view_form
+msgid "Quantity"
+msgstr ""
+
+#. module: hubi_bom
+#: code:addons/hubi_bom/models/mrp_bom.py:146
+#, python-format
+msgid "Recursion error!  A product with a Bill of Material should not have itself in its BoM or child BoMs!"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__code
+msgid "Reference"
+msgstr "Référence"
+
+#. module: hubi_bom
+#: model:ir.model,name:hubi_bom.model_report_mrp_mrp_bom_structure_report
+msgid "Report Structure bom"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model,name:hubi_bom.model_report_mrp_mrp_bom_cost_report
+msgid "Report cost bom"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.ui.menu,name:hubi_bom.menu_mrp_reporting
+msgid "Reporting"
+msgstr "Analyse"
+
+#. module: hubi_bom
+#: model:ir.ui.menu,name:hubi_bom.menu_pm_resources_config
+msgid "Resources"
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
+msgid "Search Bill Of Material"
+msgstr ""
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_line_filter
+msgid "Search Bill Of Material Components"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__sequence
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__sequence
+msgid "Sequence"
+msgstr "Séquence"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__child_bom_id
+msgid "Sub BoM"
+msgstr ""
+
+#. module: hubi_bom
+#: code:addons/hubi_bom/models/mrp_bom.py:63
+#: code:addons/hubi_bom/models/mrp_bom.py:235
+#, python-format
+msgid "The Product Unit of Measure you chose has a different category than in the product form."
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom__product_uom_id
+#: model:ir.model.fields,help:hubi_bom.field_mrp_bom_line__product_uom_id
+msgid "Unit of Measure (Unit of Measure) is the unit of measurement for the inventory control"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_unread
+msgid "Unread Messages"
+msgstr "Messages non lus"
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Compteur de messages non lus"
+
+#. module: hubi_bom
+#: model_terms:ir.ui.view,arch_db:hubi_bom.product_product_form_view_bom_button
+#: model_terms:ir.ui.view,arch_db:hubi_bom.product_template_form_view_bom_button
+msgid "Used In"
+msgstr ""
+
+#. module: hubi_bom
+#: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line__attribute_value_ids
+msgid "Variants"
+msgstr ""
+
+#. module: hubi_bom
+#: code:addons/hubi_bom/models/mrp_bom.py:63
+#: code:addons/hubi_bom/models/mrp_bom.py:235
+#, python-format
+msgid "Warning"
+msgstr ""
+
