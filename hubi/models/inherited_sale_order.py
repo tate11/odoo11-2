@@ -74,7 +74,7 @@ class HubiSaleOrderLine(models.Model):
                 'price_weight': price_weight
             })
     
-	@api.onchange('product_id')
+    @api.onchange('product_id')
     def product_change(self):
         if self.product_id.id:
             super(HubiSaleOrderLine, self).product_uom_change()
