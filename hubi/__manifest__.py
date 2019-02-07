@@ -25,7 +25,7 @@ Gestion HUBI
              "views/inherited_account_invoice_views.xml",
              "views/inherited_account_payment_views.xml",
              "views/inherited_delivery_carrier_views.xml",
-             #"views/packing_preparation_views.xml",
+             "views/packing_preparation_views.xml",
              #"views/inherited_account_view.xml",
              "reports/account_invoice_report_views.xml",
              "reports/sale_order_report_views.xml",
