@@ -95,7 +95,8 @@ class HubiSaleOrderLine(models.Model):
     price_weight = fields.Float(string='Price Weight ', store=True, readonly=True, compute='_compute_weight')
     comment = fields.Char(string='Comment')
     no_lot = fields.Char(string='Batch number')
-    partner_id = fields.Many2one('sale.order', string='Customer',domain=[('partner_id','=', 'Customer')], store=False)
+    partner_id = fields.Many2one("res.partner", string='Customer')
+    label_model_id =  fields.Many2one('hubi.labelmodel', string='Label model')
 
     @api.multi
     def invoice_line_create(self, invoice_id, qty):
