@@ -106,20 +106,24 @@ class HubiSaleOrderLine(models.Model):
         })
         return invoice_line_vals  
 		
-    @api.onchange('sale_order_id')
-    def new_packing_preparation(self):
+    #@api.onchange('sale_order_id')
+    #def new_packing_preparation(self):
         #Lors d'un ajout d'une commande, extraire les lignes des commandes vers la page
 		#Bien vérifier d'extraire les données qui ne sont pas déjà présentes
-        new_packing_preparation = super(HubiSaleOrderLine, self)
+    #    new_packing_preparation = super(HubiSaleOrderLine, self)
+	#    new_packing_preparation.execute("""
+    #    Voir pour détecter l'ajout d'une ligne de commande
 		
 		
 		
-    @api.multi
-    def transfer_packing_preparation(self):
+    #@api.multi
+    #def transfer_packing_preparation(self):
         #Lorsque l'on appuie sur le bouton la ligne est envoyé vers la page effectué
-        for product_id in packing:
-            if validation != null:
-                transfer_packing_preparation = super(HubiSaleOrderLine, self)
+    #    for product_id in packing:
+    #        if validation != null:
+    #            transfer_packing_preparation = super(HubiSaleOrderLine, self)
+    #            new_packing_preparation.execute("""
+    #            DELETE FROM sale_order_line WHERE order_id=:order_id""", data)
 		
 class HubiSaleOrder(models.Model):
     _inherit = "sale.order"
