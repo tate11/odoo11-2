@@ -10,7 +10,7 @@
 				<field name="order_id"/>
 				<field name="product_id"/>
 				<field name="product_uom_qty" string="Qty"/>
-				<!--<field name="print_label"/>-->
+				<field name="label_model_id"/>
 				<button name="validation" class="oe_button oe_form_button" value="O.K."></button>
 			</tree>
 		</field>
