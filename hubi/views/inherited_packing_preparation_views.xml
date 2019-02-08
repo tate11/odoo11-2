@@ -5,8 +5,7 @@
 		<field name="name">hubi.packing.preparation.tree</field>
 		<field name="model">sale.order.line</field> 
 		<field name="arch" type="xml">
-			<tree string="Packing Preparation" default_order="partner_id">
-				<field name="partner_id"/>
+			<tree string="Packing Preparation">
 				<field name="order_id"/>
 				<field name="product_id"/>
 				<field name="product_uom_qty" string="Qty"/>
