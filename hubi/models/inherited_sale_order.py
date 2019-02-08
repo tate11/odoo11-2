@@ -95,6 +95,7 @@ class HubiSaleOrderLine(models.Model):
     price_weight = fields.Float(string='Price Weight ', store=True, readonly=True, compute='_compute_weight')
     comment = fields.Char(string='Comment')
     no_lot = fields.Char(string='Batch number')
+    partner_id = fields.Many2one('sale.order', string='Customer',domain=[('partner_id','=', 'Customer')], store=False)
 
     @api.multi
     def invoice_line_create(self, invoice_id, qty):
@@ -110,9 +111,9 @@ class HubiSaleOrderLine(models.Model):
     #def new_packing_preparation(self):
         #Lors d'un ajout d'une commande, extraire les lignes des commandes vers la page
 		#Bien vérifier d'extraire les données qui ne sont pas déjà présentes
+		#Voir pour détecter l'ajout d'une ligne de commande
     #    new_packing_preparation = super(HubiSaleOrderLine, self)
-	#    new_packing_preparation.execute("""
-    #    Voir pour détecter l'ajout d'une ligne de commande
+    
 		
 		
 		
@@ -123,7 +124,6 @@ class HubiSaleOrderLine(models.Model):
     #        if validation != null:
     #            transfer_packing_preparation = super(HubiSaleOrderLine, self)
     #            new_packing_preparation.execute("""
-    #            DELETE FROM sale_order_line WHERE order_id=:order_id""", data)
 		
 class HubiSaleOrder(models.Model):
     _inherit = "sale.order"
