@@ -6,10 +6,11 @@
 		<field name="model">sale.order.line</field> 
 		<field name="arch" type="xml">
 			<tree string="Packing Preparation">
+				<field name="partner_id"/>
 				<field name="order_id"/>
 				<field name="product_id"/>
 				<field name="product_uom_qty" string="Qty"/>
-				<field name="print_label"/>
+				<!--<field name="print_label"/>-->
 				<button name="validation" class="oe_button oe_form_button">O.K.</button>
 			</tree>
 		</field>
