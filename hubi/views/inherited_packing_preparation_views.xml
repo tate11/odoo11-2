@@ -21,11 +21,9 @@
         <field name="res_model">sale.order.line</field>
         <field name="view_type">form</field>
         <field name="context">{'search_default_Sales':1}</field>
-        <field name="search_view_id" ref="hubi.view_hubi_saleorder_report_search"/>
         <!--<field name="view_id" ref="view_hubi_saleorder_daily_report_pivot"/>-->
         <field name="view_ids" eval="[(5, 0),
-                (0, 0, {'view_mode': 'pivot', 'view_id': ref('view_hubi_saleorder_reference_report_pivot')}),
-                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hubi_saleorder_report_reference_tree')})]"/>
+                (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hubi_packing_preparation_tree')})]"/>
     </record> 
 	
 	</data>
