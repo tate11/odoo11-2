@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 	<data>
-	<record id="view_hubi_packing_preparation_tree" model="ir.ui.view">
+	<record id="action_hubi_packing_preparation" model="ir.ui.view">
 		<field name="name">hubi.packing.preparation.tree</field>
 		<field name="model">sale.order.line</field> 
 		<field name="arch" type="xml">
