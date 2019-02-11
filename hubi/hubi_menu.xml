@@ -9,7 +9,7 @@
 				<menuitem id="menu_hubi_sale_orders" sequence="20" parent="menu_hubi_sales_documents" action="sale.action_orders"  />
 				<menuitem id="menu_hubi_sale_orders_invoice" sequence="30" parent="menu_hubi_sales_documents" action="sale.action_orders_to_invoice"  />
 				<menuitem id="menu_hubi_sale_orders_create_invoice" sequence="40" parent="menu_hubi_sales_documents" action="hubi.action_hubi_create_invoiceperiod"  />
-				<menuitem id="menu_hubi_packing_preparation" sequence="50" parent="menu_hubi_sales_documents" action="hubi.view_hubi_packing_preparation_tree"  />
+				<menuitem id="menu_hubi_packing_preparation" sequence="50" parent="menu_hubi_sales_documents" action="hubi.action_hubi_packing_preparation"  />
 			<menuitem id="menu_hubi_sales_reports" name="Reports" parent="menu_hubi_sales" sequence="2"/>
 				<menuitem id="menu_hubi_sale_analysis_report" name="Sale Order Analysis" sequence="10" parent="menu_hubi_sales_reports" />
 					<menuitem id="menu_hubi_sale_order_report_price" name="Analysis Price" sequence="10" parent="menu_hubi_sale_analysis_report" action="sale.action_order_report_all"  />
