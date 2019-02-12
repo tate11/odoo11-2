@@ -21522,7 +21522,7 @@ msgstr "Créer et modifier..."
 #. module: hubi
 #: model:ir.ui.view,arch_db:hubi.wiz_create_print_label
 msgid "Create and Print Label"
-msgstr "Création et Impression des ériquettes"
+msgstr "Création et Impression des étiquettes"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_sale_advance_payment_inv
