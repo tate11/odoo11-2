@@ -1,69 +1,69 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#	* account_cash_basis_base_account
-#	* sms
-#	* web_editor
-#	* account_online_sync
-#	* account_bank_statement_import
-#	* mail
-#	* decimal_precision
-#	* base_import
-#	* iap
-#	* fetchmail
-#	* l10n_us_reports
-#	* base_setup
-#	* delivery
-#	* sales_team
-#	* account_yodlee
-#	* analytic
-#	* account_reports
-#	* stock
-#	* procurement_jit
-#	* web
-#	* account_bank_statement_import_csv
-#	* l10n_generic_coa
-#	* mail_push
-#	* payment_transfer
-#	* account_bank_statement_import_ofx
-#	* web_diagram
-#	* web_planner
-#	* web_tour
-#	* auth_crypt
-#	* sale_stock
-#	* account_invoicing
-#	* account
-#	* currency_rate_live
-#	* hubi_bom
-#	* stock_account
-#	* l10n_us
-#	* web_enterprise
-#	* web_mobile
-#	* web_gantt
-#	* http_routing
-#	* sale_management
-#	* sale
-#	* product
-#	* payment
 #	* l10n_us_check_printing
-#	* portal
-#	* hubi
-#	* web_grid
+#	* account_bank_statement_import_ofx
+#	* decimal_precision
+#	* account_online_sync
 #	* auth_signup
-#	* bus
-#	* account_taxcloud
-#	* web_settings_dashboard
-#	* account_plaid
+#	* http_routing
+#	* sales_team
 #	* barcodes
+#	* web
+#	* mail_push
+#	* account_taxcloud
+#	* web_gantt
 #	* sale_account_taxcloud
-#	* account_check_printing
+#	* auth_crypt
+#	* payment
+#	* account_reports
+#	* analytic
+#	* procurement_jit
+#	* stock_account
+#	* currency_rate_live
+#	* delivery
+#	* account_plaid
 #	* base
+#	* web_editor
+#	* account_bank_statement_import_csv
+#	* sale
+#	* portal
+#	* sms
+#	* account_cash_basis_base_account
+#	* account_invoicing
+#	* account_bank_statement_import
+#	* web_enterprise
+#	* web_diagram
+#	* web_mobile
+#	* l10n_us
+#	* bus
+#	* l10n_us_reports
+#	* web_planner
+#	* base_import
+#	* hubi_bom
+#	* hubi
+#	* stock
+#	* web_settings_dashboard
+#	* base_setup
+#	* account_check_printing
+#	* fetchmail
+#	* mail
+#	* sale_stock
+#	* web_tour
+#	* product
+#	* sale_management
+#	* l10n_generic_coa
+#	* payment_transfer
+#	* iap
+#	* account
+#	* account_yodlee
+#	* web_grid
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-11 13:07+0000\n"
-"PO-Revision-Date: 2019-02-11 13:07+0000\n"
+"POT-Creation-Date: 2019-02-12 08:39+0000\n"
+"PO-Revision-Date: 2019-02-12 08:39+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -7096,7 +7096,7 @@ msgstr "Nb. de chiffres *"
 msgid "# of Invoices"
 msgstr "Nb. de factures"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_report_nbr
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_nbr
 #: model:ir.model.fields,field_description:sale.field_sale_report_nbr
@@ -7174,7 +7174,7 @@ msgstr "${object.company_id.name} vous invite à vous connecter à Odoo"
 msgid "${object.subject or (object.record_name and 'Re: %s' % object.record_name) or (object.parent_id and object.parent_id.subject and 'Re: %s' % object.parent_id.subject) or (object.parent_id and object.parent_id.record_name and 'Re: %s' % object.parent_id.record_name)}"
 msgstr "${object.subject or (object.record_name and 'Re: %s' % object.record_name) or (object.parent_id and object.parent_id.subject and 'Re: %s' % object.parent_id.subject) or (object.parent_id and object.parent_id.record_name and 'Re: %s' % object.parent_id.record_name)}"
 
-#. modules: sale, account, delivery
+#. modules: account, delivery, sale
 #: model:mail.template,subject:account.mail_template_data_notification_email_account_invoice
 #: model:mail.template,subject:delivery.mail_template_data_delivery_notification
 #: model:mail.template,subject:sale.mail_template_data_notification_email_sale_order
@@ -7375,7 +7375,7 @@ msgstr "%s %% remisé et %s surtaxé"
 msgid "%s (Copy)"
 msgstr "%s (Copie)"
 
-#. modules: product, account, base, mail
+#. modules: account, base, product, mail
 #: code:addons/account/models/account.py:213
 #: code:addons/account/models/account.py:494
 #: code:addons/account/models/account.py:495
@@ -7430,7 +7430,7 @@ msgstr "%w - Numéro de semaine [0(Dimanche),6].\""
 msgid "%y - Year without century [00,99].\""
 msgstr "%y - Année sans le siècle  [00,99].\""
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_partner_list_address
 #: model:ir.ui.view,arch_db:hubi.report_partner_sheet_address
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
@@ -7439,7 +7439,7 @@ msgstr "%y - Année sans le siècle  [00,99].\""
 msgid "&amp;bull;"
 msgstr "&amp;bull;"
 
-#. modules: sale, account_reports
+#. modules: account_reports, sale
 #: model:ir.ui.view,arch_db:account_reports.line_template_general_ledger_report
 #: model:ir.ui.view,arch_db:sale.portal_my_orders
 msgid "&amp;nbsp;"
@@ -7451,7 +7451,7 @@ msgstr "&amp;nbsp;"
 msgid "&amp;nbsp;<span>on</span>"
 msgstr "&amp;nbsp;<span>sur</span>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.portal_order_page
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -7698,7 +7698,7 @@ msgstr "* Emplacement fournisseur : un emplacement virtuel qui correspond à l'
 msgid ", due on"
 msgstr ", exigible au"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid ", if accounting or purchase is installed"
@@ -9152,7 +9152,7 @@ msgid "<span class=\"fa fa-folder-open\"/> Analytic\n"
 msgstr "<span class=\"fa fa-folder-open\"/>Analytique\n"
 "<span class=\"caret\"/>"
 
-#. modules: account_reports, sale_stock, account, base_setup, sale
+#. modules: base_setup, sale_stock, sale, account, account_reports
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
 #: model:ir.ui.view,arch_db:account_reports.res_config_settings_view_form
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -9347,7 +9347,7 @@ msgstr "<span class=\"o_warning_text\">Environnement</span>\n"
 msgid "<span class=\"oe_logo_edit\">Edit Company data</span>"
 msgstr "<span class=\"oe_logo_edit\">Modifier les données de la société</span>"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "<span class=\"panel-title\">\n"
@@ -9413,7 +9413,7 @@ msgstr "<span class=\"panel-title\">\n"
 " <span class=\"small\">< 50 fournisseurs</span>\n"
 "</span>"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "<span class=\"panel-title\">\n"
@@ -9675,7 +9675,7 @@ msgstr "<span>Nouvelle facture</span>"
 msgid "<span>New Invoice</span>"
 msgstr "<span>Nouvelle facture</span>"
 
-#. modules: stock, account, sales_team
+#. modules: account, stock, sales_team
 #: model:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
@@ -9702,7 +9702,7 @@ msgstr "<span>Odoo</span>"
 msgid "<span>Operations</span>"
 msgstr "<span>Opérations</span>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<span>Pro-Forma Invoice # </span>"
@@ -9719,7 +9719,7 @@ msgstr "<span>Lettrage</span>"
 msgid "<span>Reporting</span>"
 msgstr "<span>Suivi d'activité</span>"
 
-#. modules: stock, account, sales_team
+#. modules: account, stock, sales_team
 #: model:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 #: model:ir.ui.view,arch_db:sales_team.crm_team_salesteams_view_kanban
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
@@ -9741,7 +9741,7 @@ msgstr "<span>Vous devez installer l'application gestion d'Achats pour ce proces
 msgid "<span>You need to install the Sales Management app for this flow.</span>"
 msgstr "<span>Vous devez installer l'application gestion des Ventes pour ce processus.</span>"
 
-#. modules: stock, product, delivery
+#. modules: stock, delivery, product
 #: model:ir.ui.view,arch_db:delivery.choose_delivery_package_view_form
 #: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 #: model:ir.ui.view,arch_db:stock.view_template_property_form
@@ -9989,7 +9989,7 @@ msgstr "<strong>Référence client:</strong>"
 msgid "<strong>Customer: </strong>"
 msgstr "<strong>Client: </strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Date Ordered:</strong>"
@@ -10092,7 +10092,7 @@ msgstr "<strong>Dépenses</strong>"
 msgid "<strong>Expiration Date:</strong>"
 msgstr "<strong>Date d'Expiration :</strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Fiscal Position Remark:</strong>"
@@ -10309,7 +10309,7 @@ msgstr "<strong>Date de paiement: </strong>"
 msgid "<strong>Payment Method: </strong>"
 msgstr "<strong>Méthode de paiement: </strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Payment Terms:</strong>"
@@ -10376,7 +10376,7 @@ msgstr "<strong>Qté :</strong>"
 msgid "<strong>Quantity</strong>"
 msgstr "<strong>Quantité</strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Quotation Date:</strong>"
@@ -10455,7 +10455,7 @@ msgstr "<strong>Ro</strong>"
 msgid "<strong>Rq</strong>"
 msgstr "<strong>Rq</strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Salesperson:</strong>"
@@ -10497,7 +10497,7 @@ msgstr "<strong>Les services</strong> sont des produits immatériels fournis par
 msgid "<strong>Shipping Address</strong>"
 msgstr "<strong>Adresse de livraison</strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_invoice_document_inherit_sale
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -10536,14 +10536,14 @@ msgstr "<strong>Produits stockables</strong> sont sujets au système de gestion 
 msgid "<strong>Subtotal :</strong>"
 msgstr "<strong>Sous-total :</strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_invoice_layouted
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Subtotal: </strong>"
 msgstr "<strong>Sous-total : </strong>"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.ui.view,arch_db:account.portal_invoice_report
 #: model:ir.ui.view,arch_db:account.report_invoice_document
 #: model:ir.ui.view,arch_db:hubi.report_invoice_document_hubi
@@ -10615,7 +10615,7 @@ msgstr "<strong>Total Poids Coquillage : </strong>"
 msgid "<strong>Total before discount</strong>"
 msgstr "<strong>Total avant remise</strong>"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.ui.view,arch_db:account.portal_invoice_report
 #: model:ir.ui.view,arch_db:account.report_invoice_document
 #: model:ir.ui.view,arch_db:account.report_journal
@@ -10708,7 +10708,7 @@ msgstr "<strong>Quand vous traitez une réception, un transfert interne ou une l
 msgid "<strong>XML ID</strong>"
 msgstr "<strong>XML ID</strong>"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Your Reference:</strong>"
@@ -11844,7 +11844,7 @@ msgstr "Groupes d'accès"
 msgid "Access Menu"
 msgstr "Accès au menu"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: model:ir.ui.view,arch_db:base.edit_menu_access
 #: model:ir.ui.view,arch_db:base.view_groups_form
 #: model:ir.ui.view,arch_db:base.view_model_fields_form
@@ -11974,7 +11974,7 @@ msgstr "Rapport du compte \"Partenaires ordinaires\""
 msgid "Account Common Report"
 msgstr "Rapport de comptabilité"
 
-#. modules: analytic, account
+#. modules: account, analytic
 #: model:ir.model.fields,field_description:account.field_account_account_currency_id
 #: model:ir.model.fields,field_description:account.field_account_account_template_currency_id
 #: model:ir.model.fields,field_description:account.field_account_bank_accounts_wizard_currency_id
@@ -11987,7 +11987,7 @@ msgstr "Devise du compte"
 msgid "Account Destination"
 msgstr "Compte de destination"
 
-#. modules: stock_account, account
+#. modules: account, stock_account
 #: model:ir.model,name:account.model_account_move
 #: model:ir.ui.view,arch_db:account.view_move_form
 #: model:ir.model,name:stock_account.model_account_move
@@ -12097,7 +12097,7 @@ msgstr "Compte n°."
 msgid "Account Not Found(408): We're sorry, we couldn't find any accounts for you at the site. Please log in at the site and confirm that your account is set up, then try again."
 msgstr "Compte introuvable (408) : Nous sommes désolés, nous n’avons pas pu retrouver votre compte sur le site. Connectez-vous au site et confirmez que votre compte est configuré, puis réessayez."
 
-#. modules: base, account_online_sync, account, account_bank_statement_import
+#. modules: account, base, account_online_sync, account_bank_statement_import
 #: model:ir.model.fields,field_description:account.field_account_journal_bank_acc_number
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_bank_acc_number
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_journal_account_number
@@ -12475,7 +12475,7 @@ msgstr "Date comptable"
 msgid "Accounting Documents"
 msgstr "Documents comptables"
 
-#. modules: stock_account, account
+#. modules: account, stock_account
 #: model:ir.ui.menu,name:account.menu_finance_entries_accounting_entries
 #: model:ir.ui.view,arch_db:account.view_partner_property_form
 #: model:ir.ui.view,arch_db:stock_account.view_move_form_inherit
@@ -12632,7 +12632,7 @@ msgstr "Acquéreurs"
 msgid "Acquirers list"
 msgstr "Liste des acquéreurs"
 
-#. modules: web_editor, account_reports, stock, web, web_enterprise, base
+#. modules: stock, base, web, web_editor, account_reports, web_enterprise
 #. openerp-web
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_action_id
 #: selection:ir.actions.act_url,binding_type:0
@@ -12815,7 +12815,7 @@ msgstr "Activer l'option dans"
 msgid "Activated by default when subscribing."
 msgstr "Activé par défaut lors de l'abonnement."
 
-#. modules: analytic, product, web_planner, account_bank_statement_import, mail, payment, stock, hubi, account, web, hubi_bom, fetchmail, delivery, base, sales_team
+#. modules: hubi, stock, delivery, fetchmail, sales_team, base, mail, web, product, web_planner, payment, account, analytic, hubi_bom, account_bank_statement_import
 #. openerp-web
 #: model:ir.model.fields,field_description:account.field_account_account_tag_active
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_active
@@ -12943,7 +12943,7 @@ msgstr "Combinaison d'activités"
 msgid "Activity Type"
 msgstr "Type d'activité"
 
-#. modules: sales_team, mail
+#. modules: mail, sales_team
 #: model:ir.actions.act_window,name:mail.mail_activity_type_action
 #: model:ir.ui.menu,name:mail.menu_mail_activity_type
 #: model:ir.ui.view,arch_db:mail.res_config_settings_view_form
@@ -12958,7 +12958,7 @@ msgstr "Types d'activités"
 msgid "Activity type"
 msgstr "Type d'activité"
 
-#. modules: web_editor, web, account, mail
+#. modules: account, mail, web, web_editor
 #. openerp-web
 #: code:addons/account/static/src/xml/account_payment.xml:17
 #: code:addons/mail/static/src/xml/client_action.xml:87
@@ -13275,7 +13275,7 @@ msgstr "Information complémentaire sur le status"
 msgid "Additional notes..."
 msgstr "Notes supplémentaires..."
 
-#. modules: payment, stock, hubi, account, base
+#. modules: hubi, stock, base, payment, account
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:base.res_partner_view_form_private
 #: model:ir.ui.view,arch_db:base.view_company_form
@@ -13506,7 +13506,7 @@ msgstr "Acomptes réglés aux fournisseurs"
 msgid "Advance: %s"
 msgstr "Avance : %s"
 
-#. modules: stock, fetchmail, mail
+#. modules: stock, mail, fetchmail
 #: model:ir.ui.view,arch_db:fetchmail.view_email_server_form
 #: model:ir.ui.view,arch_db:mail.view_mail_form
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -13523,7 +13523,7 @@ msgstr "Mise en forme avancée d'adresse"
 msgid "Advanced Events"
 msgstr "Événements avancés"
 
-#. modules: fetchmail, account
+#. modules: account, fetchmail
 #: model:ir.ui.view,arch_db:account.view_account_tax_template_form
 #: model:ir.ui.view,arch_db:account.view_tax_form
 #: model:ir.ui.view,arch_db:fetchmail.view_email_server_form
@@ -13710,7 +13710,7 @@ msgstr "Alerte"
 msgid "Algeria"
 msgstr "Algérie"
 
-#. modules: barcodes, mail
+#. modules: mail, barcodes
 #: selection:barcode.rule,type:0
 #: model:ir.model.fields,field_description:barcodes.field_barcode_rule_alias
 #: model:ir.model.fields,field_description:mail.field_mail_alias_mixin_alias_id
@@ -13787,7 +13787,7 @@ msgstr "Alignement à gauche"
 msgid "Align right"
 msgstr "Alignement à droite"
 
-#. modules: product, mail, stock, web, account, base
+#. modules: stock, base, mail, web, product, account
 #. openerp-web
 #: selection:account.balance.report,display_account:0
 #: selection:account.common.account.report,display_account:0
@@ -13803,7 +13803,7 @@ msgstr "Alignement à droite"
 msgid "All"
 msgstr "Tous"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.menu,name:hubi.menu_hubi_sale_all_channels_report
 #: model:ir.actions.act_window,name:sale.report_all_channels_sales_action
 #: model:ir.ui.menu,name:sale.report_all_channels_sales
@@ -14181,7 +14181,7 @@ msgstr "Alt"
 msgid "Alternate Upload"
 msgstr "Envoi alternatif"
 
-#. modules: mail, payment, account_reports, barcodes
+#. modules: mail, account_reports, barcodes, payment
 #: selection:account.financial.html.report.line,show_domain:0
 #: selection:barcode.nomenclature,upc_ean_conv:0
 #: selection:ir.model.fields,track_visibility:0
@@ -14210,7 +14210,7 @@ msgstr "American Bankers Association Routing Number"
 msgid "American Samoa"
 msgstr "Samoa américaines"
 
-#. modules: analytic, payment, account_reports, hubi, account, sale, delivery
+#. modules: hubi, delivery, analytic, sale, payment, account, account_reports
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:193
 #: code:addons/account/static/src/xml/account_reconciliation.xml:235
@@ -14276,7 +14276,7 @@ msgstr "Montant dû en devise société"
 msgid "Amount Due in Invoice Currency"
 msgstr "Montant dû en devise de la facture"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_amt_invoiced
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_amt_invoiced
 #: model:ir.model.fields,field_description:sale.field_sale_report_amt_invoiced
@@ -14303,7 +14303,7 @@ msgstr "Montant signé"
 msgid "Amount Signed in Company Currency"
 msgstr "Montant Signé dans la devise de la Société"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_amt_to_invoice
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_amt_to_invoice
 #: model:ir.model.fields,field_description:sale.field_sale_report_amt_to_invoice
@@ -14524,7 +14524,7 @@ msgstr "Analytique"
 msgid "Analytic Acc."
 msgstr "Compte analytique."
 
-#. modules: analytic, sale, hubi, account
+#. modules: hubi, account, analytic, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_account_analytic_id
 #: model:ir.model.fields,field_description:account.field_account_invoice_report_account_analytic_id
 #: model:ir.model.fields,field_description:account.field_account_move_line_analytic_account_id
@@ -14545,7 +14545,7 @@ msgstr "Compte analytique."
 msgid "Analytic Account"
 msgstr "Compte analytique"
 
-#. modules: analytic, account, base
+#. modules: account, base, analytic
 #: model:ir.model.fields,field_description:account.field_res_config_settings_group_analytic_accounting
 #: model:ir.ui.menu,name:account.menu_analytic_accounting
 #: model:res.groups,name:analytic.group_analytic_accounting
@@ -14558,7 +14558,7 @@ msgstr "Comptabilité analytique"
 msgid "Analytic Accounting for Sales"
 msgstr "Comptes analytiques des ventes"
 
-#. modules: analytic, account
+#. modules: account, analytic
 #: model:ir.actions.act_window,name:account.action_open_partner_analytic_accounts
 #: model:ir.ui.menu,name:account.account_analytic_def_account
 #: model:ir.ui.view,arch_db:account.partner_view_button_contracts_count
@@ -14580,7 +14580,7 @@ msgstr "Étiquettes de comptes analytiques"
 msgid "Analytic Cost"
 msgstr "Coût analytique"
 
-#. modules: analytic, account
+#. modules: account, analytic
 #: model:ir.actions.act_window,name:account.analytic_line_reporting_pivot
 #: model:ir.ui.menu,name:account.menu_action_analytic_lines_reporting
 #: model:ir.ui.menu,name:account.menu_action_analytic_lines_tree
@@ -14596,14 +14596,14 @@ msgstr "Écritures analytiques"
 msgid "Analytic Entry"
 msgstr "Ecriture analytique"
 
-#. modules: analytic, sale, account
+#. modules: account, analytic, sale
 #: model:ir.model,name:account.model_account_analytic_line
 #: model:ir.model,name:analytic.model_account_analytic_line
 #: model:ir.model,name:sale.model_account_analytic_line
 msgid "Analytic Line"
 msgstr "Ligne analytique"
 
-#. modules: analytic, account
+#. modules: account, analytic
 #: model:ir.ui.view,arch_db:account.view_move_line_form
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_account_line_ids
 msgid "Analytic Lines"
@@ -14614,7 +14614,7 @@ msgstr "Lignes analytiques"
 msgid "Analytic Tag"
 msgstr "Étiquette analytique"
 
-#. modules: analytic, sale, account
+#. modules: account, analytic, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_analytic_tag_ids
 #: model:ir.ui.menu,name:account.account_analytic_tag_menu
 #: model:ir.model,name:analytic.model_account_analytic_tag
@@ -14782,7 +14782,7 @@ msgstr "Clavier sans-fil Apple"
 msgid "Applicability"
 msgstr "Applicabilité"
 
-#. modules: stock, product, hubi
+#. modules: hubi, stock, product
 #: model:ir.ui.view,arch_db:hubi.pricelist_hubi_form_view
 #: model:ir.ui.view,arch_db:product.product_normal_form_view
 #: model:ir.ui.view,arch_db:product.product_pricelist_view
@@ -14855,7 +14855,7 @@ msgstr "Appliquer aux éléments du journal des débits"
 msgid "Applies to"
 msgstr "S'applique à"
 
-#. modules: account_reports, portal, mail, web, base
+#. modules: base, mail, web, portal, account_reports
 #. openerp-web
 #: model:ir.ui.view,arch_db:account_reports.search_template_comparison
 #: model:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -15013,7 +15013,7 @@ msgstr "Archiver"
 msgid "Archive Records"
 msgstr "Archiver les enregistrements"
 
-#. modules: analytic, product, stock, hubi, account, web, hubi_bom, delivery, base, sales_team
+#. modules: hubi, stock, delivery, sales_team, base, web, product, account, analytic, hubi_bom
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.view_account_journal_search
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_search
@@ -15323,7 +15323,7 @@ msgstr "Nom de la pièce jointe"
 msgid "Attachment URL"
 msgstr "Lien de la pièce jointe"
 
-#. modules: base, hubi_bom, mail
+#. modules: base, mail, hubi_bom
 #: model:ir.actions.act_window,name:base.action_attachment
 #: model:ir.ui.menu,name:base.menu_action_attachment
 #: model:ir.ui.view,arch_db:base.view_attachment_form
@@ -15384,7 +15384,7 @@ msgstr "Supplément pour cette caractéristique  "
 msgid "Attribute Prices"
 msgstr "Prix des caractéristique"
 
-#. modules: stock, product, sale
+#. modules: stock, sale, product
 #: model:ir.actions.act_window,name:product.variants_action
 #: model:ir.model.fields,field_description:product.field_product_attribute_line_value_ids
 #: model:ir.ui.view,arch_db:product.product_attribute_view_form
@@ -15393,7 +15393,7 @@ msgstr "Prix des caractéristique"
 msgid "Attribute Values"
 msgstr "Valeurs de caractéristique"
 
-#. modules: stock, product, sale
+#. modules: stock, sale, product
 #: model:ir.actions.act_window,name:product.attribute_action
 #: model:ir.model.fields,field_description:product.field_product_product_attribute_value_ids
 #: model:ir.ui.view,arch_db:product.product_attribute_value_view_tree
@@ -15991,7 +15991,7 @@ msgstr "Bahamas"
 msgid "Bahrain"
 msgstr "Bahreïn"
 
-#. modules: analytic, account_online_sync, account, account_reports
+#. modules: account, account_reports, account_online_sync, analytic
 #: selection:account.payment.term.line,value:0
 #: model:ir.model.fields,field_description:account.field_account_move_line_balance
 #: model:ir.ui.view,arch_db:account.report_financial
@@ -16044,7 +16044,7 @@ msgstr "Solde :"
 msgid "Bangladesh"
 msgstr "Bengladesh"
 
-#. modules: base, hubi, account, account_bank_statement_import
+#. modules: hubi, account, base, account_bank_statement_import
 #: selection:account.bank.accounts.wizard,account_type:0
 #: selection:account.journal,type:0
 #: code:addons/account/models/chart_template.py:759
@@ -16066,7 +16066,7 @@ msgstr "Banque"
 msgid "Bank &amp; Cash"
 msgstr "Banque &amp; Cash"
 
-#. modules: payment, payment_transfer, account, account_bank_statement_import
+#. modules: account, payment, payment_transfer, account_bank_statement_import
 #: code:addons/account/models/company.py:226
 #: model:ir.model.fields,field_description:account.field_account_bank_accounts_wizard_bank_account_id
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line_bank_account_id
@@ -16093,7 +16093,7 @@ msgstr "Nom du compte bancaire"
 msgid "Bank Account Number to which the invoice will be paid. A Company bank account if this is a Customer Invoice or Vendor Credit Note, otherwise a Partner bank account number."
 msgstr "Numéro du compte bancaire sur lequel la facture sera payée. Un compte bancaire de la Société s'il s'agit d'une facture client ou d'un avoir du fournisseur, sinon un numéro de compte bancaire du tiers."
 
-#. modules: account_online_sync, account, l10n_us, payment_transfer, base
+#. modules: account_online_sync, base, l10n_us, payment_transfer, account
 #. openerp-web
 #: code:addons/account/static/src/xml/account_dashboard_setup_bar.xml:21
 #: model:ir.actions.act_window,name:account.action_account_bank_journal_form
@@ -16178,7 +16178,7 @@ msgstr "Préselection de transactions bancaires à réconcilier"
 msgid "Bank Setup Marked As Done"
 msgstr "Configuration de la banque marquée comme terminée"
 
-#. modules: account_online_sync, account
+#. modules: account, account_online_sync
 #: model:ir.model,name:account.model_account_bank_statement
 #: model:ir.ui.view,arch_db:account.view_bank_statement_form
 #: model:ir.ui.view,arch_db:account.view_bank_statement_search
@@ -16197,7 +16197,7 @@ msgstr "Relevé bancaire %s"
 msgid "Bank Statement File"
 msgstr "Fichier de relevés bancaires"
 
-#. modules: account_online_sync, account, account_bank_statement_import
+#. modules: account, account_online_sync, account_bank_statement_import
 #: model:ir.model,name:account.model_account_bank_statement_line
 #: model:ir.model,name:account_bank_statement_import.model_account_bank_statement_line
 #: model:ir.model,name:account_online_sync.model_account_bank_statement_line
@@ -16341,7 +16341,7 @@ msgstr "Bar Code 128"
 msgid "Barbados"
 msgstr "Barbade"
 
-#. modules: stock, product, base
+#. modules: stock, base, product
 #: model:ir.model.fields,field_description:base.field_res_partner_barcode
 #: model:ir.model.fields,field_description:base.field_res_users_barcode
 #: model:ir.model.fields,field_description:product.field_product_packaging_barcode
@@ -16946,7 +16946,7 @@ msgstr "Pilote Blackbox"
 msgid "Block"
 msgstr "Bloquer"
 
-#. modules: stock, sale, account
+#. modules: account, sale, stock
 #: selection:res.partner,invoice_warn:0
 #: selection:product.template,sale_line_warn:0
 #: selection:res.partner,sale_warn:0
@@ -17306,7 +17306,7 @@ msgstr "Par avoir"
 msgid "By Lots"
 msgstr "Par lots"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.filters,name:account.filter_invoice_product
 #: model:ir.filters,name:sale.filter_isale_report_product
 msgid "By Product"
@@ -17317,7 +17317,7 @@ msgstr "Par article"
 msgid "By Product Category"
 msgstr "Par catégorie d'article"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.filters,name:account.filter_invoice_salespersons
 #: model:ir.filters,name:sale.filter_sale_report_salespersons
 msgid "By Salespersons"
@@ -17490,7 +17490,7 @@ msgstr "Format CSV (séparé par des virgules) : directement éditable dans un t
 msgid "Calculate Product Price per Unit Based on Pricelist Version."
 msgstr "Calculer le prix de l'article par unité selon cette version de liste de prix"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: selection:ir.actions.act_window.view,view_mode:0
 #: model:ir.module.module,shortdesc:base.module_calendar
@@ -17679,7 +17679,7 @@ msgstr "Canada"
 msgid "Canada - Accounting"
 msgstr "Comptabilité - Canada"
 
-#. modules: sms, product, sale, web_planner, account_bank_statement_import, mail, payment, portal, stock, hubi, account, base_import, stock_account, web, iap, account_check_printing, delivery, base
+#. modules: hubi, stock, stock_account, delivery, sms, account_check_printing, base, mail, web, product, web_planner, sale, base_import, portal, payment, iap, account, account_bank_statement_import
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.account_aged_balance_view
 #: model:ir.ui.view,arch_db:account.account_common_report_view
@@ -17808,7 +17808,7 @@ msgstr "Annuler : créer un avoir et lettrer"
 msgid "Canceled"
 msgstr "Annulé"
 
-#. modules: mail, stock, hubi, account, sale
+#. modules: hubi, stock, mail, sale, account
 #: selection:account.invoice,state:0
 #: selection:account.invoice.report,state:0
 #: selection:account.payment,state:0
@@ -18233,7 +18233,7 @@ msgstr "Catégories - Produits"
 msgid "Categories may trigger specific behavior like opening calendar view"
 msgstr "Les catégories peuvent déclencher un comportement spécifique, tel que l'ouverture d'une vue calendrier"
 
-#. modules: product, hubi, base, mail
+#. modules: hubi, base, product, mail
 #: model:ir.model.fields,field_description:base.field_ir_module_module_category_id
 #: model:ir.ui.view,arch_db:base.view_module_filter
 #: model:ir.model.fields,field_description:hubi.field_wiz_create_product_from_category_categ_id
@@ -18361,7 +18361,7 @@ msgstr "Changez le modèle des documents"
 msgid "Change My Preferences"
 msgstr "Changer mes préférences"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.actions.act_window,name:base.change_password_wizard_action
 #: model:ir.ui.view,arch_db:base.change_password_wizard_view
@@ -18487,7 +18487,7 @@ msgstr "La modification de votre méthode de détermination du coût des stocks 
 msgid "Changing your name is not allowed once invoices have been issued for your account. Please contact us directly for this operation."
 msgstr "Vous ne pouvez pas modifier votre nom si des factures ont déjà été émises pour votre compte. Veuillez nous contacter directement pour effectuer cette modification."
 
-#. modules: bus, mail
+#. modules: mail, bus
 #: model:ir.model.fields,field_description:bus.field_bus_bus_channel
 #: model:ir.model.fields,field_description:mail.field_mail_channel_partner_channel_id
 #: model:ir.ui.view,arch_db:mail.mail_channel_partner_view_form
@@ -18510,7 +18510,7 @@ msgstr "Membres du canal"
 msgid "Channel Message"
 msgstr "Message du canal"
 
-#. modules: sales_team, mail
+#. modules: mail, sales_team
 #: model:ir.model.fields,field_description:mail.field_mail_channel_channel_type
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_team_type
 msgid "Channel Type"
@@ -18845,7 +18845,7 @@ msgstr "Côché = Imprimante Etiquette, Décôché = Imprimante Normale"
 msgid "Checked Quantity"
 msgstr "Quantité vérifiée"
 
-#. modules: account_check_printing, account
+#. modules: account, account_check_printing
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
 #: model:account.payment.method,name:account_check_printing.account_payment_method_check
 msgid "Checks"
@@ -18971,7 +18971,7 @@ msgstr "Chine"
 msgid "Choose Accounting Template"
 msgstr "Choisissez un modèle comptable"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: code:addons/base/ir/ir_actions_report.py:696
 #: code:addons/base_setup/models/res_config_settings.py:102
 #, python-format
@@ -19042,7 +19042,7 @@ msgstr "Choisissez l'en-tête et le pied de page de vos documents "
 msgid "Christmas Island"
 msgstr "Île Christmas"
 
-#. modules: payment, hubi, base, portal
+#. modules: hubi, base, portal, payment
 #: model:ir.model.fields,field_description:base.field_res_bank_city
 #: model:ir.model.fields,field_description:base.field_res_company_city
 #: model:ir.model.fields,field_description:base.field_res_partner_city
@@ -19231,7 +19231,7 @@ msgstr "Cliquez pour ajouter un emplacement. "
 msgid "Click to add a lot/serial number."
 msgstr "Ajouter un lot/numéro de série."
 
-#. modules: analytic, account
+#. modules: account, analytic
 #: model:ir.actions.act_window,help:account.account_tag_action
 #: model:ir.actions.act_window,help:analytic.account_analytic_tag_action
 msgid "Click to add a new tag."
@@ -19341,7 +19341,7 @@ msgstr "Cliquez ici pour créer un acquéreur de paiement."
 msgid "Click to create a payment icon."
 msgstr "Cliquez ici pour créer une icône de paiement."
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.actions.act_window,help:hubi.action_hubi_product_pricelist
 #: model:ir.actions.act_window,help:product.product_pricelist_action2
 msgid "Click to create a pricelist."
@@ -19448,7 +19448,7 @@ msgstr "Client"
 msgid "Client action tag"
 msgstr "Étiquette de l'action client"
 
-#. modules: web_editor, account_online_sync, web, account, base
+#. modules: account_online_sync, base, web, web_editor, account
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:260
 #: model:ir.ui.view,arch_db:account_online_sync.view_account_online_wizard_form
@@ -19475,7 +19475,7 @@ msgstr "Fermer"
 msgid "Close statement"
 msgstr "Fermer le relevé"
 
-#. modules: web, mail
+#. modules: mail, web
 #. openerp-web
 #: selection:mail.channel.partner,fold_state:0
 #: code:addons/web/static/src/js/fields/basic_fields.js:1706
@@ -19498,7 +19498,7 @@ msgstr "Solde de clôture bancaire "
 msgid "Cocos (Keeling) Islands"
 msgstr "Îles Cocos (Keeling)"
 
-#. modules: web_editor, account_reports, stock, hubi, account, base
+#. modules: hubi, stock, base, web_editor, account, account_reports
 #. openerp-web
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment_payment_method_code
 #: model:ir.model.fields,field_description:account.field_account_account_code
@@ -19570,7 +19570,7 @@ msgstr "Codes"
 msgid "Coin/Bill Value"
 msgstr "Valeur de la pièce/billet"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: model:ir.module.module,shortdesc:base.module_pad
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_pad
 msgid "Collaborative Pads"
@@ -19606,7 +19606,7 @@ msgstr "Rapports Comptables - Colombie"
 msgid "Colombian Accounting and Tax Preconfiguration"
 msgstr "Comptabilité et préconfiguration des taxes - Colombie"
 
-#. modules: stock, product, web_editor, hubi
+#. modules: hubi, stock, product, web_editor
 #. openerp-web
 #: model:ir.model.fields,field_description:hubi.field_hubi_shipper_color_shipper
 #: model:ir.ui.view,arch_db:hubi.pricelist_hubi_form_view
@@ -19624,7 +19624,7 @@ msgstr "Couleur"
 msgid "Color Etiq"
 msgstr "Coleur Etiquette"
 
-#. modules: analytic, product, account_bank_statement_import, account, base, sales_team
+#. modules: sales_team, base, product, account, analytic, account_bank_statement_import
 #: model:ir.model.fields,field_description:account.field_account_account_tag_color
 #: model:ir.model.fields,field_description:account.field_account_journal_color
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_color
@@ -19766,7 +19766,7 @@ msgstr "Commentaire"
 msgid "Comments"
 msgstr "Commentaires"
 
-#. modules: sale, hubi, account, base
+#. modules: hubi, account, base, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_commercial_partner_id
 #: model:ir.model.fields,help:account.field_account_invoice_report_commercial_partner_id
 #: model:ir.model.fields,field_description:base.field_res_partner_commercial_partner_id
@@ -19809,7 +19809,7 @@ msgstr "Rapport"
 msgid "Common colors"
 msgstr "Couleurs communes"
 
-#. modules: payment, account, base, account_reports
+#. modules: account, base, account_reports, payment
 #: model:ir.ui.view,arch_db:account.report_overdue_document
 #: code:addons/account_reports/models/account_followup_report.py:39
 #: code:addons/account_reports/models/account_general_ledger.py:31
@@ -19825,7 +19825,7 @@ msgstr "Libellé"
 msgid "Comoros"
 msgstr "Comores"
 
-#. modules: product, account_reports, l10n_us_check_printing, stock, sale_stock, hubi, account, currency_rate_live, account_taxcloud, base_setup, sale, base, account_yodlee
+#. modules: hubi, l10n_us_check_printing, stock, currency_rate_live, base_setup, base, sale_stock, product, account_taxcloud, sale, account, account_reports, account_yodlee
 #: model:ir.model,name:account.model_res_company
 #: model:ir.model,name:account_reports.model_res_company
 #: model:ir.model,name:account_taxcloud.model_res_company
@@ -19865,7 +19865,7 @@ msgstr "Sociétés qui font référence au partenaire"
 msgid "Companies:"
 msgstr "Sociétés :"
 
-#. modules: analytic, product, account_online_sync, account_bank_statement_import, account_reports, payment, stock, hubi, account, hubi_bom, iap, base_setup, sale, delivery, base, sales_team
+#. modules: hubi, stock, account_online_sync, delivery, base_setup, sales_team, base, analytic, product, sale, payment, iap, account, account_reports, hubi_bom, account_bank_statement_import
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment_company_id
 #: model:ir.model.fields,field_description:account.field_account_account_company_id
 #: model:ir.model.fields,field_description:account.field_account_aged_trial_balance_company_id
@@ -20087,7 +20087,7 @@ msgstr "Adresse complète"
 msgid "Complete ID"
 msgstr "ID Complet"
 
-#. modules: product, base
+#. modules: base, product
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_complete_name
 #: model:ir.model.fields,field_description:product.field_product_category_complete_name
 msgid "Complete Name"
@@ -20264,7 +20264,7 @@ msgstr "Boîtier d'ordinateur"
 msgid "Computer SC234"
 msgstr "Ordinateur SC234"
 
-#. modules: delivery, base
+#. modules: base, delivery
 #: model:ir.model.fields,field_description:base.field_ir_default_condition
 #: model:ir.ui.view,arch_db:delivery.view_delivery_price_rule_form
 msgid "Condition"
@@ -20293,7 +20293,7 @@ msgstr "Étapes de l'assistant de configuration"
 msgid "Config: Run Remaining Action Todo"
 msgstr "Configuration : exécuter les actions restant à faire"
 
-#. modules: payment, stock, hubi, account, hubi_bom, fetchmail, sale, base, sales_team
+#. modules: hubi, stock, fetchmail, sales_team, base, sale, payment, account, hubi_bom
 #: model:ir.ui.menu,name:account.menu_finance_configuration
 #: model:ir.ui.menu,name:base.menu_reporting_config
 #: model:ir.ui.view,arch_db:base.res_config_view_base
@@ -20381,7 +20381,7 @@ msgstr "Menu de configuration"
 msgid "Configuration options are available in the Settings app."
 msgstr "Des paramètres sont disponibles dans l'application Configuration."
 
-#. modules: account_online_sync, account, payment
+#. modules: account, account_online_sync, payment
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:account_online_sync.account_bank_journal_form_inherit_online_sync
 #: model:ir.ui.view,arch_db:account_online_sync.account_journal_form_inherit_online_sync
@@ -20404,7 +20404,7 @@ msgstr "Configurer la facturation des feuilles de temps"
 msgid "Configure your activity types"
 msgstr "Configurez vos types d'activités"
 
-#. modules: stock, account, base, auth_signup
+#. modules: account, base, auth_signup, stock
 #: model:ir.ui.view,arch_db:account.view_account_bnk_stmt_cashbox
 #: model:ir.ui.view,arch_db:account.view_account_bnk_stmt_check
 #: model:ir.ui.view,arch_db:account.view_account_payment_form
@@ -20482,7 +20482,7 @@ msgstr "Confirmer les factures sélectionnées"
 msgid "Confirmation"
 msgstr "Confirmation"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_confirmation_date
 #: model:ir.model.fields,field_description:sale.field_sale_order_confirmation_date
 #: model:ir.model.fields,field_description:sale.field_sale_report_confirmation_date
@@ -20490,7 +20490,7 @@ msgstr "Confirmation"
 msgid "Confirmation Date"
 msgstr "Date de confirmation"
 
-#. modules: stock, fetchmail, account, auth_signup
+#. modules: account, auth_signup, stock, fetchmail
 #: model:ir.ui.view,arch_db:account.view_bank_statement_search
 #: selection:res.users,state:0
 #: selection:fetchmail.server,state:0
@@ -20657,7 +20657,7 @@ msgstr "Ligne traitée"
 msgid "Consumed by"
 msgstr "Consommé par"
 
-#. modules: sms, product, payment, account_reports, mail, portal, stock, hubi, account, bus, auth_signup, mail_push, sale, delivery, base, sales_team
+#. modules: hubi, stock, delivery, auth_signup, sales_team, base, mail, product, mail_push, bus, sale, portal, payment, sms, account, account_reports
 #: model:ir.model,name:account.model_res_partner
 #: model:ir.model,name:account_reports.model_res_partner
 #: model:ir.model,name:auth_signup.model_res_partner
@@ -20771,7 +20771,7 @@ msgstr "Contient"
 msgid "Contains the logic shared between models which allows to register payments"
 msgstr "Contient la logique partagée entre les modèles qui permet d'enregistrer les paiements"
 
-#. modules: stock, sales_team, mail
+#. modules: stock, mail, sales_team
 #: model:ir.ui.view,arch_db:mail.email_template_form
 #: model:ir.ui.view,arch_db:mail.view_message_search
 #: model:ir.model.fields,field_description:sales_team.field_crm_team_dashboard_graph_model
@@ -20937,7 +20937,7 @@ msgstr "Couloir (X)"
 msgid "Cosmetics"
 msgstr "Cosmétiques"
 
-#. modules: product, stock_account
+#. modules: stock_account, product
 #: model:ir.model.fields,field_description:product.field_product_price_history_cost
 #: model:ir.model.fields,field_description:product.field_product_product_standard_price
 #: model:ir.model.fields,field_description:product.field_product_template_standard_price
@@ -21167,7 +21167,7 @@ msgstr "Compte de contrepartie"
 msgid "Counterpart Locations"
 msgstr "Emplacements de contrepartie"
 
-#. modules: payment, delivery, base
+#. modules: base, delivery, payment
 #: model:ir.actions.act_window,name:base.action_country
 #: model:ir.model.fields,field_description:base.field_res_country_group_country_ids
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_country_ids
@@ -21175,7 +21175,7 @@ msgstr "Emplacements de contrepartie"
 msgid "Countries"
 msgstr "Pays"
 
-#. modules: payment, portal, hubi, account, base
+#. modules: hubi, base, portal, payment, account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_country_id
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_template_country_id
 #: model:ir.model,name:base.model_res_country
@@ -21212,7 +21212,7 @@ msgstr "Code d'Appel Pays"
 msgid "Country Code"
 msgstr "Code du pays"
 
-#. modules: product, account, base
+#. modules: account, base, product
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_country_group_id
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_template_country_group_id
 #: model:ir.actions.act_window,name:base.action_country_group
@@ -21223,7 +21223,7 @@ msgstr "Code du pays"
 msgid "Country Group"
 msgstr "Groupe de pays"
 
-#. modules: product, base
+#. modules: base, product
 #: model:ir.model.fields,field_description:base.field_res_country_country_group_ids
 #: model:ir.model.fields,field_description:product.field_product_pricelist_country_group_ids
 msgid "Country Groups"
@@ -21436,7 +21436,7 @@ msgstr "Créer des tâches à partir de leads"
 msgid "Create Variant"
 msgstr "Créer une variante"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Create Vendors"
@@ -21650,7 +21650,7 @@ msgstr "Créer des relevés hebdomadaires"
 msgid "Create your custom dashboard"
 msgstr "Créez votre tableau de bord personnalisé"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Create your products"
@@ -21708,7 +21708,7 @@ msgstr "Crée mouvement"
 msgid "Created Views"
 msgstr "Vues créées"
 
-#. modules: sms, web_editor, account_online_sync, account_bank_statement_import, mail, decimal_precision, base_import, iap, fetchmail, delivery, sales_team, analytic, account_reports, stock, mail_push, web_planner, account, stock_account, hubi_bom, sale, product, payment, portal, hubi, bus, account_taxcloud, barcodes, account_check_printing, base
+#. modules: decimal_precision, account_online_sync, sales_team, barcodes, mail_push, account_taxcloud, payment, analytic, account_reports, stock_account, delivery, base, web_editor, sale, portal, sms, account_bank_statement_import, bus, web_planner, base_import, hubi_bom, hubi, stock, account_check_printing, fetchmail, mail, product, iap, account
 #: model:ir.model.fields,field_description:account.field_account_account_create_uid
 #: model:ir.model.fields,field_description:account.field_account_account_tag_create_uid
 #: model:ir.model.fields,field_description:account.field_account_account_template_create_uid
@@ -21992,7 +21992,7 @@ msgstr "Créé par"
 msgid "Created by :"
 msgstr "Créé par :"
 
-#. modules: sms, web_editor, account_online_sync, account_bank_statement_import, mail, decimal_precision, base_import, iap, fetchmail, delivery, sales_team, analytic, account_reports, stock, mail_push, web_planner, account, stock_account, hubi_bom, sale, product, payment, portal, hubi, account_taxcloud, barcodes, account_check_printing, base
+#. modules: decimal_precision, account_online_sync, sales_team, barcodes, mail_push, account_taxcloud, payment, analytic, account_reports, stock_account, delivery, base, web_editor, sale, portal, sms, account_bank_statement_import, web_planner, base_import, hubi_bom, hubi, stock, account_check_printing, fetchmail, mail, product, iap, account
 #. openerp-web
 #: model:ir.model.fields,field_description:account.field_account_account_create_date
 #: model:ir.model.fields,field_description:account.field_account_account_tag_create_date
@@ -22343,7 +22343,7 @@ msgstr "Revérification des identifiants obligatoire (420) : Le site a fusionn�
 msgid "Credentials"
 msgstr "Identités"
 
-#. modules: analytic, hubi, account, account_reports
+#. modules: hubi, account, account_reports, analytic
 #: model:ir.model.fields,field_description:account.field_account_move_line_credit
 #: model:ir.ui.view,arch_db:account.report_financial
 #: model:ir.ui.view,arch_db:account.report_generalledger
@@ -22536,7 +22536,7 @@ msgstr "Curaçao"
 msgid "Currencies"
 msgstr "Devises"
 
-#. modules: analytic, product, account_bank_statement_import, account_reports, payment, account, sale, base, sales_team
+#. modules: sales_team, base, analytic, product, sale, payment, account, account_reports, account_bank_statement_import
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment_currency_id
 #: model:ir.model.fields,field_description:account.field_account_analytic_line_company_currency_id
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_currency_id
@@ -22782,7 +22782,7 @@ msgstr "Quantité actuelle d'articles en stock.\n"
 msgid "Current user has a starred notification linked to this message"
 msgstr "L'utilisateur actuel a une notification \"favori\" associée à ce message"
 
-#. modules: payment, web_editor, base, account_reports
+#. modules: base, account_reports, web_editor, payment
 #. openerp-web
 #: model:ir.ui.view,arch_db:account_reports.search_template_comparison
 #: model:ir.ui.view,arch_db:account_reports.search_template_date_filter
@@ -22847,7 +22847,7 @@ msgstr "Ordinateur personnalisable envoyé en kit. "
 msgid "Custom fields must have a name that starts with 'x_' !"
 msgstr "Les champs personnalisés doivent avoir un nom commençant par 'x_' !"
 
-#. modules: analytic, payment, stock, hubi, account, sale
+#. modules: hubi, stock, sale, payment, account, analytic
 #: selection:account.abstract.payment,partner_type:0
 #: selection:account.payment,partner_type:0
 #: selection:account.register.payments,partner_type:0
@@ -23016,13 +23016,13 @@ msgstr "URL du portail client"
 msgid "Customer Rating"
 msgstr "Évaluation de la Clientèle"
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.model.fields,field_description:hubi.field_product_pricelist_item_customer_ref
 #: model:ir.model.fields,field_description:product.field_product_product_partner_ref
 msgid "Customer Ref"
 msgstr "Réf. client"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_product_sheet_price
 #: model:ir.model.fields,field_description:sale.field_sale_order_client_order_ref
 msgid "Customer Reference"
@@ -23048,7 +23048,7 @@ msgstr "Relevé client"
 msgid "Customer Statements"
 msgstr "Relevés de clients"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_product_product_taxes_id
 #: model:ir.model.fields,field_description:account.field_product_template_taxes_id
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv_deposit_taxes_id
@@ -23061,7 +23061,7 @@ msgstr "Taxes à la vente"
 msgid "Customer ref:"
 msgstr "Réf. du client :"
 
-#. modules: stock, hubi, account, sale, base
+#. modules: hubi, stock, base, sale, account
 #: model:ir.ui.menu,name:account.menu_account_customer
 #: model:ir.actions.act_window,name:base.action_partner_customer_form
 #: model:ir.actions.act_window,name:base.action_partner_form
@@ -23240,7 +23240,7 @@ msgstr "Dailymotion"
 msgid "Danger"
 msgstr "Danger"
 
-#. modules: stock, web_settings_dashboard, account, sales_team
+#. modules: account, web_settings_dashboard, stock, sales_team
 #. openerp-web
 #: code:addons/account/static/src/js/account_dashboard_setup_bar.js:214
 #: model:ir.ui.menu,name:account.menu_board_journal_1
@@ -23285,7 +23285,7 @@ msgstr "Données pour les tests de conversion XML"
 msgid "Data to Write"
 msgstr "Données à saisir"
 
-#. modules: web, base
+#. modules: base, web
 #: model:ir.ui.view,arch_db:base.ir_logging_search_view
 #: model:ir.ui.view,arch_db:web.login
 msgid "Database"
@@ -23347,7 +23347,7 @@ msgstr "Carte mémoire"
 msgid "Datas"
 msgstr "Données"
 
-#. modules: analytic, product, account_reports, mail, stock, hubi, account, base
+#. modules: hubi, stock, base, mail, analytic, product, account, account_reports
 #. openerp-web
 #: selection:account.print.journal,sort_selection:0
 #: selection:account.report.general.ledger,sortby:0
@@ -23436,7 +23436,7 @@ msgstr "Format de date :"
 msgid "Date Invoice"
 msgstr "Date Facture"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_date
 #: model:ir.model.fields,field_description:hubi.field_sale_report_packaging_date
 #: model:ir.model.fields,field_description:sale.field_report_all_channels_sales_date_order
@@ -23548,7 +23548,7 @@ msgstr "Dates sur les bons de commande de vente"
 msgid "Datetime Format:"
 msgstr "Format de date et heure:"
 
-#. modules: web_gantt, web, base, sales_team
+#. modules: web_gantt, base, web, sales_team
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.ir_logging_search_view
 #: selection:crm.team,dashboard_graph_group:0
@@ -23634,7 +23634,7 @@ msgstr "Echéance"
 msgid "Dear"
 msgstr "Cher"
 
-#. modules: stock, currency_rate_live, account, base
+#. modules: account, base, currency_rate_live, stock
 #: code:addons/account/models/company.py:45
 #: model:res.company,overdue_msg:base.main_company
 #: model:res.company,overdue_msg:currency_rate_live.res_company_company_1
@@ -23659,7 +23659,7 @@ msgstr "Madame, Monsieur,\n"
 "\n"
 "Cordialement,"
 
-#. modules: analytic, hubi, account, account_reports
+#. modules: hubi, account, account_reports, analytic
 #: model:ir.model.fields,field_description:account.field_account_move_line_debit
 #: model:ir.ui.view,arch_db:account.report_financial
 #: model:ir.ui.view,arch_db:account.report_generalledger
@@ -23767,7 +23767,7 @@ msgstr "Séparateur de décimales:"
 msgid "Dedicated Credit Note Sequence"
 msgstr "Séquence dédiée aux avoirs"
 
-#. modules: web_editor, mail
+#. modules: mail, web_editor
 #. openerp-web
 #: model:ir.model.fields,field_description:mail.field_mail_message_subtype_default
 #: code:addons/web_editor/static/src/js/editor/summernote.js:2048
@@ -23781,7 +23781,7 @@ msgstr "Par défaut"
 msgid "Default %(currency)s pricelist for %(company)s"
 msgstr "Liste de prix par défaut en %(currency)s pour %(company)s"
 
-#. modules: base_setup, auth_signup
+#. modules: auth_signup, base_setup
 #: model:ir.ui.view,arch_db:auth_signup.res_config_settings_view_form
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_default_user_rights
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -24166,7 +24166,7 @@ msgstr "Supprimer la rangée "
 msgid "Delete sent emails (mass mailing only)"
 msgstr "Supprimer les courriels envoyés (seulement publipostage)"
 
-#. modules: web, mail
+#. modules: mail, web
 #. openerp-web
 #: code:addons/mail/static/src/xml/thread.xml:323
 #: code:addons/web/static/src/xml/base.xml:358
@@ -24271,7 +24271,7 @@ msgstr "Échec de l'envoi"
 msgid "Delivery Information"
 msgstr "Information de livraison"
 
-#. modules: product, sale
+#. modules: sale, product
 #: model:ir.model.fields,field_description:product.field_product_supplierinfo_delay
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_customer_lead
 msgid "Delivery Lead Time"
@@ -24459,7 +24459,7 @@ msgstr "Amortissement"
 msgid "Describe why you take money from the cash register:"
 msgstr "Expliquez la raison pour laquelle vous retirez de l'argent de la caisse :"
 
-#. modules: analytic, product, web_editor, payment, mail, l10n_us_check_printing, stock, hubi, account, web_enterprise, sale, base
+#. modules: hubi, l10n_us_check_printing, stock, base, mail, product, web_editor, sale, payment, account, analytic, web_enterprise
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:251
 #: model:ir.model.fields,field_description:account.field_account_account_type_note
@@ -24678,7 +24678,7 @@ msgstr "Détails par mois"
 msgid "Detect Automatically"
 msgstr "Détecter automatiquement"
 
-#. modules: product, delivery, payment
+#. modules: delivery, product, payment
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_sequence
 #: model:ir.model.fields,help:payment.field_payment_acquirer_sequence
 #: model:ir.model.fields,help:product.field_product_attribute_sequence
@@ -24810,7 +24810,7 @@ msgid "Disabling this option will also uninstall the following modules \n"
 msgstr "Désactiver cette option désinstallera également les modules suivants\n"
 "%s"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.ui.view,arch_db:account.portal_invoice_report
 #: model:ir.ui.view,arch_db:account.report_invoice_document
 #: model:ir.ui.view,arch_db:hubi.report_invoice_document_hubi
@@ -24820,7 +24820,7 @@ msgstr "Désactiver cette option désinstallera également les modules suivants\
 msgid "Disc.(%)"
 msgstr "Rem.(%)"
 
-#. modules: web_editor, mail, stock, web, account, barcodes, delivery, base
+#. modules: stock, delivery, base, mail, barcodes, web, web_editor, account
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.setup_opening_move_wizard_form
 #: code:addons/barcodes/static/src/js/barcode_form_view.js:368
@@ -24859,7 +24859,7 @@ msgstr "Annuler la modification d'un enregistrement"
 msgid "Discount"
 msgstr "Remise"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_discount
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_discount
 msgid "Discount (%)"
@@ -24936,7 +24936,7 @@ msgstr "Remises"
 msgid "Discuss"
 msgstr "Messages"
 
-#. modules: mail_push, mail
+#. modules: mail, mail_push
 #: model:ir.model,name:mail.model_mail_channel
 #: model:ir.model,name:mail_push.model_mail_channel
 msgid "Discussion channel"
@@ -24974,7 +24974,7 @@ msgstr "Afficher les comptes"
 msgid "Display Debit/Credit Columns"
 msgstr "Afficher les colonnes de débit/crédit"
 
-#. modules: sms, web_editor, account_online_sync, account_bank_statement_import, mail, decimal_precision, base_import, iap, fetchmail, l10n_us_reports, delivery, sales_team, analytic, account_reports, stock, mail_push, web_planner, web_tour, account, stock_account, hubi_bom, sale, product, payment, portal, hubi, bus, account_taxcloud, barcodes, account_check_printing, base
+#. modules: decimal_precision, account_online_sync, sales_team, barcodes, mail_push, account_taxcloud, payment, analytic, account_reports, stock_account, delivery, base, web_editor, sale, portal, sms, account_bank_statement_import, bus, l10n_us_reports, web_planner, base_import, hubi_bom, hubi, stock, account_check_printing, fetchmail, mail, web_tour, product, iap, account
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment_display_name
 #: model:ir.model.fields,field_description:account.field_account_account_display_name
 #: model:ir.model.fields,field_description:account.field_account_account_tag_display_name
@@ -25462,7 +25462,7 @@ msgstr "Docsaway"
 msgid "Doctor"
 msgstr "Docteur"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.view_base_module_uninstall
 #: code:addons/web_editor/static/src/xml/editor.xml:51
@@ -25492,7 +25492,7 @@ msgstr "Nom du document"
 msgid "Document Style"
 msgstr "Style du document"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: model:ir.model.fields,field_description:base.field_res_company_external_report_layout
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_external_report_layout
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -25520,7 +25520,7 @@ msgid "Document: Customer account statement<br/>\n"
 msgstr "Document : Relevé de compte client<br/>\n"
 "            Date :"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.module.module,shortdesc:base.module_website_forum_doc
 #: code:addons/web/static/src/xml/base.xml:1330
@@ -25540,7 +25540,7 @@ msgstr "Test des exemples de documentation"
 msgid "Documents"
 msgstr "Documents"
 
-#. modules: web, base, account_reports
+#. modules: base, account_reports, web
 #. openerp-web
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_domain
 #: model:ir.model.fields,field_description:base.field_ir_filters_domain
@@ -25617,10 +25617,11 @@ msgstr "Ne pas importer"
 msgid "Don't leave yet,<br />it's still loading..."
 msgstr "Ne partez pas,<br />c'est presque terminé..."
 
-#. modules: payment, account_reports, mail, stock, base
+#. modules: hubi, stock, base, mail, payment, account_reports
 #. openerp-web
 #: model:ir.ui.view,arch_db:account_reports.template_followup_report
 #: selection:ir.actions.todo,state:0
+#: model:ir.ui.view,arch_db:hubi.view_hubi_packing_preparation_tree
 #: code:addons/mail/static/src/xml/activity.xml:79
 #: selection:payment.transaction,state:0
 #: model:ir.model.fields,field_description:stock.field_stock_move_line_qty_done
@@ -25720,7 +25721,7 @@ msgstr "Acompte de %s%%"
 msgid "Down payments are made when creating invoices from a sales order. They are not copied when duplicating a sales order."
 msgstr "Les acomptes sont effectués lors de la création de factures à partir d'un bon de commande client. Ils ne sont pas copiés lors de la duplication d'un bon de commande."
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.ui.view,arch_db:account.portal_invoice_page
 #: model:ir.ui.view,arch_db:sale.portal_order_page
 msgid "Download"
@@ -25731,7 +25732,7 @@ msgstr "Télécharger"
 msgid "Download a bank statement from your bank and import it here. Supported formats:"
 msgstr "Télécharger un extrait de votre banque et importez-le ici. Formats supportés:"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Download the"
@@ -25777,7 +25778,7 @@ msgstr "Douzaine(s)"
 msgid "Dr."
 msgstr "Dr."
 
-#. modules: stock, account, payment
+#. modules: account, stock, payment
 #: selection:account.invoice,state:0
 #: selection:account.invoice.report,state:0
 #: selection:account.payment,state:0
@@ -25824,7 +25825,7 @@ msgstr "Factures en brouillon"
 msgid "Draft Moves"
 msgstr "Mouvements en brouillon"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: selection:sale.report.carrier,state:0
 #: selection:sale.report,state:0
 msgid "Draft Quotation"
@@ -25877,7 +25878,7 @@ msgstr "Dûe"
 msgid "Due Amount"
 msgstr "Montant Dû"
 
-#. modules: account, mail, l10n_us_check_printing
+#. modules: l10n_us_check_printing, account, mail
 #. openerp-web
 #: code:addons/account/controllers/portal.py:71
 #: code:addons/account/static/src/xml/account_reconciliation.xml:234
@@ -25919,7 +25920,7 @@ msgstr "Date d'échéance"
 msgid "Due in %d days"
 msgstr "Dû dans %d jours"
 
-#. modules: web, account
+#. modules: account, web
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.view_move_form
 #: code:addons/web/static/src/js/views/form/form_controller.js:163
@@ -26140,7 +26141,7 @@ msgstr "Chaque société de transport (par exemple UPS ) peut avoir plusieurs m�
 msgid "Each model must be unique!"
 msgstr "Chaque modèle doit être unique !"
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.actions.act_window,help:hubi.action_hubi_product_pricelist
 #: model:ir.actions.act_window,help:product.product_pricelist_action2
 msgid "Each rule include a set of applicability criteria (date range,\n"
@@ -26170,7 +26171,7 @@ msgstr "Équateur"
 msgid "Ecuador - Accounting"
 msgstr "Comptabilité - Équateur"
 
-#. modules: web_editor, web, mail
+#. modules: mail, web, web_editor
 #. openerp-web
 #: code:addons/mail/static/src/xml/activity.xml:62
 #: code:addons/web/static/src/js/views/calendar/calendar_controller.js:296
@@ -26446,7 +26447,7 @@ msgstr "Electronic Accounting for Mexico and Fiscal Reports\n"
 msgid "Element '%s' cannot be located in parent view"
 msgstr "L'élément '%s' ne peut être localisé dans la vue parente"
 
-#. modules: payment, mail, portal, hubi, web, base
+#. modules: hubi, base, mail, web, portal, payment
 #: model:ir.model.fields,field_description:base.field_res_bank_email
 #: model:ir.model.fields,field_description:base.field_res_company_email
 #: model:ir.model.fields,field_description:base.field_res_partner_email
@@ -26561,7 +26562,7 @@ msgstr "Adresse courriel de l'expéditeur. Ce champ est défini quand aucun part
 msgid "Email address to redirect replies..."
 msgstr "Adresse mél où rediriger les réponses..."
 
-#. modules: sale, account, mail
+#. modules: account, mail, sale
 #: model:ir.model,name:account.model_mail_compose_message
 #: model:ir.model,name:mail.model_mail_compose_message
 #: model:ir.model,name:sale.model_mail_compose_message
@@ -26669,13 +26670,13 @@ msgstr "Codage des caractères :"
 msgid "Encrypted Password"
 msgstr "Mot de passe chiffré"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "End"
 msgstr "Fin"
 
-#. modules: product, hubi, account
+#. modules: hubi, account, product
 #: model:ir.model.fields,field_description:account.field_account_aged_trial_balance_date_to
 #: model:ir.model.fields,field_description:account.field_account_balance_report_date_to
 #: model:ir.model.fields,field_description:account.field_account_common_account_report_date_to
@@ -26745,7 +26746,7 @@ msgstr "Fermeture de la Caisse"
 msgid "Ending balance"
 msgstr "Fin balance"
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.model.fields,help:hubi.field_wiz_productprice_date_end
 #: model:ir.model.fields,help:product.field_product_pricelist_item_date_end
 msgid "Ending valid for the pricelist item validation"
@@ -26855,7 +26856,7 @@ msgstr "Séquence d'écriture"
 msgid "Entry lines"
 msgstr "Lignes d'écritures"
 
-#. modules: payment, delivery, base
+#. modules: base, delivery, payment
 #: model:ir.module.category,name:base.module_category_theme_environment
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_prod_environment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_environment
@@ -27347,7 +27348,7 @@ msgstr "Exemple : GLOBAL_RULE_1 AND GLOBAL_RULE_2 AND ( (GROUP_A_RULE_1 OR GROUP
 msgid "Examples"
 msgstr "Exemples"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Excel template"
@@ -27537,7 +27538,7 @@ msgstr "Nom explicite pour cette ligne de la liste de prix"
 msgid "Explicitly associated reports"
 msgstr "Rapports explicitement associés"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_ir_exports_line_export_id
 #: model:ir.ui.view,arch_db:base.wizard_lang_export
@@ -27668,7 +27669,7 @@ msgstr "Audit externe"
 msgid "External Email Servers"
 msgstr "Serveur de messagerie externe"
 
-#. modules: base_import, web, base
+#. modules: base, web, base_import
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_ir_act_client_xml_id
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_xml_id
@@ -28196,7 +28197,7 @@ msgstr "Ajoutez des équipes aux favoris pour les afficher sur le tableau de bor
 msgid "Favorited By"
 msgstr "Préféré par"
 
-#. modules: web, account
+#. modules: account, web
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.view_account_journal_search
 #: code:addons/web/static/src/xml/base.xml:1146
@@ -28479,7 +28480,7 @@ msgstr "Champ utilisé pour enregistré des erreurs et/ou des messages de valida
 msgid "Field:"
 msgstr "Champ :"
 
-#. modules: sale, base, auth_signup, mail
+#. modules: base, sale, auth_signup, mail
 #: model:ir.model,name:auth_signup.model_ir_model_fields
 #: model:ir.actions.act_window,name:base.action_model_fields
 #: model:ir.model,name:base.model_ir_model_fields
@@ -28532,7 +28533,7 @@ msgstr "Champs : %s"
 msgid "Fiji"
 msgstr "Fiji"
 
-#. modules: base_import, hubi, base
+#. modules: hubi, base, base_import
 #: selection:ir.attachment,type:0
 #: model:ir.model.fields,field_description:base.field_base_language_export_data
 #: model:ir.model.fields,field_description:base.field_base_language_import_data
@@ -28577,7 +28578,7 @@ msgstr "Format de Fichier"
 msgid "File Import"
 msgstr "Importation de fichier"
 
-#. modules: base_import, base
+#. modules: base, base_import
 #: model:ir.model.fields,field_description:base.field_base_language_export_name
 #: model:ir.model.fields,field_description:base.field_base_language_import_filename
 #: model:ir.model.fields,field_description:base.field_ir_attachment_datas_fname
@@ -28646,7 +28647,7 @@ msgstr "Complétez ce champ si vous envisagez de facturer l'expédition en fonct
 msgid "Filling this form allows you to filter delivery carriers according to the delivery address of your customer."
 msgstr "Lorsque vous remplissez ce formulaire, vous pouvez filtrer les transporteurs en fonction de l'adresse de livraison de votre client."
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_ir_act_window_filter
 #: code:addons/web/static/src/js/chrome/search_inputs.js:565
@@ -28703,7 +28704,7 @@ msgstr "Un filtre du même nom existe déjà."
 msgid "Filter..."
 msgstr "Filtrer..."
 
-#. modules: stock, web, base
+#. modules: stock, base, web
 #. openerp-web
 #: model:ir.actions.act_window,name:base.actions_ir_filters_view
 #: model:ir.model,name:base.model_ir_filters
@@ -28829,7 +28830,7 @@ msgstr "Correspondance fiscale"
 msgid "Fiscal Periods"
 msgstr "Périodes fiscales"
 
-#. modules: account_taxcloud, sale, account
+#. modules: account_taxcloud, account, sale
 #: model:ir.actions.act_window,name:account.action_account_fiscal_position_template_form
 #: model:ir.model,name:account.model_account_fiscal_position
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_account_position_id
@@ -28887,7 +28888,7 @@ msgstr "Dernier mois de l'exercice fiscal"
 msgid "Fix Price"
 msgstr "Prix Fixe"
 
-#. modules: stock, account
+#. modules: account, stock
 #: selection:account.reconcile.model,amount_type:0
 #: selection:account.reconcile.model,second_amount_type:0
 #: selection:account.reconcile.model.template,amount_type:0
@@ -28918,7 +28919,7 @@ msgstr "Emplacements fixes par catégories"
 msgid "Fixed Locations Per Product Category"
 msgstr "Emplacements fixes par catégories d'article"
 
-#. modules: product, delivery
+#. modules: delivery, product
 #: selection:delivery.carrier,delivery_type:0
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_fixed_price
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_fixed_price
@@ -28967,7 +28968,7 @@ msgstr "Gestion de Parc Automobile"
 msgid "Flip axis"
 msgstr "Intervertir les axes"
 
-#. modules: base, account_reports, decimal_precision
+#. modules: decimal_precision, base, account_reports
 #: selection:account.financial.html.report.line,figure_type:0
 #: selection:ir.property,type:0
 #: model:ir.model.fields,field_description:decimal_precision.field_decimal_precision_test_float
@@ -29196,7 +29197,7 @@ msgstr "Icône Font Awesome e.g. fa-tasks"
 msgid "Food"
 msgstr "Alimentation"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: model:ir.model.fields,help:base.field_res_company_report_footer
 #: model:ir.model.fields,help:base_setup.field_res_config_settings_report_footer
 msgid "Footer text displayed at the bottom of all reports."
@@ -29276,7 +29277,7 @@ msgstr "Pour les champs de relation, le nom technique du modèle cible"
 msgid "For selection fields, the Selection Options must be given!"
 msgstr "Pour les champs de sélection, les Options de Sélection doivent être fournies !"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "For the Odoo Team,<br/>\n"
@@ -29359,7 +29360,7 @@ msgstr "Quantité prévue (calculée comme quantité en stock - sortante + entra
 msgid "Forecasted Quantity"
 msgstr "Quantité prévue"
 
-#. modules: payment, web, base
+#. modules: base, web, payment
 #. openerp-web
 #: selection:ir.actions.act_window,view_type:0
 #: selection:ir.actions.act_window.view,view_mode:0
@@ -29404,7 +29405,7 @@ msgstr "Formulaire avec tokenisation"
 msgid "Form-only"
 msgstr "Form-only"
 
-#. modules: web_editor, base_setup, hubi
+#. modules: hubi, web_editor, base_setup
 #. openerp-web
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 #: model:ir.ui.view,arch_db:hubi.pricelist_item_hubi_form_view
@@ -29547,7 +29548,7 @@ msgstr "Polynésie française"
 msgid "French Southern Territories"
 msgstr "Terres Australes Françaises"
 
-#. modules: stock, payment, base, mail
+#. modules: stock, base, mail, payment
 #: model:ir.model.fields,field_description:base.field_ir_sequence_date_range_date_from
 #: model:ir.model.fields,field_description:mail.field_email_template_preview_email_from
 #: model:ir.model.fields,field_description:mail.field_mail_compose_message_email_from
@@ -29666,7 +29667,7 @@ msgstr "Chemin Complet"
 msgid "Full Reconcile"
 msgstr "Lettrage complet"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #. openerp-web
 #: selection:ir.actions.act_window,target:0
 #: selection:ir.actions.client,target:0
@@ -29675,7 +29676,7 @@ msgstr "Lettrage complet"
 msgid "Full Screen"
 msgstr "Plein écran"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: selection:sale.report,invoice_status:0
 #: selection:sale.report.carrier,invoice_status:0
 #: selection:sale.order,invoice_status:0
@@ -29696,7 +29697,7 @@ msgstr "Fonction"
 msgid "Future"
 msgstr "Future"
 
-#. modules: product, mail, stock, account, sale
+#. modules: stock, mail, product, sale, account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model:ir.ui.view,arch_db:mail.mail_activity_view_search
 #: model:ir.ui.view,arch_db:mail.res_partner_view_search_inherit_mail
@@ -29826,7 +29827,7 @@ msgstr "Ludification"
 msgid "Gamma"
 msgstr "Gamma"
 
-#. modules: web_gantt, base
+#. modules: base, web_gantt
 #. openerp-web
 #: selection:ir.actions.act_window.view,view_mode:0
 #: selection:ir.ui.view,type:0
@@ -29873,7 +29874,7 @@ msgstr "Jauge pour Kanban"
 msgid "General"
 msgstr "Général"
 
-#. modules: product, base
+#. modules: base, product
 #: model:ir.ui.view,arch_db:base.view_company_form
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 msgid "General Information"
@@ -29902,7 +29903,7 @@ msgstr "Grand livre"
 msgid "General Report"
 msgstr "Rapport général"
 
-#. modules: base_setup, hubi, base
+#. modules: hubi, base, base_setup
 #: model:ir.ui.view,arch_db:base.view_window_action_form
 #: model:ir.ui.menu,name:base_setup.menu_config
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
@@ -30115,7 +30116,7 @@ msgstr "Indique l'ordre d'affichage lorsqu'une liste d'articles est affichée."
 msgid "Gives the sequence order when displaying."
 msgstr "Gives the sequence order when displaying."
 
-#. modules: stock, product, base
+#. modules: stock, base, product
 #: model:ir.model.fields,field_description:base.field_ir_rule_global
 #: model:ir.ui.view,arch_db:base.ir_access_view_search
 #: model:ir.ui.view,arch_db:base.view_rule_search
@@ -30187,7 +30188,7 @@ msgstr "Bravo !"
 msgid "Goods will always be resupplied from this warehouse"
 msgstr "Les marchandises seront toujours réapprovisionnées depuis cet entrepôt"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: model:ir.module.module,shortdesc:base.module_google_calendar
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 msgid "Google Calendar"
@@ -30319,7 +30320,7 @@ msgstr " Integration de Google Drive™"
 msgid "Google Map Snippet"
 msgstr "Google Map Snippet"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: model:ir.module.module,shortdesc:base.module_google_spreadsheet
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_google_spreadsheet
 msgid "Google Spreadsheet"
@@ -30330,7 +30331,7 @@ msgstr "Feuille de calcul Google"
 msgid "Google Users"
 msgstr "Utilisateurs Google"
 
-#. modules: stock, web, base, sales_team
+#. modules: stock, base, web, sales_team
 #. openerp-web
 #: selection:ir.actions.act_window.view,view_mode:0
 #: selection:ir.ui.view,type:0
@@ -30409,7 +30410,7 @@ msgstr "Groënland"
 msgid "Grenada"
 msgstr "Grenade"
 
-#. modules: web_grid, base
+#. modules: base, web_grid
 #. openerp-web
 #: selection:ir.actions.act_window.view,view_mode:0
 #: selection:ir.ui.view,type:0
@@ -30428,7 +30429,7 @@ msgstr "Vue Grille"
 msgid "Gross Profit"
 msgstr "résultat brut"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_weight
 #: model:ir.model.fields,field_description:sale.field_sale_report_weight
 msgid "Gross Weight"
@@ -30459,7 +30460,7 @@ msgstr "Groupe"
 msgid "Group %s is not a portal"
 msgstr "Le groupe %s n'est pas un portail"
 
-#. modules: product, payment, mail, stock, hubi, account, web, sale, delivery, base
+#. modules: hubi, stock, delivery, base, mail, web, product, sale, payment, account
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.view_account_chart_template_seacrh
 #: model:ir.ui.view,arch_db:account.view_account_financial_report_search
@@ -30520,7 +30521,7 @@ msgstr "Regrouper par"
 msgid "Group By Name"
 msgstr "Grouper par nom"
 
-#. modules: analytic, sales_team, hubi_bom
+#. modules: analytic, hubi_bom, sales_team
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_account_search
 #: model:ir.ui.view,arch_db:analytic.view_account_analytic_line_filter
 #: model:ir.ui.view,arch_db:hubi_bom.view_mrp_bom_filter
@@ -30540,7 +30541,7 @@ msgstr "Grouper les lignes de facture"
 msgid "Group Name"
 msgstr "Nom du groupe"
 
-#. modules: hubi, sales_team, account_reports
+#. modules: hubi, account_reports, sales_team
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_groupby
 #: model:ir.ui.view,arch_db:hubi.Price_List_Lines_search
 #: model:ir.ui.view,arch_db:hubi.create_product_from_category_search
@@ -30720,7 +30721,7 @@ msgstr "HT"
 msgid "HTML"
 msgstr "HTML"
 
-#. modules: web_editor, web_tour, portal, web, web_enterprise, auth_signup, mail_push, barcodes, http_routing, base
+#. modules: http_routing, auth_signup, base, web_tour, barcodes, web, mail_push, web_editor, portal, web_enterprise
 #: model:ir.model,name:auth_signup.model_ir_http
 #: model:ir.model,name:barcodes.model_ir_http
 #: model:ir.model,name:base.model_ir_http
@@ -30931,7 +30932,7 @@ msgstr "La hauteur doit être positive"
 msgid "Hello,"
 msgstr "Hello,"
 
-#. modules: web_editor, base_import, hubi, base
+#. modules: hubi, base, base_import, web_editor
 #. openerp-web
 #: selection:ir.translation,type:0
 #: model:ir.ui.view,arch_db:base.view_server_action_form
@@ -31418,7 +31419,7 @@ msgstr "Comptes IAP"
 msgid "IBAN Bank Accounts"
 msgstr "Comptes bancaires IBAN"
 
-#. modules: sms, web_editor, account_online_sync, account_bank_statement_import, mail, decimal_precision, base_import, iap, fetchmail, l10n_us_reports, delivery, sales_team, analytic, account_reports, stock, mail_push, web_planner, web_tour, account, stock_account, hubi_bom, sale, product, payment, portal, hubi, bus, account_taxcloud, barcodes, account_check_printing, base
+#. modules: decimal_precision, account_online_sync, sales_team, barcodes, mail_push, account_taxcloud, payment, analytic, account_reports, stock_account, delivery, base, web_editor, sale, portal, sms, account_bank_statement_import, bus, l10n_us_reports, web_planner, base_import, hubi_bom, hubi, stock, account_check_printing, fetchmail, mail, web_tour, product, iap, account
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment_id
 #: model:ir.model.fields,field_description:account.field_account_account_id
 #: model:ir.model.fields,field_description:account.field_account_account_tag_id
@@ -32503,7 +32504,7 @@ msgstr "Si vous voulez être capable d'envoyer à vos clients leurs rappels de p
 "                        dans les comptes payables et recevables. Celles-ci seraient des factures\n"
 "                        qui n'ont pas été payées ou des paiements qui n'ont pas été lettrés."
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "If you want to do it yourself:"
@@ -32519,7 +32520,7 @@ msgstr "Pour arrêter le processus, activer le bouton 'Arrêter' ci dessous"
 msgid "If you're selling digital goods to customers in the EU, you must charge VAT based on your customers' locations. This rule applies regardless of you are located. Digital goods are defined in the legislation as broadcasting, telecommunications, and services that are electronically supplied instead of shipped. Gift cards sent online are not included in the definition."
 msgstr "Si vous vendez des produits numériques à des clients au sein de l'UE, vous devez leur facturer la TVA en fonction de l'endroit où ils se trouvent. Cette règle s'applique quel que soit votre emplacement. Les produits numériques sont définis comme suit par la loi : radiodiffusion, télécommunications et services qui sont fournis sous forme électronique et non pas expédiés. Les cartes cadeaux envoyées en ligne n'entrent pas dans le cadre de cette définition. "
 
-#. modules: product, web_editor, payment, web, base
+#. modules: base, web, web_editor, product, payment
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_res_country_image
 #: model:ir.model.fields,field_description:base.field_res_partner_image
@@ -32545,7 +32546,7 @@ msgstr "URL de l'image"
 msgid "Image displayed on the payment form"
 msgstr "Image affichée sur le formulaire de paiement"
 
-#. modules: product, sale, account
+#. modules: account, sale, product
 #: model:ir.model.fields,help:account.field_account_invoice_line_product_image
 #: model:ir.model.fields,help:product.field_product_product_image
 #: model:ir.model.fields,help:sale.field_sale_order_line_product_image
@@ -32619,7 +32620,7 @@ msgstr "Mise en œuvre de champs creux."
 msgid "Implements the registered cash system, adhering to guidelines by FPS Finance."
 msgstr "Met en œuvre le système de caisse enregistré, conformément aux directives de FPS Finance."
 
-#. modules: base_import, account_bank_statement_import
+#. modules: account_bank_statement_import, base_import
 #. openerp-web
 #: model:ir.actions.act_window,name:account_bank_statement_import.action_account_bank_statement_import
 #: code:addons/base_import/static/src/xml/base_import.xml:97
@@ -32643,7 +32644,7 @@ msgstr "Importer des fichiers .qif"
 msgid "Import / Export"
 msgstr "Import / Export"
 
-#. modules: account_bank_statement_import_csv, account_bank_statement_import, account_bank_statement_import_ofx
+#. modules: account_bank_statement_import, account_bank_statement_import_ofx, account_bank_statement_import_csv
 #. openerp-web
 #: model:ir.model,name:account_bank_statement_import.model_account_bank_statement_import
 #: code:addons/account_bank_statement_import_csv/static/src/js/import_bank_stmt.js:14
@@ -32905,7 +32906,7 @@ msgstr "Dans votre ancien logiciel de comptabilité, imprimez la balance génér
 msgid "In-App Purchases"
 msgstr "Achats intégrés"
 
-#. modules: web_planner, web, account, base
+#. modules: account, base, web, web_planner
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.view_account_tax_search
 #: model:ir.ui.view,arch_db:base.view_currency_search
@@ -33005,7 +33006,7 @@ msgstr "Inclus dans le prix"
 msgid "Income"
 msgstr "Revenus"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_product_category_property_account_income_categ_id
 #: model:ir.model.fields,field_description:account.field_product_product_property_account_income_id
 #: model:ir.model.fields,field_description:account.field_product_template_property_account_income_id
@@ -33168,7 +33169,7 @@ msgstr "Indonésie"
 msgid "Industry"
 msgstr "Secteur"
 
-#. modules: web_editor, hubi
+#. modules: hubi, web_editor
 #: model:ir.model.fields,field_description:hubi.field_product_pricelist_item_info_price
 #: model:ir.ui.view,arch_db:web_editor.colorpicker
 msgid "Info"
@@ -33399,7 +33400,7 @@ msgstr "Insérez vos termes et conditions ici..."
 msgid "Instagram"
 msgstr "Instagram"
 
-#. modules: payment, web_editor, base
+#. modules: base, web_editor, payment
 #. openerp-web
 #: code:addons/base/module/module.py:437
 #: model:ir.ui.view,arch_db:base.module_form
@@ -33547,7 +33548,7 @@ msgstr "Intégrer le mécanisme de coupons dans l'e-commerce"
 msgid "Integration Level"
 msgstr "Degré d'intégration"
 
-#. modules: base_setup, mail
+#. modules: mail, base_setup
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 #: model:ir.ui.menu,name:mail.mail_channel_integrations_menu
 #: model:ir.ui.view,arch_db:mail.mail_channel_view_form
@@ -33584,7 +33585,7 @@ msgstr "Interaction entre les règles"
 msgid "Intercompany SO/PO/INV rules"
 msgstr "Régles SO/PO/INV du module Inter-company"
 
-#. modules: account_online_sync, account_plaid, account_yodlee
+#. modules: account_plaid, account_online_sync, account_yodlee
 #: model:ir.model,name:account_online_sync.model_account_online_journal
 #: model:ir.model,name:account_plaid.model_account_online_journal
 #: model:ir.model,name:account_yodlee.model_account_online_journal
@@ -33606,7 +33607,7 @@ msgstr "Compte intermédiaire utilisé pour déplacer de l'argent d'un compte de
 msgid "Internal"
 msgstr "Interne"
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.model.fields,field_description:hubi.field_account_invoice_line_category_id
 #: model:ir.model.fields,field_description:hubi.field_sale_order_line_category_id
 #: model:ir.model.fields,field_description:hubi.field_wiz_create_print_label_category_id
@@ -33655,7 +33656,7 @@ msgstr "Notes internes"
 msgid "Internal Only"
 msgstr "Interne Seulement"
 
-#. modules: stock, product, base
+#. modules: stock, base, product
 #: model:ir.model.fields,field_description:base.field_res_partner_ref
 #: model:ir.model.fields,field_description:base.field_res_users_ref
 #: model:ir.model.fields,field_description:product.field_product_product_default_code
@@ -33687,7 +33688,7 @@ msgstr "Transferts internes"
 msgid "Internal Transit Location"
 msgstr "Emplacement de transit interne"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.model.fields,field_description:account.field_account_account_internal_type
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_int_type_id
 msgid "Internal Type"
@@ -33740,7 +33741,7 @@ msgstr "Intervalle"
 msgid "Interval Number"
 msgstr "Intervalle"
 
-#. modules: currency_rate_live, base
+#. modules: base, currency_rate_live
 #: model:ir.model.fields,field_description:base.field_ir_cron_interval_type
 #: model:ir.model.fields,field_description:currency_rate_live.field_res_company_currency_interval_unit
 #: model:ir.model.fields,field_description:currency_rate_live.field_res_config_settings_currency_interval_unit
@@ -33978,7 +33979,7 @@ msgstr "Inventaires"
 msgid "Inventories Month"
 msgstr "Mois d'inventaire"
 
-#. modules: stock, product, stock_account, base
+#. modules: stock, base, product, stock_account
 #: model:ir.module.category,name:base.module_category_warehouse_management
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 #: model:ir.actions.act_window,name:stock.quantsact
@@ -34147,7 +34148,7 @@ msgstr "Message d'invitation"
 msgid "Invitation to follow %s: %s"
 msgstr "Invitation à suivre %s : %s"
 
-#. modules: web_settings_dashboard, mail
+#. modules: mail, web_settings_dashboard
 #. openerp-web
 #: code:addons/mail/static/src/js/client_action.js:44
 #: code:addons/mail/static/src/xml/client_action.xml:133
@@ -34200,7 +34201,7 @@ msgstr "Assistant d'invitation"
 msgid "Invited people only"
 msgstr "Seulement les personnes invitées"
 
-#. modules: sale_stock, hubi, account, stock_account, account_taxcloud, sale_account_taxcloud, sale
+#. modules: hubi, stock_account, sale_stock, account_taxcloud, sale_account_taxcloud, sale, account
 #: code:addons/account/models/account_invoice.py:1229
 #: model:ir.model,name:account.model_account_invoice
 #: model:ir.model.fields,field_description:account.field_account_invoice_tax_invoice_id
@@ -34265,7 +34266,7 @@ msgstr "Analyse Facturation"
 msgid "Invoice Confirmed"
 msgstr "Facture confirmée"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:mail.message.subtype,description:account.mt_invoice_created
 #: model:mail.message.subtype,name:account.mt_invoice_created
 #: model:mail.message.subtype,name:sale.mt_salesteam_invoice_created
@@ -34284,7 +34285,7 @@ msgstr "Facture créée"
 msgid "Invoice Date"
 msgstr "Date de facture"
 
-#. modules: sale_stock, hubi, account, stock_account, sale
+#. modules: hubi, stock_account, sale_stock, sale, account
 #: model:ir.model,name:account.model_account_invoice_line
 #: model:ir.ui.view,arch_db:account.view_invoice_line_form
 #: model:ir.ui.view,arch_db:account.view_invoice_line_tree
@@ -34295,7 +34296,7 @@ msgstr "Date de facture"
 msgid "Invoice Line"
 msgstr "Ligne de facture"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_invoice_line_ids
 #: model:ir.ui.view,arch_db:account.invoice_form
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_invoice_lines
@@ -34344,7 +34345,7 @@ msgstr "Facturer les lignes de commande"
 msgid "Invoice Shipping on Delivery"
 msgstr "Facturer le transport à la livraison"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_report_state
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_invoice_status
 #: model:ir.model.fields,field_description:hubi.field_sale_report_invoice_status
@@ -34460,7 +34461,7 @@ msgstr "Lignes facturables"
 msgid "Invoiceable lines (deduct down payments)"
 msgstr "Lignes facturables (acomptes déduits)"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.ui.view,arch_db:account.view_account_invoice_report_search
 #: model:ir.ui.view,arch_db:hubi.view_hubi_invoice_report_search
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_qty_invoiced
@@ -34479,7 +34480,7 @@ msgstr "Quantité facturée"
 msgid "Invoiced This Month"
 msgstr "Facturé ce mois-ci"
 
-#. modules: sale, hubi, account, sales_team
+#. modules: hubi, account, sale, sales_team
 #: model:ir.actions.act_window,name:account.action_invoice_refund_out_tree
 #: model:ir.actions.act_window,name:account.action_invoice_tree
 #: model:ir.actions.report,name:account.account_invoices
@@ -34508,7 +34509,7 @@ msgstr "Facturé ce mois-ci"
 msgid "Invoices"
 msgstr "Factures"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.actions.act_window,name:account.action_account_invoice_report_all
 #: model:ir.actions.act_window,name:account.action_account_invoice_report_all_supp
 #: model:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
@@ -34549,7 +34550,7 @@ msgstr "Factures Hubi"
 msgid "Invoices Hubi without Payment"
 msgstr "Factures Hubi sans Paiement"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.model,name:account.model_account_invoice_report
 #: model:ir.model,name:hubi.model_account_invoice_report
 #: model:ir.model,name:sale.model_account_invoice_report
@@ -34594,7 +34595,7 @@ msgstr "Factures sans paiement"
 msgid "Invoices: Untaxed Total"
 msgstr "Factures : total HT"
 
-#. modules: sale_stock, sale, account, base
+#. modules: account, base, sale, sale_stock
 #: model:ir.ui.menu,name:account.menu_finance
 #: model:ir.ui.view,arch_db:account.product_template_form_view
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
@@ -34632,13 +34633,13 @@ msgstr "Politique de facturation"
 msgid "Invoicing Target"
 msgstr "Objectif de facturation"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "Invoicing address:"
 msgstr "Adresse de facturation :"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "Invoicing and shipping address:"
@@ -35072,7 +35073,7 @@ msgstr "Rejoindre un groupe"
 msgid "Jordan"
 msgstr "Jordanie"
 
-#. modules: account_online_sync, account_check_printing, account, account_bank_statement_import
+#. modules: account, account_check_printing, account_online_sync, account_bank_statement_import
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:185
 #: code:addons/account/static/src/xml/account_reconciliation.xml:229
@@ -35315,7 +35316,7 @@ msgstr "Justifié complet"
 msgid "K FINANCIAL AND INSURANCE ACTIVITIES"
 msgstr "K ACTIVITÉS FINANCIÈRES ET D'ASSURANCE"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: selection:ir.actions.act_window.view,view_mode:0
 #: model:ir.ui.view,arch_db:base.view_view_search
@@ -35591,7 +35592,7 @@ msgstr "Coûts logistiques"
 msgid "Landscape"
 msgstr "Paysage"
 
-#. modules: payment, base, mail
+#. modules: base, mail, payment
 #: model:ir.model.fields,field_description:base.field_base_language_export_lang
 #: model:ir.model.fields,field_description:base.field_base_language_install_lang
 #: model:ir.model.fields,field_description:base.field_base_update_translations_lang
@@ -35632,7 +35633,7 @@ msgstr "Le code langue ne peut pas être modifié."
 msgid "Language code of translation item must be among known languages"
 msgstr "Le code de la  langue de  traduction doit figurer parmi les langues connues"
 
-#. modules: web, base
+#. modules: base, web
 #: model:ir.actions.act_window,name:base.res_lang_act_window
 #: model:ir.model,name:base.model_res_lang
 #: model:ir.ui.menu,name:base.menu_res_lang_act_window
@@ -35713,7 +35714,7 @@ msgstr "Date du dernier message"
 msgid "Last Modification Date"
 msgstr "Date de la dernière modification"
 
-#. modules: sms, web_editor, account_online_sync, account_bank_statement_import, mail, decimal_precision, base_import, iap, fetchmail, l10n_us_reports, delivery, sales_team, analytic, account_reports, stock, mail_push, web_planner, web_tour, account, stock_account, hubi_bom, sale, product, payment, portal, hubi, bus, account_taxcloud, barcodes, account_check_printing, base
+#. modules: decimal_precision, account_online_sync, sales_team, barcodes, mail_push, account_taxcloud, payment, analytic, account_reports, stock_account, delivery, base, web_editor, sale, portal, sms, account_bank_statement_import, bus, l10n_us_reports, web_planner, base_import, hubi_bom, hubi, stock, account_check_printing, fetchmail, mail, web_tour, product, iap, account
 #: model:ir.model.fields,field_description:account.field_account_abstract_payment___last_update
 #: model:ir.model.fields,field_description:account.field_account_account___last_update
 #: model:ir.model.fields,field_description:account.field_account_account_tag___last_update
@@ -36060,7 +36061,7 @@ msgstr "Date de la dernière modification"
 msgid "Last Modified on"
 msgstr "Dernière modification le"
 
-#. modules: hubi, account, sales_team, account_reports
+#. modules: hubi, account, account_reports, sales_team
 #: model:ir.ui.view,arch_db:account.view_account_invoice_report_search
 #: model:ir.ui.view,arch_db:account_reports.search_template_date_filter
 #: model:ir.ui.view,arch_db:hubi.hubi_account_invoice_period_search_view
@@ -36112,7 +36113,7 @@ msgstr "Dernier vu"
 msgid "Last Sync Date"
 msgstr "Date de dernière synchronisation"
 
-#. modules: sms, web_editor, account_online_sync, account_bank_statement_import, mail, decimal_precision, base_import, iap, fetchmail, delivery, sales_team, analytic, account_reports, stock, mail_push, web_planner, account, stock_account, hubi_bom, sale, product, payment, portal, hubi, bus, account_taxcloud, barcodes, account_check_printing, base
+#. modules: decimal_precision, account_online_sync, sales_team, barcodes, mail_push, account_taxcloud, payment, analytic, account_reports, stock_account, delivery, base, web_editor, sale, portal, sms, account_bank_statement_import, bus, web_planner, base_import, hubi_bom, hubi, stock, account_check_printing, fetchmail, mail, product, iap, account
 #: model:ir.model.fields,field_description:account.field_account_account_tag_write_uid
 #: model:ir.model.fields,field_description:account.field_account_account_template_write_uid
 #: model:ir.model.fields,field_description:account.field_account_account_type_write_uid
@@ -36391,7 +36392,7 @@ msgstr "Date de dernière synchronisation"
 msgid "Last Updated by"
 msgstr "Dernière mise à jour par"
 
-#. modules: sms, web_editor, account_online_sync, account_bank_statement_import, mail, decimal_precision, base_import, iap, fetchmail, delivery, sales_team, analytic, account_reports, stock, mail_push, web_planner, account, stock_account, hubi_bom, sale, product, payment, portal, hubi, bus, account_taxcloud, barcodes, account_check_printing, base
+#. modules: decimal_precision, account_online_sync, sales_team, barcodes, mail_push, account_taxcloud, payment, analytic, account_reports, stock_account, delivery, base, web_editor, sale, portal, sms, account_bank_statement_import, bus, web_planner, base_import, hubi_bom, hubi, stock, account_check_printing, fetchmail, mail, product, iap, account
 #: model:ir.model.fields,field_description:account.field_account_account_tag_write_date
 #: model:ir.model.fields,field_description:account.field_account_account_template_write_date
 #: model:ir.model.fields,field_description:account.field_account_account_type_write_date
@@ -36715,7 +36716,7 @@ msgstr "La dernière fois que la correspondance entre les factures et les paieme
 msgid "Late"
 msgstr "En retard"
 
-#. modules: product, mail, stock, account, sale
+#. modules: stock, mail, product, sale, account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model:ir.ui.view,arch_db:mail.mail_activity_view_search
 #: model:ir.ui.view,arch_db:mail.res_partner_view_search_inherit_mail
@@ -36913,7 +36914,7 @@ msgstr "Marge de gauche"
 msgid "Left Margin (mm)"
 msgstr "Marge de gauche (mm)"
 
-#. modules: stock, product, account
+#. modules: account, product, stock
 #: model:ir.model.fields,field_description:account.field_account_group_parent_left
 #: model:ir.model.fields,field_description:product.field_product_category_parent_left
 #: model:ir.model.fields,field_description:stock.field_stock_location_parent_left
@@ -37112,7 +37113,7 @@ msgstr "Comme avec le flux de vente, Odoo Inventaire est\n"
 msgid "Limit"
 msgstr "Limite"
 
-#. modules: sales_team, base, account_reports
+#. modules: base, account_reports, sales_team
 #: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_line
 #: model:ir.model.fields,field_description:base.field_ir_logging_line
 #: selection:crm.team,dashboard_graph_type:0
@@ -37143,7 +37144,7 @@ msgstr "Ligne Id"
 msgid "Line subtotals in sales orders"
 msgstr "Sous-totaux de ligne dans les bons de commande"
 
-#. modules: product, account_reports
+#. modules: account_reports, product
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_ids
 #: model:ir.model.fields,field_description:product.field_product_attribute_attribute_line_ids
 msgid "Lines"
@@ -37402,7 +37403,7 @@ msgstr "Charger"
 msgid "Load File"
 msgstr "Choisir un fichier"
 
-#. modules: web_settings_dashboard, base
+#. modules: base, web_settings_dashboard
 #. openerp-web
 #: model:ir.actions.act_window,name:base.action_view_base_language_install
 #: model:ir.ui.menu,name:base.menu_view_base_language_install
@@ -37522,7 +37523,7 @@ msgstr "Type d'emplacement"
 msgid "Location where the system will stock the finished products."
 msgstr "Emplacement où le système stockera les produits finis."
 
-#. modules: stock, hubi
+#. modules: hubi, stock
 #: model:ir.ui.menu,name:hubi.menu_hubi_datas_location
 #: model:ir.actions.act_window,name:stock.action_location_form
 #: model:ir.ui.menu,name:stock.menu_action_location_form
@@ -38386,7 +38387,7 @@ msgstr "Gérer vos immobilisations, comme l'immobilier, la machinerie, les mati�
 msgid "Management"
 msgstr "Gestion"
 
-#. modules: stock, sales_team, account_reports
+#. modules: stock, account_reports, sales_team
 #: model:ir.model.fields,field_description:account_reports.field_account_report_footnote_manager_id
 #: model:res.groups,name:sales_team.group_sale_manager
 #: model:res.groups,name:stock.group_stock_manager
@@ -38398,7 +38399,7 @@ msgstr "Gestionnaire"
 msgid "Managing bank fees"
 msgstr "Gestion des frais bancaires"
 
-#. modules: stock_account, account, account_reports
+#. modules: account, account_reports, stock_account
 #: model:account.payment.method,name:account.account_payment_method_manual_in
 #: model:account.payment.method,name:account.account_payment_method_manual_out
 #: model:ir.model.fields,field_description:account.field_account_invoice_tax_manual
@@ -38744,7 +38745,7 @@ msgstr "Envoyer des mailings aux participants"
 msgid "Mass mailing on track speakers"
 msgstr "Envoyer des mailings aux intervenants"
 
-#. modules: stock, account, hubi_bom
+#. modules: account, stock, hubi_bom
 #: model:ir.ui.menu,name:account.menu_finance_payables_master_data
 #: model:ir.ui.menu,name:account.menu_finance_receivables_master_data
 #: model:ir.ui.menu,name:hubi_bom.menu_mrp_bom
@@ -38906,7 +38907,7 @@ msgstr "Mesures"
 msgid "Medium"
 msgstr "Moyen"
 
-#. modules: payment, product, base
+#. modules: base, product, payment
 #: model:ir.model.fields,field_description:base.field_res_partner_image_medium
 #: model:ir.model.fields,field_description:base.field_res_users_image_medium
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_image_medium
@@ -38985,7 +38986,7 @@ msgstr "Mémoire"
 msgid "Memos pad"
 msgstr "Blocs notes"
 
-#. modules: web_planner, base, web_tour
+#. modules: base, web_tour, web_planner
 #: model:ir.model.fields,field_description:base.field_ir_ui_menu_name
 #: model:ir.ui.view,arch_db:base.edit_menu
 #: model:ir.ui.view,arch_db:base.edit_menu_access
@@ -39028,7 +39029,7 @@ msgstr "Personnalisation des Menus"
 msgid "Mercury Payment Services"
 msgstr "Services de Paiement Mercury"
 
-#. modules: sms, account_online_sync, payment, mail, portal, bus, base
+#. modules: account_online_sync, base, mail, bus, portal, payment, sms
 #: model:ir.model.fields,field_description:account_online_sync.field_account_online_provider_message
 #: model:ir.model.fields,field_description:base.field_ir_logging_message
 #: model:ir.model.fields,field_description:bus.field_bus_bus_message
@@ -39173,7 +39174,7 @@ msgstr "Identifiant unique de message"
 msgid "Message-Id"
 msgstr "ID du message"
 
-#. modules: fetchmail, payment, mail
+#. modules: mail, payment, fetchmail
 #: model:ir.actions.act_window,name:fetchmail.act_server_history
 #: model:ir.model.fields,field_description:fetchmail.field_fetchmail_server_message_ids
 #: model:ir.actions.act_window,name:mail.action_view_mail_message
@@ -39414,7 +39415,7 @@ msgstr "Minute : %(min)s"
 msgid "Minutes"
 msgstr "Minutes"
 
-#. modules: stock, hubi, base
+#. modules: hubi, stock, base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 #: model:ir.ui.view,arch_db:hubi.view_partner_establishment
 #: model:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_form
@@ -39492,7 +39493,7 @@ msgstr "Architecture de vue manquante."
 msgid "Mister"
 msgstr "Monsieur"
 
-#. modules: hubi, web_mobile, base
+#. modules: hubi, base, web_mobile
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_res_partner_mobile
 #: model:ir.model.fields,field_description:base.field_res_users_mobile
@@ -39529,7 +39530,7 @@ msgstr "Support mobile"
 msgid "Mobile:"
 msgstr "Mobile :"
 
-#. modules: base_import, base, mail
+#. modules: base, base_import, mail
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_model
 #: model:ir.model.fields,field_description:base.field_ir_act_server_crud_model_name
 #: model:ir.model.fields,field_description:base.field_ir_act_server_model_id
@@ -39845,7 +39846,7 @@ msgstr "Contrôlez vos marges par articles à partir des factures"
 msgid "Montenegro"
 msgstr "Montenegro"
 
-#. modules: mail, web, web_gantt, base, sales_team
+#. modules: sales_team, base, mail, web, web_gantt
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.ir_logging_search_view
 #: model:ir.ui.view,arch_db:mail.view_mail_search
@@ -39947,7 +39948,7 @@ msgstr "Souris optique"
 msgid "Mouse, Wireless"
 msgstr "Souris, sans fil"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.report_generalledger
 #: model:ir.ui.view,arch_db:account.report_journal
 #: model:ir.ui.view,arch_db:account.view_account_move_filter
@@ -39973,7 +39974,7 @@ msgstr "Déplacer vers le bas"
 msgid "Move From Another Location"
 msgstr "Déplacer d'un autre emplacement"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.model.fields,field_description:account.field_account_analytic_line_move_id
 #: model:ir.model.fields,field_description:account.field_account_payment_move_line_ids
 #: model:ir.model.fields,field_description:stock.field_stock_move_move_line_ids
@@ -40096,7 +40097,7 @@ msgstr "Multi devise"
 msgid "Multi Language Chart of Accounts"
 msgstr "Plan comptable multi-lingue"
 
-#. modules: base_setup, account
+#. modules: account, base_setup
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_group_multi_currency
 msgid "Multi-Currencies"
@@ -40145,7 +40146,7 @@ msgstr "Prix spécifiques par article (pex: catégorie de client, monnaie,...)"
 msgid "My Account"
 msgstr "Mon compte"
 
-#. modules: stock, sale, account, mail
+#. modules: account, mail, sale, stock
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model:ir.ui.view,arch_db:mail.mail_activity_view_search
 #: model:ir.ui.view,arch_db:mail.res_partner_view_search_inherit_mail
@@ -40251,7 +40252,7 @@ msgstr "NIT"
 msgid "NONE"
 msgstr "AUCUN"
 
-#. modules: product, web_editor, account_online_sync, web_planner, payment, account_reports, mail, stock, web_tour, hubi, account, base_import, fetchmail, sale, delivery, base
+#. modules: hubi, stock, account_online_sync, delivery, fetchmail, base, mail, web_tour, product, web_editor, web_planner, sale, base_import, payment, account, account_reports
 #. openerp-web
 #: model:ir.model.fields,field_description:account.field_account_account_name
 #: model:ir.model.fields,field_description:account.field_account_account_tag_name
@@ -40407,7 +40408,7 @@ msgid "Name to use for the generated report file (may contain placeholders)\n"
 msgstr "Nom à utiliser pour le fichier de rapport généré (peut contenir des variables)\n"
 "L'extension peut être omise: celle du rapport sera utilisée."
 
-#. modules: web, account, base
+#. modules: account, base, web
 #. openerp-web
 #: code:addons/account/static/src/xml/account_payment.xml:52
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
@@ -40520,7 +40521,7 @@ msgstr "Comptabilité - Pays-Bas"
 msgid "Netherlands - Accounting Reports"
 msgstr "Rapports comptables - Pays-Bas"
 
-#. modules: payment, account_reports, barcodes
+#. modules: account_reports, barcodes, payment
 #: selection:account.financial.html.report.line,show_domain:0
 #: selection:barcode.nomenclature,upc_ean_conv:0
 #: selection:payment.acquirer,save_token:0
@@ -40532,7 +40533,7 @@ msgstr "Jamais"
 msgid "Never Connected"
 msgstr "Jamais connecté"
 
-#. modules: stock, web, sale, account
+#. modules: web, account, sale, stock
 #. openerp-web
 #: selection:account.bank.statement,state:0
 #: code:addons/sale/models/sale.py:129
@@ -40593,7 +40594,7 @@ msgstr "Nouveau mouvement :"
 msgid "New Node"
 msgstr "Nouvelle activité"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_change_password_user_new_passwd
 #: code:addons/web/static/src/xml/base.xml:165
@@ -40800,14 +40801,14 @@ msgstr "Type d'Activités à Venir"
 msgid "Next Check Number"
 msgstr "Numéro de chèque suivant"
 
-#. modules: currency_rate_live, base
+#. modules: base, currency_rate_live
 #: model:ir.model.fields,field_description:base.field_ir_cron_nextcall
 #: model:ir.model.fields,field_description:currency_rate_live.field_res_company_currency_next_execution_date
 #: model:ir.model.fields,field_description:currency_rate_live.field_res_config_settings_currency_next_execution_date
 msgid "Next Execution Date"
 msgstr "Prochaine date d'exécution"
 
-#. modules: base, account, account_bank_statement_import
+#. modules: account, base, account_bank_statement_import
 #: model:ir.model.fields,field_description:account.field_account_invoice_sequence_number_next
 #: model:ir.model.fields,field_description:account.field_account_invoice_sequence_number_next_prefix
 #: model:ir.model.fields,field_description:account.field_account_journal_sequence_number_next
@@ -40945,7 +40946,7 @@ msgstr "Aucun filtre"
 msgid "No Follow-up"
 msgstr "Aucun suivi"
 
-#. modules: stock, sale, account
+#. modules: account, sale, stock
 #: selection:res.partner,invoice_warn:0
 #: selection:product.template,sale_line_warn:0
 #: selection:res.partner,sale_warn:0
@@ -41342,7 +41343,7 @@ msgstr "Champ %r non relationnel pour la dépendance %r  "
 msgid "Non-relational field name '%s' in related field '%s'"
 msgstr "Nom de champ '%s' non relationnel pour le champ connexe '%s'  "
 
-#. modules: web_editor, l10n_us_check_printing, web, account, base
+#. modules: l10n_us_check_printing, base, web, web_editor, account
 #. openerp-web
 #: selection:account.tax,type_tax_use:0
 #: selection:account.tax.template,type_tax_use:0
@@ -41463,7 +41464,7 @@ msgstr "Non urgent"
 msgid "Not&nbsp;due&nbsp;on %s"
 msgstr "Pas&nbsp;dû&nbsp; %s"
 
-#. modules: account_reports, mail, stock, hubi, account
+#. modules: hubi, stock, mail, account, account_reports
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:254
 #: model:ir.model.fields,field_description:account.field_account_account_template_note
@@ -41513,7 +41514,7 @@ msgstr "Note que vous pouvez envoyer à travers la déclaration du client concer
 msgid "Note: Subscriptions does not take this field in account, it uses server to server by default."
 msgstr "Remarque : la fonction Abonnements ne prend pas ce champ en compte. Par défaut, elle utilise l'option serveur à serveur."
 
-#. modules: stock, product, account, base
+#. modules: account, base, product, stock
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line_note
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_note
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_template_note
@@ -41540,7 +41541,7 @@ msgstr "Notes & Play Theme"
 msgid "Notes eCommerce Plugin"
 msgstr "Notes eCommerce Plugin"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: selection:sale.report,invoice_status:0
 #: selection:sale.report.carrier,invoice_status:0
 #: selection:sale.order,invoice_status:0
@@ -41581,7 +41582,7 @@ msgstr "Gestion des notifications"
 msgid "Notification Service"
 msgstr "Service de notification"
 
-#. modules: mail_push, mail
+#. modules: mail, mail_push
 #: model:ir.model.fields,field_description:mail.field_mail_compose_message_notification_ids
 #: model:ir.model.fields,field_description:mail.field_mail_mail_notification_ids
 #: model:ir.model.fields,field_description:mail.field_mail_message_notification_ids
@@ -41683,7 +41684,7 @@ msgstr "Nombre de pièces/billets"
 msgid "Number of Companies"
 msgstr "Nombe de sociétés"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.model.fields,field_description:account.field_account_payment_term_line_days
 #: model:ir.model.fields,field_description:stock.field_procurement_rule_delay
 msgid "Number of Days"
@@ -41830,7 +41831,7 @@ msgstr "Importazione OFX"
 msgid "OHADA - Accounting"
 msgstr "Comptabilité - OHADA"
 
-#. modules: stock, hubi, account, account_bank_statement_import
+#. modules: hubi, account, stock, account_bank_statement_import
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:17
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_journal_creation_view
@@ -41872,7 +41873,7 @@ msgstr "Nom d'objet"
 msgid "Object Relation"
 msgstr "Relation de l'objet"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
 #: model:ir.ui.view,arch_db:base.report_irmodulereference
@@ -41887,7 +41888,7 @@ msgstr "Objet :"
 msgid "October"
 msgstr "Octobre"
 
-#. modules: web, web_enterprise, mail, web_settings_dashboard
+#. modules: web_settings_dashboard, mail, web, web_enterprise
 #. openerp-web
 #: model:ir.ui.view,arch_db:mail.message_user_assigned
 #: code:addons/web/static/src/js/core/dialog.js:51
@@ -42302,7 +42303,7 @@ msgstr "Système CRM d'Odoo\n"
 msgid "Odoo Client Error"
 msgstr "Erreur client Odoo"
 
-#. modules: web_planner, web, web_settings_dashboard
+#. modules: web_settings_dashboard, web_planner, web
 #. openerp-web
 #: code:addons/web/static/src/js/fields/upgrade_fields.js:86
 #: code:addons/web_planner/static/src/js/web_planner_common.js:391
@@ -44201,7 +44202,7 @@ msgstr "Désactivé"
 msgid "Office Supplies"
 msgstr "Fournitures de bureau"
 
-#. modules: bus, mail
+#. modules: mail, bus
 #. openerp-web
 #: selection:bus.presence,status:0
 #: code:addons/mail/static/src/xml/client_action.xml:120
@@ -44215,7 +44216,7 @@ msgstr "Hors ligne"
 msgid "Ogone Payment Acquirer"
 msgstr "Intermédiaire de paiement Ogone"
 
-#. modules: web_editor, web, payment
+#. modules: web, web_editor, payment
 #. openerp-web
 #: code:addons/payment/static/src/js/payment_form.js:432
 #: code:addons/web/static/src/js/core/dialog.js:55
@@ -44480,7 +44481,7 @@ msgstr "Les champs One2Many ne peuvent être synchronisés comme éléments de `
 msgid "Ongoing Package Creation: Content"
 msgstr "Création de l'emballage en cours : Contenu"
 
-#. modules: bus, mail
+#. modules: mail, bus
 #. openerp-web
 #: selection:bus.presence,status:0
 #: code:addons/mail/static/src/xml/client_action.xml:118
@@ -44695,7 +44696,7 @@ msgstr "Uniquement vous-même"
 msgid "Oops! Something went wrong. Try to reload the page and log in."
 msgstr "Oups ! Un problème est survenu. Essayez de recharger la page et de vous identifier."
 
-#. modules: web, account, mail
+#. modules: account, mail, web
 #. openerp-web
 #: selection:account.invoice,state:0
 #: selection:account.invoice.report,state:0
@@ -45255,7 +45256,7 @@ msgstr "Optionnel : mouvement de stock suivant quand il est enchainé."
 msgid "Optional: previous stock move when chaining them"
 msgstr "Facultatif : mouvement de stock précédent quand ils sont chaînés"
 
-#. modules: web_editor, account
+#. modules: account, web_editor
 #. openerp-web
 #: model:ir.model.fields,field_description:account.field_account_payment_term_line_option
 #: model:ir.ui.view,arch_db:account.tax_adjustments_wizard
@@ -45291,7 +45292,7 @@ msgstr "Orchid Theme - Flowers, Beauty"
 msgid "Orchid eCommerce Plugin"
 msgstr "Orchid eCommerce Plugin"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_wiz_search_product_line_order_line_id
 #: model:ir.ui.view,arch_db:sale.portal_my_home_menu_sale
 #: model:ir.ui.view,arch_db:sale.portal_order_page
@@ -45299,7 +45300,7 @@ msgstr "Orchid eCommerce Plugin"
 msgid "Order"
 msgstr "Commande"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "Order #"
@@ -45327,14 +45328,14 @@ msgstr "Date de la commande"
 msgid "Order Line Sections"
 msgstr "Sections de ligne de commande"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.hubi_palletization_form
 #: model:ir.model.fields,field_description:sale.field_sale_order_order_line
 #: model:ir.ui.view,arch_db:sale.view_order_form
 msgid "Order Lines"
 msgstr "Lignes de la commande"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search_carrier
 #: model:ir.ui.view,arch_db:sale.view_order_product_search
@@ -45363,7 +45364,7 @@ msgstr "Traitement de la commande"
 msgid "Order Quantity"
 msgstr "Quantité Commande"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_hubi_palletization_line_order_id
 #: model:ir.model.fields,field_description:hubi.field_hubi_palletization_order_id
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_name_5919
@@ -45411,7 +45412,7 @@ msgstr "Commande à facturer"
 msgid "Order-Specific Routes"
 msgstr "Routes par commande"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.hubi_palletization_form
 #: model:ir.ui.view,arch_db:sale.view_order_form
 msgid "Ordered Qty"
@@ -45434,7 +45435,7 @@ msgid "Ordered Quantity: Invoice based on the quantity the customer ordered.\n"
 msgstr "Quantités commandées : facturation basée sur les quantités commandées par le client.\n"
 "Quantités livrées : facturation basée sur les quantités que le fournisseur a livré (temps passé dans le cas de prestations)."
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search
 #: model:ir.ui.view,arch_db:sale.view_order_product_search
 msgid "Ordered date of the sales order"
@@ -45474,7 +45475,7 @@ msgstr "Commandes"
 msgid "Orders processed today or scheduled for today"
 msgstr "Commandes effectuées aujourd'hui ou prévues pour aujourd'hui."
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.menu,name:hubi.menu_hubi_sale_orders_invoice
 #: model:ir.actions.act_window,name:sale.action_orders_to_invoice
 #: model:ir.ui.menu,name:sale.menu_sale_order_invoice
@@ -45819,7 +45820,7 @@ msgstr "Organisez vos activités commerciales avec l'application <b>Gestion des 
 msgid "Orientation"
 msgstr "Orientation"
 
-#. modules: stock, hubi
+#. modules: hubi, stock
 #: model:ir.model.fields,field_description:hubi.field_wiz_creditnote_origin_id
 #: model:ir.ui.view,arch_db:stock.view_move_form
 #: model:ir.ui.view,arch_db:stock.view_picking_internal_search
@@ -45893,7 +45894,7 @@ msgstr "Autres revenus"
 msgid "Other Info"
 msgstr "Autres informations"
 
-#. modules: product, sale, hubi
+#. modules: hubi, sale, product
 #: model:ir.ui.view,arch_db:hubi.hubi_sale_order_form_view
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 #: model:ir.ui.view,arch_db:sale.view_order_form
@@ -46002,7 +46003,7 @@ msgstr "Serveur de courriel sortant"
 msgid "Outgoing Mail Servers"
 msgstr "Serveurs de courriel sortant"
 
-#. modules: fetchmail, mail
+#. modules: mail, fetchmail
 #: model:ir.model,name:fetchmail.model_mail_mail
 #: model:ir.model,name:mail.model_mail_mail
 msgid "Outgoing Mails"
@@ -46250,7 +46251,7 @@ msgstr "Colis"
 msgid "Pack Type"
 msgstr "Type de colisage"
 
-#. modules: stock, sale_stock, account, barcodes, delivery
+#. modules: stock, delivery, sale_stock, barcodes, account
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
 #: selection:barcode.rule,type:0
 #: model:ir.ui.view,arch_db:delivery.choose_delivery_package_view_form
@@ -46341,7 +46342,7 @@ msgstr "Les colis sont généralement créés lors des opérations de colisage r
 "             \n"
 "            "
 
-#. modules: stock, product, hubi, delivery
+#. modules: hubi, stock, delivery, product
 #: model:ir.model,name:delivery.model_product_packaging
 #: model:ir.model.fields,field_description:hubi.field_account_invoice_line_packaging_id
 #: model:ir.model.fields,field_description:hubi.field_product_product_packaging_id
@@ -46393,7 +46394,7 @@ msgstr "Emballage date"
 msgid "Packing Location"
 msgstr "Emplacement de colisage"
 
-#. modules: stock, stock_account, delivery
+#. modules: stock, delivery, stock_account
 #: model:ir.model,name:delivery.model_stock_move_line
 #: model:ir.model,name:stock.model_stock_move_line
 #: model:ir.model,name:stock_account.model_stock_move_line
@@ -46561,7 +46562,7 @@ msgstr "Format de papier"
 msgid "Paper Format General Configuration"
 msgstr "Configuration générale du format de page"
 
-#. modules: base_setup, base
+#. modules: base, base_setup
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_paperformat_id
 #: model:ir.model.fields,field_description:base.field_res_company_paperformat_id
 #: model:ir.model.fields,field_description:base_setup.field_res_config_settings_paperformat_id
@@ -46609,7 +46610,7 @@ msgstr "Paraguay"
 msgid "Parameter"
 msgstr "Paramètre"
 
-#. modules: stock, hubi, base
+#. modules: hubi, stock, base
 #: model:ir.ui.menu,name:base.menu_ir_property
 #: model:ir.ui.view,arch_db:base.ir_property_view
 #: model:ir.ui.view,arch_db:base.ir_property_view_search
@@ -46630,7 +46631,7 @@ msgstr "Paramètres qui sont utilisés par toutes les ressources."
 msgid "Params storage"
 msgstr "Paramètre de stockage"
 
-#. modules: account, base_import, account_reports, mail
+#. modules: account, mail, account_reports, base_import
 #: model:ir.model.fields,field_description:account.field_account_financial_report_parent_id
 #: model:ir.model.fields,field_description:account.field_account_group_parent_id
 #: model:ir.model.fields,field_description:account_reports.field_account_financial_html_report_line_parent_id
@@ -46649,7 +46650,7 @@ msgstr "Application parente"
 msgid "Parent BoM"
 msgstr "Parent BoM"
 
-#. modules: product, hubi, base
+#. modules: hubi, base, product
 #: model:ir.model.fields,field_description:base.field_res_partner_category_parent_id
 #: model:ir.model.fields,field_description:hubi.field_hubi_product_category_caliber_categ_id
 #: model:ir.model.fields,field_description:product.field_product_category_parent_id
@@ -46752,7 +46753,7 @@ msgstr "Sous-type parent, utilisé pour l'inscription automatique. Ce champs n'e
 msgid "Partial"
 msgstr "Partiel"
 
-#. modules: account_cash_basis_base_account, account
+#. modules: account, account_cash_basis_base_account
 #: model:ir.model,name:account.model_account_partial_reconcile
 #: model:ir.ui.view,arch_db:account.view_account_move_line_reconcile_full
 #: model:ir.model,name:account_cash_basis_base_account.model_account_partial_reconcile
@@ -46764,7 +46765,7 @@ msgstr "Lettrage partiel"
 msgid "Partially Available"
 msgstr "Partiellement disponible"
 
-#. modules: analytic, payment, account_reports, stock, hubi, account, mail_push, sale, base
+#. modules: hubi, stock, base, analytic, mail_push, sale, payment, account, account_reports
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:232
 #: code:addons/account/static/src/xml/account_reconciliation.xml:249
@@ -46820,7 +46821,7 @@ msgstr "Adresse du partenaire"
 msgid "Partner Company"
 msgstr "Société partenaire"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_country_id
 #: model:ir.model.fields,field_description:sale.field_report_all_channels_sales_country_id
 #: model:ir.model.fields,field_description:sale.field_sale_report_country_id
@@ -46915,7 +46916,7 @@ msgstr "Partenaire famille"
 msgid "Partner's"
 msgstr "Du partenaire"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search_carrier
 #: model:ir.ui.view,arch_db:sale.view_order_product_search
@@ -46970,7 +46971,7 @@ msgstr "Partenaires :"
 msgid "Parts Replacement"
 msgstr "Remplacement de pièces"
 
-#. modules: web, fetchmail, base, auth_signup
+#. modules: base, web, auth_signup, fetchmail
 #: model:ir.ui.view,arch_db:auth_signup.fields
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_pass
 #: model:ir.model.fields,field_description:base.field_res_users_password
@@ -47098,7 +47099,7 @@ msgstr "Limite de débit"
 msgid "Payables"
 msgstr "Dettes"
 
-#. modules: sale, hubi, payment, l10n_us_check_printing
+#. modules: hubi, sale, l10n_us_check_printing, payment
 #: model:ir.actions.act_window,name:hubi.action_hubi_payment
 #: model:ir.ui.view,arch_db:hubi.hubi_payment_form
 #: model:ir.ui.view,arch_db:hubi.view_hubi_payment_tree
@@ -47119,7 +47120,7 @@ msgstr "Paiement – Compte"
 msgid "Payment - Sale"
 msgstr "Paiement – Vente"
 
-#. modules: payment, payment_transfer, base
+#. modules: base, payment_transfer, payment
 #: model:ir.module.category,name:base.module_category_payment_acquirer
 #: model:ir.module.module,shortdesc:base.module_payment
 #: model:ir.model,name:payment.model_payment_acquirer
@@ -47260,7 +47261,7 @@ msgstr "Type des méthodes de paiement"
 msgid "Payment Method:"
 msgstr "Méthode de paiement :"
 
-#. modules: payment, account, account_bank_statement_import
+#. modules: account, payment, account_bank_statement_import
 #: model:ir.model,name:account.model_account_payment_method
 #: model:ir.model.fields,field_description:account.field_account_journal_outbound_payment_method_ids
 #: model:ir.model.fields,field_description:account_bank_statement_import.field_account_bank_statement_import_journal_creation_outbound_payment_method_ids
@@ -47303,7 +47304,7 @@ msgstr "Référence du paiement"
 msgid "Payment Term"
 msgstr "Délai de Paiement"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.actions.act_window,name:account.action_payment_term_form
 #: model:ir.model,name:account.model_account_payment_term
 #: model:ir.model.fields,field_description:account.field_account_invoice_payment_term_id
@@ -47430,7 +47431,7 @@ msgstr "La transaction de paiement a échoué."
 msgid "Payment: Website Integration"
 msgstr "Paiement : intégration site web"
 
-#. modules: payment, l10n_us_check_printing, hubi, account, account_check_printing
+#. modules: hubi, l10n_us_check_printing, account_check_printing, payment, account
 #: code:addons/account/models/account_payment.py:237
 #: model:ir.actions.act_window,name:account.action_account_payments
 #: model:ir.actions.act_window,name:account.action_account_payments_payable
@@ -47718,7 +47719,7 @@ msgstr "Comptabilité - Pérou"
 msgid "Philippines"
 msgstr "Philippines"
 
-#. modules: payment, hubi, base, portal
+#. modules: hubi, base, portal, payment
 #: model:ir.model.fields,field_description:base.field_res_bank_phone
 #: model:ir.model.fields,field_description:base.field_res_company_phone
 #: model:ir.model.fields,field_description:base.field_res_partner_phone
@@ -47742,7 +47743,7 @@ msgstr "Téléphone:"
 msgid "Phone Numbers Validation"
 msgstr "Validation de numéros de téléphone"
 
-#. modules: web, hubi, base
+#. modules: hubi, base, web
 #: model:ir.ui.view,arch_db:base.view_partner_form
 #: model:ir.ui.view,arch_db:hubi.view_partner_establishment
 #: model:ir.ui.view,arch_db:web.external_layout_standard
@@ -47897,7 +47898,7 @@ msgstr "Pièce"
 msgid "Pitcairn Islands"
 msgstr "Îles Pitcairn"
 
-#. modules: stock, web, base
+#. modules: stock, base, web
 #. openerp-web
 #: selection:ir.actions.act_window.view,view_mode:0
 #: selection:ir.ui.view,type:0
@@ -47947,7 +47948,7 @@ msgstr "Transfert planifié"
 msgid "Planned activities"
 msgstr "Activités planifiées"
 
-#. modules: stock, web_planner, account, base
+#. modules: account, base, web_planner, stock
 #: model:ir.model,name:account.model_web_planner
 #: model:ir.module.module,shortdesc:base.module_web_planner
 #: model:ir.model,name:stock.model_web_planner
@@ -48501,7 +48502,7 @@ msgstr "PostgreSQL, contrainte ou nom de clé étrangère."
 msgid "PostgreSQL table name implementing a many2many relation."
 msgstr "PostgreSQL, nom de table implémentant une relation many2many."
 
-#. modules: web, mail
+#. modules: mail, web
 #: model:ir.ui.view,arch_db:mail.message_user_assigned
 #: model:ir.ui.view,arch_db:web.menu_secondary
 msgid "Powered by"
@@ -48517,7 +48518,7 @@ msgstr "Propulsé par <span>Odoo</span>"
 msgid "Preceding Activities"
 msgstr "Activités précédentes"
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.view_users_form
 #: code:addons/web/static/src/xml/base.xml:1333
@@ -48610,7 +48611,7 @@ msgstr "Préconfigurer pour créer des pièces comptables pendant la corresponda
 msgid "Prev"
 msgstr "Préc."
 
-#. modules: web_editor, mail
+#. modules: mail, web_editor
 #. openerp-web
 #: model:ir.ui.view,arch_db:mail.email_template_form
 #: code:addons/web_editor/static/src/xml/editor.xml:229
@@ -48661,7 +48662,7 @@ msgstr "Période précédente"
 msgid "Previous Years Unallocated Earnings"
 msgstr "Bénéfices non répartis des exercices précédents"
 
-#. modules: product, hubi, delivery, stock_account
+#. modules: hubi, stock_account, delivery, product
 #: selection:delivery.price.rule,variable:0
 #: selection:delivery.price.rule,variable_factor:0
 #: model:ir.ui.view,arch_db:hubi.pricelist_hubi_form_view
@@ -48724,7 +48725,7 @@ msgstr "Prix IFLS"
 msgid "Price Kg :"
 msgstr "Prix Kg :"
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.model.fields,field_description:hubi.field_res_partner_price_list_id
 #: model:ir.model.fields,field_description:hubi.field_res_users_price_list_id
 #: model:ir.actions.act_window,name:product.action_product_price_list
@@ -48826,7 +48827,7 @@ msgstr "Prix :"
 msgid "PriceList"
 msgstr "Liste de prix"
 
-#. modules: product, sale, hubi
+#. modules: hubi, sale, product
 #: model:ir.model,name:hubi.model_product_pricelist
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_pricelist_id
 #: model:ir.model.fields,field_description:hubi.field_wiz_productprice_pricelist_ids
@@ -48853,7 +48854,7 @@ msgstr "Élément de la liste de prix"
 msgid "Pricelist Item applicable on selected option"
 msgstr "Liste de prix d'article applicable sur les options sélectionnées"
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.ui.view,arch_db:hubi.pricelist_hubi_form_view
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_ids
 #: model:ir.model.fields,field_description:product.field_product_product_item_ids
@@ -48876,13 +48877,13 @@ msgstr "Nom de la liste de prix"
 msgid "Pricelist for current sales order."
 msgstr "Liste de prix du bon de commande actuel."
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.model,name:hubi.model_product_pricelist_item
 #: model:ir.model,name:product.model_product_pricelist_item
 msgid "Pricelist item"
 msgstr "Élément de la liste de prix"
 
-#. modules: product, sale, hubi
+#. modules: hubi, sale, product
 #: model:ir.actions.act_window,name:hubi.action_hubi_product_pricelist
 #: model:ir.actions.act_window,name:product.product_pricelist_action2
 #: model:ir.model.fields,field_description:product.field_res_country_group_pricelist_ids
@@ -48913,7 +48914,7 @@ msgstr "Prix calculés à partir de formules (remises, marges, arrondis)"
 msgid "PricesList"
 msgstr "Tarif"
 
-#. modules: product, sale, delivery
+#. modules: delivery, product, sale
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 #: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
@@ -48931,7 +48932,7 @@ msgstr "Règles de tarification"
 msgid "Primary"
 msgstr "Primaire"
 
-#. modules: product, stock, hubi, account, web, account_check_printing, sale
+#. modules: hubi, stock, account_check_printing, web, product, sale, account
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.account_aged_balance_view
 #: model:ir.ui.view,arch_db:account.account_common_report_view
@@ -48980,6 +48981,7 @@ msgstr "Imprimer la facture"
 
 #. module: hubi
 #: model:ir.ui.menu,name:hubi.menu_hubi_sales_print_label
+#: model:ir.ui.view,arch_db:hubi.view_hubi_packing_preparation_tree
 #: model:ir.ui.view,arch_db:hubi.wiz_prepare_sale_order_print_label
 msgid "Print Label"
 msgstr "Imprimer Etiquette"
@@ -49354,7 +49356,7 @@ msgstr "Ligne de fabrication"
 msgid "Produced Qty"
 msgstr "Qté produite"
 
-#. modules: product, stock, hubi, account, stock_account, hubi_bom, sale
+#. modules: hubi, stock, stock_account, product, sale, account, hubi_bom
 #: model:ir.model,name:account.model_product_product
 #: model:ir.model.fields,field_description:account.field_account_analytic_line_product_id
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_product_id
@@ -49456,7 +49458,7 @@ msgstr "Calibre Produit"
 msgid "Product Catalog"
 msgstr "Catalogue d'articles"
 
-#. modules: stock, product, sale
+#. modules: stock, sale, product
 #: model:ir.actions.act_window,name:product.product_category_action_form
 #: model:ir.ui.view,arch_db:product.product_category_list_view
 #: model:ir.ui.view,arch_db:product.product_category_search_view
@@ -49469,7 +49471,7 @@ msgstr "Catalogue d'articles"
 msgid "Product Categories"
 msgstr "Catégories d'articles"
 
-#. modules: product, stock, hubi, account, stock_account, sale
+#. modules: hubi, stock, stock_account, product, sale, account
 #: model:ir.model,name:account.model_product_category
 #: model:ir.model.fields,field_description:account.field_account_invoice_report_categ_id
 #: model:ir.ui.view,arch_db:account.view_account_invoice_report_search
@@ -49529,7 +49531,7 @@ msgstr "Modèle de courriel d'article"
 msgid "Product ID"
 msgstr "Produit ID"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_product_image
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_product_image
 msgid "Product Image"
@@ -49591,7 +49593,7 @@ msgstr "Emballage des produits"
 msgid "Product Price Sheet"
 msgstr "Edition des Tarifs"
 
-#. modules: sale, account, hubi_bom
+#. modules: account, sale, hubi_bom
 #: model:ir.model.fields,field_description:account.field_account_invoice_report_product_qty
 #: model:ir.model.fields,field_description:hubi_bom.field_mrp_bom_line_product_qty
 #: model:ir.model.fields,field_description:sale.field_report_all_channels_sales_product_qty
@@ -49603,7 +49605,7 @@ msgstr "Quantité d'articles"
 msgid "Product TIC Categories"
 msgstr "Catégories de produits TIC"
 
-#. modules: product, stock, hubi, account, stock_account, hubi_bom, account_taxcloud, sale, delivery
+#. modules: hubi, stock, stock_account, delivery, product, account_taxcloud, sale, account, hubi_bom
 #: model:ir.model,name:account.model_product_template
 #: model:ir.model,name:account_taxcloud.model_product_template
 #: model:ir.model,name:delivery.model_product_template
@@ -49668,7 +49670,7 @@ msgstr "Valorisation de produit"
 msgid "Product Variant"
 msgstr "Variante d'article"
 
-#. modules: stock, product, sale
+#. modules: stock, sale, product
 #: model:ir.actions.act_window,name:product.product_normal_action
 #: model:ir.actions.act_window,name:product.product_normal_action_sell
 #: model:ir.actions.act_window,name:product.product_variant_action
@@ -49725,7 +49727,7 @@ msgstr "Emplacement de production"
 msgid "Productivity"
 msgstr "Productivité"
 
-#. modules: product, stock, hubi, account, stock_account, hubi_bom, sale
+#. modules: hubi, stock, stock_account, product, sale, account, hubi_bom
 #: model:ir.actions.act_window,name:account.product_product_action
 #: model:ir.ui.view,arch_db:account.product_product_view_tree
 #: model:ir.actions.act_window,name:hubi.action_hubi_product_template
@@ -50114,7 +50116,7 @@ msgstr "Identifiant du fournisseur"
 msgid "Provider Type"
 msgstr "Type de fournisseur"
 
-#. modules: account_online_sync, account_plaid, account_yodlee
+#. modules: account_plaid, account_online_sync, account_yodlee
 #: model:ir.model,name:account_online_sync.model_account_online_provider
 #: model:ir.model,name:account_plaid.model_account_online_provider
 #: model:ir.model,name:account_yodlee.model_account_online_provider
@@ -50396,19 +50398,19 @@ msgstr "Vues QWeb"
 msgid "Qatar"
 msgstr "Qatar"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.view_hubi_packing_preparation_tree
 #: model:ir.ui.view,arch_db:sale.view_order_line_tree
 msgid "Qty"
 msgstr "Qté"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_qty_delivered
 #: model:ir.model.fields,field_description:sale.field_sale_report_qty_delivered
 msgid "Qty Delivered"
 msgstr "Qté livrée"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_qty_invoiced
 #: model:ir.model.fields,field_description:sale.field_sale_report_qty_invoiced
 msgid "Qty Invoiced"
@@ -50424,13 +50426,13 @@ msgstr "Multiple Qté"
 msgid "Qty Multiple must be greater than or equal to zero."
 msgstr "Le multiple qté. doit être supérieur ou égal à zéro."
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_product_uom_qty
 #: model:ir.model.fields,field_description:sale.field_sale_report_product_uom_qty
 msgid "Qty Ordered"
 msgstr "Qté commandée"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_qty_to_invoice
 #: model:ir.model.fields,field_description:sale.field_sale_report_qty_to_invoice
 msgid "Qty To Invoice"
@@ -50470,7 +50472,7 @@ msgstr "Quant"
 msgid "Quantities to invoice from sales orders"
 msgstr "Quantités à facturer depuis les factures"
 
-#. modules: analytic, stock, hubi, account, stock_account, hubi_bom, sale, delivery
+#. modules: hubi, stock, stock_account, delivery, sale, account, analytic, hubi_bom
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_quantity
 #: model:ir.model.fields,field_description:account.field_account_move_line_quantity
 #: model:ir.ui.view,arch_db:account.portal_invoice_report
@@ -50679,7 +50681,7 @@ msgstr "Questions relatives aux événements"
 msgid "Quick actions for installing new app, adding users, completing planners, etc."
 msgstr "Actions rapides pour l'installation d'une nouvelle application, pour ajouter des utilisateurs, pour remplir les planificateurs, etc."
 
-#. modules: sale_stock, hubi, sale_account_taxcloud, sale, delivery
+#. modules: hubi, delivery, sale_stock, sale_account_taxcloud, sale
 #: model:ir.model,name:delivery.model_sale_order
 #: model:ir.model,name:hubi.model_sale_order
 #: model:ir.model,name:sale.model_sale_order
@@ -50693,7 +50695,7 @@ msgstr "Actions rapides pour l'installation d'une nouvelle application, pour ajo
 msgid "Quotation"
 msgstr "Devis"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:sale.portal_my_quotations
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -50725,7 +50727,7 @@ msgstr "Date du devis"
 msgid "Quotation Number"
 msgstr "N° de devis"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: selection:sale.report.carrier,state:0
 #: selection:sale.order,state:0
 #: selection:sale.report,state:0
@@ -50750,7 +50752,7 @@ msgstr "Devis envoyé"
 msgid "Quotation, Sales Orders, Delivery & Invoicing Control"
 msgstr "Devis, commandes clients, livraison et contrôle des factures"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.menu,name:hubi.menu_hubi_sale_quotations
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search_carrier
@@ -51353,7 +51355,7 @@ msgstr "Réf"
 msgid "Ref."
 msgstr "Réf."
 
-#. modules: analytic, product, payment, account_reports, stock, hubi, account, stock_account, hubi_bom, sale, base
+#. modules: hubi, stock, stock_account, base, analytic, product, sale, payment, account, account_reports, hubi_bom
 #: code:addons/account/controllers/portal.py:72
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line_ref
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_name
@@ -51516,7 +51518,7 @@ msgstr "Enregistrer des paiements"
 msgid "Register lots, packs, location"
 msgstr "Enregistrer des lots, emballages, emplacements"
 
-#. modules: hubi, account_check_printing, account
+#. modules: hubi, account, account_check_printing
 #: model:ir.model,name:account.model_account_register_payments
 #: model:ir.model,name:account_check_printing.model_account_register_payments
 #: model:ir.model,name:hubi.model_account_register_payments
@@ -51738,7 +51740,7 @@ msgstr "Stratégie d'enlèvement"
 msgid "Removal strategy %s not implemented."
 msgstr "La stratégie d'enlèvement %s n'est pas implémentée."
 
-#. modules: web_editor, web
+#. modules: web, web_editor
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:1196
 #: code:addons/web_editor/static/src/js/editor/rte.summernote.js:155
@@ -51932,7 +51934,7 @@ msgstr "Répondre"
 msgid "Reply email address. Setting the reply_to bypasses the automatic thread creation."
 msgstr "Adresse courriel de réponse. Définir le champ reply_to contourne la création automatique de fil."
 
-#. modules: sales_team, mail
+#. modules: mail, sales_team
 #: model:ir.model.fields,field_description:mail.field_email_template_preview_reply_to
 #: model:ir.model.fields,field_description:mail.field_mail_compose_message_reply_to
 #: model:ir.model.fields,field_description:mail.field_mail_mail_reply_to
@@ -51942,7 +51944,7 @@ msgstr "Adresse courriel de réponse. Définir le champ reply_to contourne la cr
 msgid "Reply-To"
 msgstr "Répondre à"
 
-#. modules: web, account, base
+#. modules: account, base, web
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.view_account_financial_report_form
 #: selection:ir.actions.act_url,binding_type:0
@@ -52047,7 +52049,7 @@ msgstr "Rapport XML"
 msgid "Report/Template"
 msgstr "Rapport/Modèle"
 
-#. modules: stock, account, hubi_bom, sale, base
+#. modules: stock, base, sale, account, hubi_bom
 #: model:ir.ui.menu,name:account.account_report_folder
 #: model:ir.ui.menu,name:account.menu_finance_reports
 #: model:ir.ui.menu,name:base.reporting_menuitem
@@ -52311,7 +52313,7 @@ msgstr "Resources"
 msgid "Responsable"
 msgstr "Responsable"
 
-#. modules: stock, account, mail
+#. modules: account, mail, stock
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_user_id
 #: model:ir.ui.view,arch_db:account.invoice_supplier_form
 #: model:ir.model.fields,field_description:mail.field_account_invoice_activity_user_id
@@ -52408,7 +52410,7 @@ msgstr "Retourner"
 msgid "Return Location"
 msgstr "Emplacement pour le retour"
 
-#. modules: stock, stock_account, delivery
+#. modules: stock, delivery, stock_account
 #: model:ir.model,name:delivery.model_stock_return_picking
 #: model:ir.model,name:stock.model_stock_return_picking
 #: model:ir.model,name:stock_account.model_stock_return_picking
@@ -52527,7 +52529,7 @@ msgstr "Message Texte enrichi/HTML"
 msgid "Right Margin (mm)"
 msgstr "Marge de droite (mm)"
 
-#. modules: stock, product, account
+#. modules: account, product, stock
 #: model:ir.model.fields,field_description:account.field_account_group_parent_right
 #: model:ir.model.fields,field_description:product.field_product_category_parent_right
 #: model:ir.model.fields,field_description:stock.field_stock_location_parent_right
@@ -52596,14 +52598,14 @@ msgstr "Forme d'arrondi"
 msgid "Rounding Line"
 msgstr "Ligne d'arrondi"
 
-#. modules: product, account
+#. modules: account, product
 #: model:ir.model.fields,field_description:account.field_account_cash_rounding_rounding_method
 #: model:ir.ui.view,arch_db:account.res_config_settings_view_form
 #: model:ir.ui.view,arch_db:product.product_pricelist_item_form_view
 msgid "Rounding Method"
 msgstr "Méthode d'arrondi"
 
-#. modules: product, account
+#. modules: account, product
 #: model:ir.model.fields,field_description:account.field_account_cash_rounding_rounding
 #: model:ir.model.fields,field_description:product.field_product_uom_rounding
 msgid "Rounding Precision"
@@ -52830,7 +52832,7 @@ msgstr "Contrainte SQL"
 msgid "SSL"
 msgstr "SSL"
 
-#. modules: fetchmail, base
+#. modules: base, fetchmail
 #: selection:ir.mail_server,smtp_encryption:0
 #: model:ir.model.fields,field_description:fetchmail.field_fetchmail_server_is_ssl
 msgid "SSL/TLS"
@@ -52920,7 +52922,7 @@ msgstr "Description vente"
 msgid "Sale Line"
 msgstr "Ligne de vente"
 
-#. modules: sale_stock, hubi
+#. modules: hubi, sale_stock
 #: model:ir.model.fields,field_description:hubi.field_wiz_invoiceperiod_sale_order_ids
 #: model:ir.model.fields,field_description:sale_stock.field_procurement_group_sale_id
 msgid "Sale Order"
@@ -52936,7 +52938,7 @@ msgstr "Bon de Commande Analyse"
 msgid "Sale Order Id"
 msgstr "Bon de Commande Id"
 
-#. modules: product, delivery
+#. modules: delivery, product
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_list_price
 #: model:ir.model.fields,field_description:product.field_product_product_lst_price
 msgid "Sale Price"
@@ -52968,7 +52970,7 @@ msgstr "Taxe à la vente"
 msgid "Saleable"
 msgstr "En vente"
 
-#. modules: product, sale_stock, hubi, account, sale, base, sales_team
+#. modules: hubi, sales_team, base, sale_stock, product, sale, account
 #: selection:account.tax,type_tax_use:0
 #: selection:account.tax.template,type_tax_use:0
 #: model:ir.ui.menu,name:account.menu_finance_receivables
@@ -53002,13 +53004,13 @@ msgstr "Vente"
 msgid "Sales & Purchases"
 msgstr "Ventes & Achats"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model,name:hubi.model_sale_advance_payment_inv
 #: model:ir.model,name:sale.model_sale_advance_payment_inv
 msgid "Sales Advance Payment Invoice"
 msgstr "Facture de paiement d'avance"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_search
 #: model:ir.actions.act_window,name:sale.action_order_report_all
 #: model:ir.actions.act_window,name:sale.action_order_report_so_salesteam
@@ -53023,7 +53025,7 @@ msgstr "Analyse des ventes"
 msgid "Sales Analysis Carrier"
 msgstr "Analyse des ventes Transporteur"
 
-#. modules: sale, hubi, sales_team
+#. modules: hubi, sale, sales_team
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_team_id
 #: model:ir.model,name:sale.model_crm_team
 #: model:ir.model.fields,field_description:sale.field_account_invoice_report_team_id
@@ -53051,7 +53053,7 @@ msgstr "Equipe de vente"
 msgid "Sales Channel the user is member of. Used to compute the members of a sales channel through the inverse one2many"
 msgstr "Canal de vente dont l'utilisateur est membre. Utilisé pour obtenir la liste des membres d'un canal de vente via le champ one2many inverse"
 
-#. modules: sale, hubi, base, sales_team
+#. modules: hubi, base, sale, sales_team
 #: model:ir.module.module,shortdesc:base.module_sales_team
 #: model:ir.module.module,summary:base.module_sales_team
 #: model:ir.ui.menu,name:hubi.menu_hubi_sale_team_report
@@ -53062,7 +53064,7 @@ msgstr "Canal de vente dont l'utilisateur est membre. Utilisé pour obtenir la l
 msgid "Sales Channels"
 msgstr "Equipes de vente"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: selection:sale.report.carrier,state:0
 #: selection:sale.report,state:0
 msgid "Sales Done"
@@ -53099,7 +53101,7 @@ msgstr "Ventes Facturées"
 msgid "Sales Management"
 msgstr "Gestion des ventes"
 
-#. modules: sale_stock, sale, hubi
+#. modules: hubi, sale_stock, sale
 #: selection:sale.report.carrier,state:0
 #: model:ir.model.fields,field_description:sale.field_res_partner_sale_order_ids
 #: model:ir.model.fields,field_description:sale.field_res_partner_sale_warn
@@ -53120,7 +53122,7 @@ msgstr "Bon de Commande"
 msgid "Sales Order Confirmed"
 msgstr "Commande de vente confirmée"
 
-#. modules: sale_stock, procurement_jit, hubi, sale, delivery
+#. modules: hubi, delivery, sale_stock, sale, procurement_jit
 #: model:ir.model,name:delivery.model_sale_order_line
 #: model:ir.model,name:hubi.model_sale_order_line
 #: model:ir.model,name:procurement_jit.model_sale_order_line
@@ -53132,7 +53134,7 @@ msgstr "Commande de vente confirmée"
 msgid "Sales Order Line"
 msgstr "Ligne de bons de commande"
 
-#. modules: sale_stock, sale, hubi
+#. modules: hubi, sale_stock, sale
 #: model:ir.ui.view,arch_db:hubi.hubi_palletization_form
 #: model:ir.actions.act_window,name:sale.action_product_sale_list
 #: model:ir.model.fields,field_description:sale.field_account_invoice_line_sale_line_ids
@@ -53152,7 +53154,7 @@ msgstr "Lignes de commande à facturer"
 msgid "Sales Order Lines related to a Sales Order of mine"
 msgstr "Lignes de commande liées à une de mes commandes"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.menu,name:hubi.menu_hubi_sale_orders
 #: code:addons/sale/models/sales_team.py:102
 #: model:ir.actions.act_window,name:sale.action_orders
@@ -53171,7 +53173,7 @@ msgstr "Lignes de commande liées à une de mes commandes"
 msgid "Sales Orders"
 msgstr "Bons de commandes"
 
-#. modules: sale_stock, sale, hubi
+#. modules: hubi, sale_stock, sale
 #: model:ir.model,name:hubi.model_sale_report
 #: model:ir.model,name:sale.model_sale_report
 #: model:ir.model,name:sale_stock.model_sale_report
@@ -53250,14 +53252,14 @@ msgstr "Mécanisme de vente interne"
 msgid "Sales price"
 msgstr "Prix de vente"
 
-#. modules: sale, account
+#. modules: account, sale
 #: code:addons/account/models/account_journal_dashboard.py:33
 #: code:addons/sale/models/sales_team.py:94
 #, python-format
 msgid "Sales: Untaxed Total"
 msgstr "Ventes : total HT"
 
-#. modules: hubi, account, sale, base, sales_team
+#. modules: hubi, sales_team, base, sale, account
 #: model:ir.model.fields,field_description:account.field_account_invoice_report_user_id
 #: model:ir.model.fields,field_description:account.field_account_invoice_user_id
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
@@ -53324,7 +53326,7 @@ msgstr "Arabie Saoudite"
 msgid "Saudi Arabia - Accounting"
 msgstr "Comptabilité - Arabie Saoudite"
 
-#. modules: web_editor, account_reports, web, account, delivery, base
+#. modules: delivery, base, web, web_editor, account, account_reports
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.setup_bank_journal_form
 #: model:ir.ui.view,arch_db:account.setup_financial_year_opening_form
@@ -53624,7 +53626,7 @@ msgstr "Commande d'écran"
 msgid "Script"
 msgstr "Script"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.view_view_search
 #: selection:ir.ui.view,type:0
@@ -53844,7 +53846,7 @@ msgstr "Rechercher des modules"
 msgid "Search shippers"
 msgstr "Rechercher un Transporteur"
 
-#. modules: web, web_enterprise, base
+#. modules: base, web, web_enterprise
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.res_config_settings_view_form
 #: code:addons/web/static/src/xml/base.xml:996
@@ -53938,7 +53940,7 @@ msgstr "Délai de sécurité"
 msgid "Security Lead Time for Sales"
 msgstr "Délai de livraison pour les ventes"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_access_token
 #: model:ir.model.fields,field_description:sale.field_sale_order_access_token
 msgid "Security Token"
@@ -54155,7 +54157,7 @@ msgstr "Les factures sélectionnées ne peuvent pas être confirmées car elles 
 msgid "Selected records"
 msgstr "Les enregistrements sélectionnés"
 
-#. modules: stock, sale, account, base
+#. modules: account, base, sale, stock
 #: model:ir.model.fields,help:account.field_res_partner_invoice_warn
 #: model:ir.model.fields,help:account.field_res_users_invoice_warn
 #: code:addons/base/res/res_partner.py:28
@@ -54207,7 +54209,7 @@ msgstr "Vendez en ligne vos produits"
 #: model:ir.ui.view,arch_db:sale.res_config_settings_view_form
 #: model:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Sell and purchase products in different units of measure"
-msgstr "Achetez et vendez dans des unités de mesure différentes"
+msgstr "Acheter et vendre dans des unités de mesure différentes"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_timesheet
@@ -54384,7 +54386,7 @@ msgstr "Inviter par email"
 msgid "Send an SMS"
 msgstr "Envoyer un SMS"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.ui.view,arch_db:account.invoice_form
 #: model:ir.ui.view,arch_db:sale.view_order_form
 msgid "Send by Email"
@@ -54550,7 +54552,7 @@ msgstr "Séparateur :"
 msgid "September"
 msgstr "Septembre"
 
-#. modules: product, account_bank_statement_import, account_reports, mail, payment, stock, account, hubi_bom, barcodes, sale, delivery, base
+#. modules: stock, delivery, base, mail, barcodes, product, sale, payment, account, account_reports, hubi_bom, account_bank_statement_import
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line_sequence
 #: model:ir.model.fields,field_description:account.field_account_financial_report_sequence
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_sequence
@@ -54680,7 +54682,7 @@ msgstr "Nom du numéro de série"
 msgid "Served Warehouse"
 msgstr "Entrepôt servi"
 
-#. modules: product, base
+#. modules: base, product
 #: selection:ir.logging,type:0
 #: model:product.product,name:product.consu_delivery_01
 #: model:product.template,name:product.consu_delivery_01_product_template
@@ -54697,7 +54699,7 @@ msgstr "Serveur et login"
 msgid "Server API Key"
 msgstr "Clé d'API du serveur"
 
-#. modules: fetchmail, base
+#. modules: base, fetchmail
 #: selection:ir.actions.server,usage:0
 #: model:ir.ui.view,arch_db:base.view_server_action_form
 #: model:ir.ui.view,arch_db:base.view_server_action_search
@@ -54785,7 +54787,7 @@ msgstr "Serveur de type IMAP"
 msgid "Server type POP."
 msgstr "Serveur de type POP"
 
-#. modules: product, currency_rate_live
+#. modules: currency_rate_live, product
 #: model:ir.ui.view,arch_db:currency_rate_live.res_config_settings_view_form
 #: selection:product.template,type:0
 msgid "Service"
@@ -54802,7 +54804,7 @@ msgstr "Nom du service"
 msgid "Service Provider"
 msgstr "Fournisseur du service"
 
-#. modules: product, sale, base
+#. modules: base, sale, product
 #: model:ir.module.category,name:base.module_category_theme_services
 #: model:res.partner.category,name:base.res_partner_category_11
 #: model:ir.ui.view,arch_db:product.product_template_search_view
@@ -54996,7 +54998,7 @@ msgstr "Définissez ce champ sur VRAI si cette taxe peut être utilisée dans l'
 msgid "Set this to False if you don't want this template to be used actively in the wizard that generate Chart of Accounts from templates, this is useful when you want to generate accounts of this template only when loading its child template."
 msgstr "Mettre ceci à faux si vous ne voulez pas que ce modèle soit utilisé dans l'assistant qui crée votre charte de compte depuis les modèles, c'est utile si vous voulez générer les comptes de ce modèle seulement en chargeant le sous-modèle."
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.invoice_supplier_form
 #: model:ir.ui.view,arch_db:stock.view_inventory_form
 msgid "Set to Draft"
@@ -55070,7 +55072,7 @@ msgstr "Après qu'une valeur a été définie, cette action devient disponible d
 msgid "Setting empty passwords is not allowed for security reasons!"
 msgstr "Pour des raisons de sécurité, les mots de passes vides ne sont pas autorisés !"
 
-#. modules: mail, stock, hubi, account, base_setup, sale, base, sales_team
+#. modules: hubi, stock, base_setup, sales_team, base, mail, sale, account
 #. openerp-web
 #: model:ir.actions.act_window,name:account.action_account_config
 #: model:ir.ui.menu,name:account.menu_account_config
@@ -55254,7 +55256,7 @@ msgstr "Transporteur"
 msgid "Shippers"
 msgstr "Transporteurs"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_product_pricelist_shipping
 #: model:ir.model.fields,field_description:hubi.field_res_partner_shipping
 #: model:ir.model.fields,field_description:hubi.field_res_users_shipping
@@ -55447,7 +55449,7 @@ msgstr "Afficher les devises actives"
 msgid "Show active taxes"
 msgstr "Montrer les taxes actives"
 
-#. modules: product, mail, stock, account, sale
+#. modules: stock, mail, product, sale, account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model:ir.ui.view,arch_db:mail.mail_activity_view_search
 #: model:ir.ui.view,arch_db:mail.res_partner_view_search_inherit_mail
@@ -55455,7 +55457,7 @@ msgstr "Montrer les taxes actives"
 #: model:ir.ui.view,arch_db:sale.view_sales_order_filter
 #: model:ir.ui.view,arch_db:stock.view_picking_internal_search
 msgid "Show all records which has next action date is before today"
-msgstr "Montrez toutes les enregistrements pour lesquelles la date des prochaines actions est pour aujourd'hui ou avant. "
+msgstr "Montrez toutes les enregistrements pour lesquelles la date des prochaines actions est pour aujourd'hui ou avant"
 
 #. module: mail
 #: code:addons/mail/models/mail_channel.py:675
@@ -55590,7 +55592,7 @@ msgstr "Signe sur les rapports"
 msgid "Sign up"
 msgstr "S'enregistrer"
 
-#. modules: sale, base
+#. modules: base, sale
 #: model:ir.model.fields,field_description:base.field_res_users_signature
 #: selection:res.config.settings,portal_confirmation_options:0
 msgid "Signature"
@@ -55731,7 +55733,7 @@ msgstr "Site plus pris en charge (430) : Ce site n’est plus pris en charge po
 msgid "Site Not Supported (505): We currently does not support the security system used by this site. We apologize for any inconvenience. Check back periodically if this situation has changed."
 msgstr "Site non supporté (505): Nous ne supportons pas le système de sécurité utilisé par ce site web pour le moment. Nous nous excusons pour tout inconvénient. Revenez voir de temps en temps si la situation a changé. "
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_size
 #: code:addons/web_editor/static/src/xml/editor.xml:255
@@ -55804,7 +55806,7 @@ msgstr "Petit"
 msgid "Small Refrigerator"
 msgstr "Petit réfrigérateur"
 
-#. modules: payment, product, base
+#. modules: base, product, payment
 #: model:ir.model.fields,field_description:base.field_res_partner_image_small
 #: model:ir.model.fields,field_description:base.field_res_users_image_small
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_image_small
@@ -55981,7 +55983,7 @@ msgstr "Champ de tri %s non trouvé sur le modèle %s"
 msgid "Source"
 msgstr "Origine"
 
-#. modules: stock, sale, hubi, account
+#. modules: hubi, account, sale, stock
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_origin
 #: model:ir.model.fields,field_description:account.field_account_invoice_origin
 #: model:ir.ui.view,arch_db:account.portal_invoice_report
@@ -56286,7 +56288,7 @@ msgstr "Code standardisé pour l'expédition international et la déclaration de
 msgid "Starred"
 msgstr "Favoris"
 
-#. modules: product, hubi, account
+#. modules: hubi, account, product
 #: model:ir.model.fields,field_description:account.field_account_aged_trial_balance_date_from
 #: model:ir.model.fields,field_description:account.field_account_balance_report_date_from
 #: model:ir.model.fields,field_description:account.field_account_common_account_report_date_from
@@ -56363,7 +56365,7 @@ msgstr "Date de début pour la création des avoirs"
 msgid "Starting date for the creation of invoices"
 msgstr "Date de début pour la création des factures"
 
-#. modules: product, hubi
+#. modules: hubi, product
 #: model:ir.model.fields,help:hubi.field_wiz_productprice_date_start
 #: model:ir.model.fields,help:product.field_product_pricelist_item_date_start
 msgid "Starting date for the pricelist item validation"
@@ -56470,7 +56472,7 @@ msgstr "Nombre d'états"
 msgid "Statistics"
 msgstr "Statistics"
 
-#. modules: payment, mail, stock, hubi, account, auth_signup, fetchmail, sale, base
+#. modules: hubi, stock, auth_signup, fetchmail, base, mail, sale, payment, account
 #: code:addons/account/controllers/portal.py:73
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line_state
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_state
@@ -56650,7 +56652,7 @@ msgstr "Emplacement de stock"
 msgid "Stock Locations"
 msgstr "Emplacements de stock"
 
-#. modules: stock, sale_stock, stock_account, delivery
+#. modules: stock, sale_stock, delivery, stock_account
 #: model:ir.model,name:delivery.model_stock_move
 #: model:ir.model,name:sale_stock.model_stock_move
 #: model:ir.model,name:stock.model_stock_move
@@ -56957,7 +56959,7 @@ msgstr "Conséquences"
 msgid "Substitution"
 msgstr "Substitution"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_account_cashbox_line_subtotal
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_price_subtotal
 #: model:ir.ui.view,arch_db:sale.invoice_form_inherit_sale
@@ -57393,7 +57395,7 @@ msgstr "Étiquette"
 msgid "Tag Name"
 msgstr "Nom de l'étiquette"
 
-#. modules: analytic, account, base
+#. modules: account, base, analytic
 #: model:ir.model.fields,field_description:account.field_account_account_tag_ids
 #: model:ir.model.fields,field_description:account.field_account_tax_tag_ids
 #: model:ir.ui.view,arch_db:account.account_tag_view_form
@@ -57498,7 +57500,7 @@ msgstr "Tâches Mois"
 msgid "Taste of the quality"
 msgstr "Goût de la qualité"
 
-#. modules: account_cash_basis_base_account, hubi, account
+#. modules: hubi, account, account_cash_basis_base_account
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:174
 #: model:ir.model,name:account.model_account_tax
@@ -58925,7 +58927,7 @@ msgstr "TaxCloud permet à l'entreprise de se conformer facilement à l'impôt s
 msgid "TaxCloud uses Taxability Information Codes (TIC) to make sure each item in your catalog is taxed at the right rate (or, for tax-exempt items, not taxed at all), so it's important to make sure that each item is assigned a TIC. If you can't find the right tax category for an item in your catalog, you can assign it to the 'General Goods and Services' TIC, 00000. TaxCloud automatically assigns products to this TIC as a default, so unless you've changed an item's TIC in the past, it should already be set to 00000."
 msgstr "TaxCloud utilise des codes TIC (Taxability Information Code) pour s'assurer que chaque article de votre catalogue est taxé au taux adéquat (ou, pour les articles exonérés de taxes, qu'aucune taxe n'est appliquée). Il est ainsi important de s'assurer qu'un code TIC est attribué à chaque article. Si vous ne trouvez pas la catégorie de taxe appropriée pour un article de votre catalogue, vous pouvez lui attribuer le code TIC « General Goods and Services » (Biens et services généraux), 00000. TaxCloud attribue automatiquement ce code TIC par défaut aux produits. Sauf si vous avez modifié le code TIC d'un article, cette valeur doit être déjà définie sur 00000."
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: selection:account.account.tag,applicability:0
 #: model:account.tax.group,name:account.tax_group_taxes
 #: model:ir.actions.act_window,name:account.action_tax_form
@@ -59251,7 +59253,7 @@ msgstr "Tél. :"
 msgid "Tells whether or not this line belongs to an unaffected earnings account"
 msgstr "Indique si cette ligne appartient ou non à un compte de bénéfices non concerné"
 
-#. modules: stock, base_setup, web_planner, account
+#. modules: account, web_planner, stock, base_setup
 #: model:ir.model.fields,field_description:account.field_res_config_settings_chart_template_id
 #: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
 #: model:ir.model.fields,field_description:stock.field_stock_change_product_qty_product_tmpl_id
@@ -59312,7 +59314,7 @@ msgstr "Utilisateur modèle pour les nouveaux utilisateurs créés à travers si
 msgid "Templates"
 msgstr "Modèles"
 
-#. modules: stock_account, account
+#. modules: account, stock_account
 #: model:ir.model,name:account.model_account_chart_template
 #: model:ir.model,name:stock_account.model_account_chart_template
 msgid "Templates for Account Chart"
@@ -61068,14 +61070,14 @@ msgid "There is no check layout configured.\n"
 msgstr "Il n'y a pas de disposition de chèques de configurer.\n"
 "Assurez-vous que le bon module d'impression de chèques est installé et que sa configuration est bonne (dans les paramètres de la société > onglet 'Configuration')."
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: code:addons/hubi/models/wiz_create_creditnote_ca.py:225
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:74
 #, python-format
 msgid "There is no income account defined for this product: \"%s\". You may have to install a chart of account from Accounting app, settings menu."
 msgstr "Aucun compte de revenu pour cet article: \"%s\". Vous devez installer le paramétrage des comptes."
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: code:addons/hubi/models/inherited_sale_order.py:378
 #: code:addons/hubi/models/inherited_sale_order.py:382
 #: code:addons/sale/models/sale.py:452
@@ -61112,7 +61114,7 @@ msgstr "Il n'y a rien à réconcilier."
 msgid "There was a problem while uploading your file"
 msgstr "Il y a eu un problème lors de l'envoi du fichier"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.ui.view,arch_db:account.portal_invoice_error
 #: model:ir.ui.view,arch_db:sale.portal_order_error
 msgid "There was an error processing this page."
@@ -61195,7 +61197,7 @@ msgstr "Cette semaine"
 msgid "This Window"
 msgstr "Cette fenêtre"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.ui.view,arch_db:account.view_account_invoice_report_search
 #: model:ir.ui.view,arch_db:hubi.hubi_account_invoice_period_search_view
 #: model:ir.ui.view,arch_db:hubi.view_hubi_invoice_report_search
@@ -61727,7 +61729,7 @@ msgstr "Ce produit est conditionné par %.2f %s. Vous devriez en vendre %.2f %s.
 msgid "This quantity is expressed in the Default Unit of Measure of the product."
 msgstr "Cette quantité est exprimée dans l'unité de mesure par défaut de l'article."
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.actions.act_window,help:hubi.action_hubi_saleorder_report_carrier
 #: model:ir.actions.act_window,help:hubi.action_hubi_saleorder_report_daily
 #: model:ir.actions.act_window,help:hubi.action_hubi_saleorder_report_delivery
@@ -61991,7 +61993,7 @@ msgstr "Conseil"
 msgid "Tip: Hit CTRL-Enter to reconcile all the balanced items in the sheet."
 msgstr "Astuce : utilisez Ctrl+Entrée pour lettrer tous les entrées équilibrées sur la feuille."
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.model.fields,field_description:base.field_res_partner_title
 #: model:ir.model.fields,field_description:base.field_res_partner_title_name
@@ -62043,7 +62045,7 @@ msgstr "Pour (partenaires)"
 msgid "To Do"
 msgstr "À faire"
 
-#. modules: sale, hubi, account
+#. modules: hubi, account, sale
 #: model:ir.ui.view,arch_db:account.view_account_invoice_report_search
 #: model:ir.ui.view,arch_db:hubi.view_hubi_invoice_report_search
 #: selection:sale.report,invoice_status:0
@@ -62205,7 +62207,7 @@ msgstr "A quelle URL ce lien devrait-il renvoyer?"
 msgid "To:"
 msgstr "À:"
 
-#. modules: account_reports, mail, stock, web, hubi, web_grid, web_gantt
+#. modules: hubi, stock, mail, web, web_gantt, account_reports, web_grid
 #. openerp-web
 #: model:ir.ui.view,arch_db:account_reports.search_template_date_filter
 #: model:ir.ui.view,arch_db:hubi.hubi_account_invoice_period_search_view
@@ -62231,7 +62233,7 @@ msgstr "À:"
 msgid "Today"
 msgstr "Aujourd'hui"
 
-#. modules: product, mail, stock, account, sale
+#. modules: stock, mail, product, sale, account
 #: model:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model:ir.ui.view,arch_db:mail.mail_activity_view_search
 #: model:ir.ui.view,arch_db:mail.res_partner_view_search_inherit_mail
@@ -62311,7 +62313,7 @@ msgstr "Marge supérieure (mm)"
 msgid "Topics discussed in this group..."
 msgstr "Sujets discutés dans ce groupe..."
 
-#. modules: analytic, account_reports, hubi, account, web, web_grid, sale
+#. modules: hubi, analytic, web, sale, account, account_reports, web_grid
 #. openerp-web
 #: model:ir.model.fields,field_description:account.field_account_invoice_amount_total
 #: model:ir.ui.view,arch_db:account.invoice_supplier_tree
@@ -62411,7 +62413,7 @@ msgstr "Total Palette"
 msgid "Total Payable"
 msgstr "Total dû"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.ui.view,arch_db:hubi.report_saleorder_hubi_document
 #: model:ir.ui.view,arch_db:hubi.view_hubi_invoice_report_tree
 #: model:ir.ui.view,arch_db:sale.report_all_channels_sales_view_pivot
@@ -62419,7 +62421,7 @@ msgstr "Total dû"
 msgid "Total Price"
 msgstr "Prix total"
 
-#. modules: stock, hubi
+#. modules: hubi, stock
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_carrier_tree
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_daily_tree
 #: model:ir.ui.view,arch_db:hubi.view_hubi_saleorder_report_reference_tree
@@ -62539,7 +62541,7 @@ msgstr "Interface pour magasins"
 msgid "Tour name"
 msgstr "Nom de la visite"
 
-#. modules: web_tour, base
+#. modules: base, web_tour
 #: model:ir.module.module,shortdesc:base.module_web_tour
 #: model:ir.actions.act_window,name:web_tour.edit_tour_action
 #: model:ir.model,name:web_tour.model_web_tour_tour
@@ -62608,7 +62610,7 @@ msgstr "Suivez les zones d'emplacement dans votre entrepôt"
 msgid "Tracked values are stored in a separate model. This field allow to reconstruct the tracking and to generate statistics on the model."
 msgstr "Les valeurs suivies sont stockées dans un modèle distinct. Ce champ permet de reconstruire le suivi et de générer des statistiques sur le modèle."
 
-#. modules: stock, delivery, mail
+#. modules: stock, mail, delivery
 #: model:ir.ui.view,arch_db:delivery.view_picking_withcarrier_out_form
 #: model:ir.model.fields,field_description:mail.field_ir_model_fields_track_visibility
 #: model:ir.ui.view,arch_db:mail.view_message_form
@@ -62670,7 +62672,7 @@ msgstr "Transactions"
 msgid "Transactions Subtotal"
 msgstr "Sous-total des transactions"
 
-#. modules: stock, sale_stock, hubi, delivery
+#. modules: hubi, stock, sale_stock, delivery
 #: model:ir.model,name:delivery.model_stock_picking
 #: model:ir.ui.view,arch_db:hubi.wiz_transfert_compta
 #: model:ir.model,name:sale_stock.model_stock_picking
@@ -62734,7 +62736,7 @@ msgstr "Les informations de transfert seront fournies après avoir choisi l'acqu
 msgid "Transfer to %s"
 msgstr "Transférer à %s"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.view_account_payment_search
 #: model:ir.actions.act_window,name:stock.action_picking_tree
 #: model:ir.ui.menu,name:stock.all_picking
@@ -62889,7 +62891,7 @@ msgid "Translation is not valid:\n"
 msgstr "La traduction est invalide :\n"
 "%s"
 
-#. modules: web_settings_dashboard, base
+#. modules: base, web_settings_dashboard
 #. openerp-web
 #: model:ir.ui.menu,name:base.menu_translation
 #: model:ir.ui.view,arch_db:base.view_translation_dialog_tree
@@ -63032,7 +63034,7 @@ msgstr "Deux implémentations d'objets de séquence sont proposées : « stand
 msgid "Two weeks"
 msgstr "Deux semaines"
 
-#. modules: product, account_bank_statement_import, account_reports, mail, payment, hubi, account, barcodes, base, sales_team
+#. modules: hubi, sales_team, base, mail, barcodes, product, payment, account, account_reports, account_bank_statement_import
 #: model:ir.model.fields,field_description:account.field_account_account_template_user_type_id
 #: model:ir.model.fields,field_description:account.field_account_account_type_type
 #: model:ir.model.fields,field_description:account.field_account_account_user_type_id
@@ -63117,7 +63119,7 @@ msgstr "Type d'action du serveur. Les valeurs suivantes sont disponibles :\n"
 msgid "Type of the constraint: `f` for a foreign key, `u` for other constraints."
 msgstr "Type de la contrainte : `f` pour une clé étrangère, `u` pour les autres."
 
-#. modules: web, base
+#. modules: base, web
 #. openerp-web
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
 #: code:addons/web/static/src/xml/base.xml:25
@@ -63340,7 +63342,7 @@ msgstr "Bénéfices non répartis"
 msgid "Unarchive"
 msgstr "Désarchiver"
 
-#. modules: sale, base
+#. modules: base, sale
 #: model:ir.module.category,name:base.module_category_uncategorized
 #: code:addons/sale/models/sale.py:601
 #, python-format
@@ -63352,7 +63354,7 @@ msgstr "Sans catégorie"
 msgid "Uncheck the active field to disable a unit of measure without deleting it."
 msgstr "Décochez le champ actif de désactiver une unité de mesure sans la supprimer."
 
-#. modules: web, account_reports, web_grid
+#. modules: account_reports, web, web_grid
 #. openerp-web
 #: code:addons/account_reports/models/account_financial_report.py:722
 #: code:addons/web/static/src/js/views/calendar/calendar_model.js:560
@@ -63492,7 +63494,7 @@ msgstr "Unité"
 msgid "Unit Of Measure"
 msgstr "Unité de mesure"
 
-#. modules: stock, sale, hubi, account
+#. modules: hubi, account, sale, stock
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_price_unit
 #: model:ir.ui.view,arch_db:account.portal_invoice_report
 #: model:ir.ui.view,arch_db:account.report_invoice_document
@@ -63515,7 +63517,7 @@ msgstr "Prix de l'unité :"
 msgid "Unit Product"
 msgstr "Unité de produit"
 
-#. modules: product, stock, account, stock_account, sale, delivery
+#. modules: stock, stock_account, delivery, product, sale, account
 #: model:ir.model.fields,field_description:account.field_account_analytic_line_product_uom_id
 #: model:ir.model.fields,field_description:account.field_account_invoice_line_uom_id
 #: model:ir.model.fields,field_description:account.field_account_move_line_product_uom_id
@@ -63558,7 +63560,7 @@ msgstr "'Unité de mesure' est l'unité de mesure pour le poids"
 msgid "Unit of Measure (Unit of Measure) is the unit of measurement for the inventory control"
 msgstr "Unit of Measure (Unit of Measure) is the unit of measurement for the inventory control"
 
-#. modules: product, sale
+#. modules: sale, product
 #: model:ir.actions.act_window,name:product.product_uom_categ_form_action
 #: model:ir.ui.menu,name:sale.menu_product_uom_categ_form_action
 msgid "Unit of Measure Categories"
@@ -63604,7 +63606,7 @@ msgstr "Expéditions d'USPS (United States Postal Service)"
 msgid "Units Of Measure"
 msgstr "Unités de Mesure"
 
-#. modules: stock, product, sale
+#. modules: stock, sale, product
 #: model:ir.actions.act_window,name:product.product_uom_form_action
 #: model:ir.model.fields,field_description:product.field_res_config_settings_group_uom
 #: model:ir.ui.view,arch_db:product.product_uom_form_view
@@ -63644,7 +63646,7 @@ msgstr "Les unités de mesure appartenant à la même catégorie peuvent être\n
 msgid "Unity"
 msgstr "Unité"
 
-#. modules: web_grid, base
+#. modules: base, web_grid
 #. openerp-web
 #: selection:ir.module.module.dependency,state:0
 #: selection:ir.module.module.exclusion,state:0
@@ -63808,7 +63810,7 @@ msgstr "Écritures non-comptabilisées"
 msgid "Unposted Journal Items"
 msgstr "Écritures non-comptabilisées"
 
-#. modules: sale, mail
+#. modules: mail, sale
 #: model:ir.model.fields,field_description:mail.field_account_analytic_account_message_unread
 #: model:ir.model.fields,field_description:mail.field_account_bank_statement_message_unread
 #: model:ir.model.fields,field_description:mail.field_account_invoice_message_unread
@@ -63951,7 +63953,7 @@ msgstr "Format de fichier \"{}\" non pris en charge, l'importation ne prend en c
 msgid "Unsupported report type %s found."
 msgstr "Type de rapport non pris en charge détecté (%s)."
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.model.fields,field_description:account.field_account_invoice_amount_untaxed
 #: model:ir.model.fields,field_description:sale.field_sale_order_amount_untaxed
 msgid "Untaxed Amount"
@@ -63962,7 +63964,7 @@ msgstr "Montant HT"
 msgid "Untaxed Amount in Company Currency"
 msgstr "Montant hors taxe dans la devise de la société"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: model:ir.model.fields,field_description:hubi.field_sale_report_carrier_price_subtotal
 #: model:ir.model.fields,field_description:sale.field_sale_report_price_subtotal
 msgid "Untaxed Total"
@@ -64196,7 +64198,7 @@ msgstr "Erreur de transmission"
 msgid "Uploading error"
 msgstr "Erreur de transmission"
 
-#. modules: web_editor, web
+#. modules: web, web_editor
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:899
 #: code:addons/web/static/src/xml/base.xml:930
@@ -64211,7 +64213,7 @@ msgstr "Envoi en cours..."
 msgid "Upselling"
 msgstr "Montée en gamme"
 
-#. modules: sale, hubi
+#. modules: hubi, sale
 #: selection:sale.report,invoice_status:0
 #: selection:sale.report.carrier,invoice_status:0
 #: selection:sale.order,invoice_status:0
@@ -64254,7 +64256,7 @@ msgstr "Rapports Comptables - Uruguay"
 msgid "Uruguay - Chart of Accounts"
 msgstr "Comptabilité - Uruguay"
 
-#. modules: base, decimal_precision
+#. modules: decimal_precision, base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_usage
 #: model:ir.model.fields,field_description:base.field_ir_cron_usage
 #: model:ir.ui.view,arch_db:base.view_server_action_search
@@ -64561,7 +64563,7 @@ msgstr "Utilisé pour enregistrer un profit lorsque le solde final de la caisse 
 msgid "Used to select automatically the right address according to the context in sales and purchases documents."
 msgstr "Utilisé pour sélectionner automatiquement la bonne adresse selon le contexte des documents de vente et d'achats"
 
-#. modules: stock, analytic, base, mail
+#. modules: stock, base, analytic, mail
 #: model:ir.model.fields,field_description:analytic.field_account_analytic_line_user_id
 #: model:ir.model.fields,field_description:base.field_change_password_user_user_id
 #: model:ir.model.fields,field_description:base.field_ir_default_user_id
@@ -64630,13 +64632,13 @@ msgstr "Utilisateur: tous les documents"
 msgid "User: Own Documents Only"
 msgstr "Utilisateur: mes documents seulement"
 
-#. modules: fetchmail, base
+#. modules: base, fetchmail
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_user
 #: model:ir.model.fields,field_description:fetchmail.field_fetchmail_server_user
 msgid "Username"
 msgstr "Nom d’utilisateur"
 
-#. modules: mail, portal, auth_crypt, bus, auth_signup, web_settings_dashboard, base_setup, base, sales_team
+#. modules: web_settings_dashboard, auth_signup, base_setup, sales_team, base, mail, bus, auth_crypt, portal
 #: model:ir.model,name:auth_crypt.model_res_users
 #: model:ir.model,name:auth_signup.model_res_users
 #: model:ir.actions.act_window,name:base.action_res_users
@@ -64783,7 +64785,7 @@ msgstr "VoIP OnSIP"
 msgid "Valid Until"
 msgstr "Valide jusqu'au"
 
-#. modules: stock, account
+#. modules: account, stock
 #. openerp-web
 #: code:addons/account/static/src/xml/account_reconciliation.xml:72
 #: model:ir.ui.view,arch_db:account.invoice_form
@@ -64827,7 +64829,7 @@ msgstr "Valider et mettre en forme les numéros de téléphone des leads et des 
 msgid "Validate purchase orders and control vendor bills by departments."
 msgstr "Valider les ordres d'achat et contrôler les factures fournisseurs par département."
 
-#. modules: stock, account
+#. modules: account, stock
 #: selection:account.bank.statement,state:0
 #: model:mail.message.subtype,name:account.mt_invoice_validated
 #: selection:stock.inventory,state:0
@@ -64878,7 +64880,7 @@ msgstr "Rapport d'évaluation"
 msgid "Valuation at date"
 msgstr "Evaluation par date"
 
-#. modules: product, hubi, account, base_import, stock_account, base
+#. modules: hubi, stock_account, base, product, base_import, account
 #: model:ir.model.fields,field_description:account.field_account_payment_term_line_value_amount
 #: model:ir.model.fields,field_description:base.field_ir_config_parameter_value
 #: model:ir.model.fields,field_description:base.field_ir_server_object_lines_value
@@ -65071,7 +65073,7 @@ msgstr "Vehicle eCommerce Plugin"
 msgid "Vehicle, leasing, insurances, costs"
 msgstr "Vehicule, leasing, assurances, coûts"
 
-#. modules: product, stock, hubi, account, base
+#. modules: hubi, stock, base, product, account
 #: selection:account.abstract.payment,partner_type:0
 #: selection:account.payment,partner_type:0
 #: selection:account.register.payments,partner_type:0
@@ -65225,7 +65227,7 @@ msgstr "Unité de mesure du Fournisseur"
 msgid "Vendor of this product"
 msgstr "Fournisseur de cet article"
 
-#. modules: product, stock, hubi, account, base
+#. modules: hubi, stock, base, product, account
 #: model:ir.ui.menu,name:account.menu_account_supplier
 #: model:ir.actions.act_window,name:base.action_partner_supplier_form
 #: model:ir.ui.view,arch_db:base.view_res_partner_filter
@@ -65314,7 +65316,7 @@ msgstr "Comptabilité - Vietnam"
 msgid "Vietnam - Accounting Reports"
 msgstr "Rapports Comptables - Vietnam"
 
-#. modules: stock, account, base, mail
+#. modules: account, base, stock, mail
 #: selection:account.financial.report,type:0
 #: model:ir.model.fields,field_description:base.field_ir_act_window_view_view_id
 #: selection:ir.translation,type:0
@@ -65521,7 +65523,7 @@ msgstr "Visible sur le site web/portail"
 msgid "Void Transaction"
 msgstr "Annuler la transaction"
 
-#. modules: product, stock, hubi, sale, delivery
+#. modules: hubi, stock, delivery, product, sale
 #: selection:delivery.price.rule,variable:0
 #: selection:delivery.price.rule,variable_factor:0
 #: model:ir.model.fields,field_description:delivery.field_stock_picking_volume
@@ -65586,7 +65588,7 @@ msgstr "En attente de transferts"
 msgid "Wallis and Futuna"
 msgstr "Wallis et Futuna"
 
-#. modules: stock, sale_stock, base
+#. modules: stock, base, sale_stock
 #: model:ir.module.category,name:base.module_category_warehouse
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_warehouse_id
 #: model:ir.model.fields,field_description:sale_stock.field_sale_report_warehouse_id
@@ -65651,7 +65653,7 @@ msgstr "Routes de l'entrepôt"
 msgid "Warehouses"
 msgstr "Entrepôts"
 
-#. modules: web_editor, stock, sale_stock, web, account, stock_account, hubi_bom, sale, base
+#. modules: stock, stock_account, base, sale_stock, web, web_editor, sale, account, hubi_bom
 #. openerp-web
 #: selection:res.partner,invoice_warn:0
 #: code:addons/base/ir/ir_mail_server.py:479
@@ -65677,7 +65679,7 @@ msgstr "Entrepôts"
 msgid "Warning"
 msgstr "Avertissement"
 
-#. modules: sale, account
+#. modules: account, sale
 #: code:addons/account/models/account_invoice.py:675
 #: code:addons/sale/models/sale.py:1076
 #, python-format
@@ -65705,7 +65707,7 @@ msgstr "Avertissement sur les commandes de vente"
 msgid "Warning when Selling this Product"
 msgstr "Avertissement lorsque vous vendez cet article"
 
-#. modules: stock, payment, account, base
+#. modules: account, base, stock, payment
 #. openerp-web
 #: code:addons/account/models/account_invoice.py:1596
 #: code:addons/account/models/account_invoice.py:1653
@@ -65726,7 +65728,7 @@ msgid "Warning! \n"
 msgstr "Attention!\n"
 "Si vous enlevez un abonné, il ne sera pas averti des emails ou des discussions sur ce document. Voulez-vous vraiment enlever cet abonné?"
 
-#. modules: stock, sale, account, base
+#. modules: account, base, sale, stock
 #: model:ir.model.fields,field_description:account.field_res_config_settings_group_warning_account
 #: code:addons/models.py:4992
 #: model:ir.model.fields,field_description:sale.field_res_config_settings_group_warning_sale
@@ -66152,7 +66154,7 @@ msgstr "Semaines"
 msgid "Weighing Scale Hardware Driver"
 msgstr "Pilote pour balance"
 
-#. modules: product, hubi, delivery
+#. modules: hubi, delivery, product
 #: selection:delivery.price.rule,variable:0
 #: selection:delivery.price.rule,variable_factor:0
 #: model:ir.model.fields,field_description:delivery.field_stock_move_weight
@@ -66221,7 +66223,7 @@ msgstr "Article pesé"
 msgid "Weights"
 msgstr "Poids"
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Welcome"
@@ -66428,7 +66430,7 @@ msgstr "Indique si la valeur est stockée dans la base de données."
 #: model:ir.model.fields,help:account.field_account_journal_show_on_dashboard
 #: model:ir.model.fields,help:account_bank_statement_import.field_account_bank_statement_import_journal_creation_show_on_dashboard
 msgid "Whether this journal should be displayed on the dashboard or not"
-msgstr "Si ce journal doit être affiché sur le tableau de bord ou non"
+msgstr "Si ce journal doit être affiché sur le tableau de bord ou non."
 
 #. module: mail
 #: model:ir.model.fields,help:mail.field_ir_model_is_mail_thread
@@ -66844,7 +66846,7 @@ msgstr "Yes eCommerce Plugin"
 msgid "Yesterday"
 msgstr "Hier"
 
-#. modules: account_online_sync, base
+#. modules: base, account_online_sync
 #: selection:account.online.provider,provider_type:0
 #: model:ir.module.module,shortdesc:base.module_account_yodlee
 msgid "Yodlee"
@@ -68001,7 +68003,7 @@ msgstr "Votre session Odoo a expiré. Merci d'actualiser la page."
 msgid "Your Order has been confirmed."
 msgstr "Votre commande est confirmée."
 
-#. modules: stock, account
+#. modules: account, stock
 #: model:ir.ui.view,arch_db:account.account_planner
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Your Products"
@@ -68116,7 +68118,7 @@ msgstr "Votre modèle doit définir un email_from"
 msgid "Youtube"
 msgstr "Youtube"
 
-#. modules: payment, hubi, base
+#. modules: hubi, base, payment
 #: model:ir.ui.view,arch_db:base.res_partner_view_form_private
 #: model:ir.ui.view,arch_db:base.view_company_form
 #: model:ir.ui.view,arch_db:base.view_partner_address_form
@@ -68154,7 +68156,7 @@ msgstr "Antivirus Zed+"
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
 
-#. modules: payment, account_taxcloud, hubi, base
+#. modules: account_taxcloud, base, hubi, payment
 #: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position_tax_template_zip_codes
 #: model:ir.model.fields,field_description:account_taxcloud.field_account_fiscal_position_tax_zip_codes
 #: model:ir.model.fields,field_description:base.field_res_bank_zip
@@ -68237,7 +68239,7 @@ msgstr "_Appliquer"
 msgid "_Cancel"
 msgstr "_Annuler"
 
-#. modules: base, account_bank_statement_import
+#. modules: account_bank_statement_import, base
 #: model:ir.ui.view,arch_db:account_bank_statement_import.account_bank_statement_import_view
 #: model:ir.ui.view,arch_db:base.view_base_import_language
 msgid "_Import"
@@ -68371,7 +68373,7 @@ msgstr "tous les enregistrements"
 msgid "amount: the transaction amount, a float"
 msgstr "montant : le montant de la transaction, un réel"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #. openerp-web
 #: code:addons/base/res/res_currency.py:117
 #: code:addons/web_editor/static/src/xml/editor.xml:199
@@ -68453,7 +68455,7 @@ msgstr "barcode.rule"
 msgid "barcodes.barcode_events_mixin"
 msgstr "barcodes.barcode_events_mixin"
 
-#. modules: web, base, web_grid
+#. modules: base, web, web_grid
 #: model:ir.model,name:base.model_base
 #: model:ir.model,name:web.model_base
 #: model:ir.model,name:web_grid.model_base
@@ -68649,7 +68651,7 @@ msgstr "choisir"
 msgid "classic"
 msgstr "classique"
 
-#. modules: sale, account
+#. modules: account, sale
 #: model:ir.ui.view,arch_db:account.portal_invoice_error
 #: model:ir.ui.view,arch_db:account.portal_invoice_success
 #: model:ir.ui.view,arch_db:sale.portal_order_error
@@ -68735,7 +68737,7 @@ msgstr "date"
 msgid "datetime"
 msgstr "date/heure"
 
-#. modules: product, stock, sale_stock, account, web_enterprise, sale
+#. modules: stock, sale_stock, product, sale, account, web_enterprise
 #. openerp-web
 #: model:ir.ui.view,arch_db:account.view_payment_term_line_form
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
@@ -68759,7 +68761,7 @@ msgstr "nombre de jours entre chaque rappel"
 msgid "days to be propagated"
 msgstr "jours de propagation"
 
-#. modules: product, decimal_precision
+#. modules: decimal_precision, product
 #: model:ir.model,name:decimal_precision.model_decimal_precision
 #: model:ir.model,name:product.model_decimal_precision
 msgid "decimal.precision"
@@ -69301,7 +69303,7 @@ msgstr "ir.actions.act_url"
 msgid "ir.actions.act_window"
 msgstr "ir.actions.act_window"
 
-#. modules: web_grid, base
+#. modules: base, web_grid
 #: model:ir.model,name:base.model_ir_actions_act_window_view
 #: model:ir.model,name:web_grid.model_ir_actions_act_window_view
 msgid "ir.actions.act_window.view"
@@ -69336,7 +69338,7 @@ msgstr "ir.actions.report"
 msgid "ir.actions.server"
 msgstr "ir.actions.server"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_attachment
 #: model:ir.model,name:web_editor.model_ir_attachment
 msgid "ir.attachment"
@@ -69408,13 +69410,13 @@ msgstr "ir.model.relation"
 msgid "ir.property"
 msgstr "ir.property"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb
 #: model:ir.model,name:web_editor.model_ir_qweb
 msgid "ir.qweb"
 msgstr "ir.qweb"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field
 #: model:ir.model,name:web_editor.model_ir_qweb_field
 msgid "ir.qweb.field"
@@ -69425,31 +69427,31 @@ msgstr "ir.qweb.field"
 msgid "ir.qweb.field.barcode"
 msgstr "ir.qweb.field.barcode"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_contact
 #: model:ir.model,name:web_editor.model_ir_qweb_field_contact
 msgid "ir.qweb.field.contact"
 msgstr "ir.qweb.field.contact"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_date
 #: model:ir.model,name:web_editor.model_ir_qweb_field_date
 msgid "ir.qweb.field.date"
 msgstr "ir.qweb.field.date"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_datetime
 #: model:ir.model,name:web_editor.model_ir_qweb_field_datetime
 msgid "ir.qweb.field.datetime"
 msgstr "ir.qweb.field.datetime"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_duration
 #: model:ir.model,name:web_editor.model_ir_qweb_field_duration
 msgid "ir.qweb.field.duration"
 msgstr "ir.qweb.field.duration"
 
-#. modules: web_editor, base, decimal_precision
+#. modules: decimal_precision, base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_float
 #: model:ir.model,name:decimal_precision.model_ir_qweb_field_float
 #: model:ir.model,name:web_editor.model_ir_qweb_field_float
@@ -69461,56 +69463,56 @@ msgstr "ir.qweb.field.float"
 msgid "ir.qweb.field.float_time"
 msgstr "ir.qweb.field.float_time"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_html
 #: model:ir.model,name:web_editor.model_ir_qweb_field_html
 msgid "ir.qweb.field.html"
 msgstr "ir.qweb.field.html"
 
-#. modules: web_editor, web, base
+#. modules: base, web, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_image
 #: model:ir.model,name:web.model_ir_qweb_field_image
 #: model:ir.model,name:web_editor.model_ir_qweb_field_image
 msgid "ir.qweb.field.image"
 msgstr "ir.qweb.field.image"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_integer
 #: model:ir.model,name:web_editor.model_ir_qweb_field_integer
 msgid "ir.qweb.field.integer"
 msgstr "ir.qweb.field.integer"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_many2one
 #: model:ir.model,name:web_editor.model_ir_qweb_field_many2one
 msgid "ir.qweb.field.many2one"
 msgstr "ir.qweb.field.many2one"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_monetary
 #: model:ir.model,name:web_editor.model_ir_qweb_field_monetary
 msgid "ir.qweb.field.monetary"
 msgstr "ir.qweb.field.monetary"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_qweb
 #: model:ir.model,name:web_editor.model_ir_qweb_field_qweb
 msgid "ir.qweb.field.qweb"
 msgstr "ir.qweb.field.qweb"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_relative
 #: model:ir.model,name:web_editor.model_ir_qweb_field_relative
 msgid "ir.qweb.field.relative"
 msgstr "ir.qweb.field.relative"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_selection
 #: model:ir.model,name:web_editor.model_ir_qweb_field_selection
 msgid "ir.qweb.field.selection"
 msgstr "ir.qweb.field.selection"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_qweb_field_text
 #: model:ir.model,name:web_editor.model_ir_qweb_field_text
 msgid "ir.qweb.field.text"
@@ -69531,7 +69533,7 @@ msgstr "ir.sequence"
 msgid "ir.sequence.date_range"
 msgstr "ir.sequence.date_range"
 
-#. modules: web_editor, base
+#. modules: base, web_editor
 #: model:ir.model,name:base.model_ir_translation
 #: model:ir.model,name:web_editor.model_ir_translation
 msgid "ir.translation"
@@ -69542,7 +69544,7 @@ msgstr "ir.translation"
 msgid "ir.ui.menu"
 msgstr "ir.ui.menu"
 
-#. modules: web_editor, web_grid, base, http_routing
+#. modules: base, http_routing, web_editor, web_grid
 #: model:ir.model,name:base.model_ir_ui_view
 #: model:ir.model,name:http_routing.model_ir_ui_view
 #: model:ir.model,name:web_editor.model_ir_ui_view
@@ -70429,7 +70431,7 @@ msgstr "res.config"
 msgid "res.config.installer"
 msgstr "res.config.installer"
 
-#. modules: product, account_reports, l10n_us_check_printing, mail, stock, sale_stock, account, currency_rate_live, auth_signup, stock_account, account_taxcloud, mail_push, base_setup, sale, delivery, base
+#. modules: l10n_us_check_printing, stock, stock_account, currency_rate_live, delivery, auth_signup, base_setup, base, mail, sale_stock, product, mail_push, account_taxcloud, sale, account, account_reports
 #: model:ir.model,name:account.model_res_config_settings
 #: model:ir.model,name:account_reports.model_res_config_settings
 #: model:ir.model,name:account_taxcloud.model_res_config_settings
@@ -70882,7 +70884,7 @@ msgstr "la liste des produits"
 msgid "the list of vendors"
 msgstr "la liste des clients"
 
-#. modules: product, account
+#. modules: account, product
 #: model:ir.ui.view,arch_db:account.view_partner_property_form
 #: model:ir.ui.view,arch_db:product.view_partner_property_form
 msgid "the parent company"
@@ -71058,7 +71060,7 @@ msgstr "avec le bouton  <i>Valider</i> "
 msgid "wizard.ir.model.menu.create"
 msgstr "wizard.ir.model.menu.create"
 
-#. modules: account_check_printing, account, payment
+#. modules: account, payment, account_check_printing
 #: model:ir.model,name:account.model_wizard_multi_charts_accounts
 #: model:ir.model,name:account_check_printing.model_wizard_multi_charts_accounts
 #: model:ir.model,name:payment.model_wizard_multi_charts_accounts
