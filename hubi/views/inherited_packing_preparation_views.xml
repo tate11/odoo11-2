@@ -22,7 +22,27 @@
 		<field name="arch" type="xml">
 			<form string="Print Label">
 				<div class="oe_title">
-					<group>  
+                    <group>
+                        <group>
+                        <field name="packaging_date"  />
+                        </group>
+                        <group>
+                        <field name="sending_date" />
+                        </group>
+                    </group>
+                
+                    <group>
+                        <group>
+                            <field name="partner_id" domain="[('customer', '=', True), ('parent_id', '=', False)]"  />
+                        </group>
+                        <group>
+                            <field name="etabexp_id" domain="[('is_company','=',1), ('customer','=',False), ('supplier','=',False)]"/>
+                            <field name="health_number" />
+                            <field name="code_128"  />
+                        </group>
+                    </group>
+                    
+                    <group>  
                         <group>                  
                             <label class="oe_edit_only" for="category_id" string="Category"/>
                             <field name="category_id" class="oe_edit_only" nolabel="1"/>
@@ -42,7 +62,22 @@
                                                     
                         </group>
                     </group>
-				</div>
+                    
+                    <group>
+                        <field name="qte"  />
+                        <field name="color_etiq"  />
+                        <field name="label_id"  />
+                        <field name="printer_id" />
+                    </group>
+                    
+                </div>
+                <separator />
+
+                <footer>
+                    <button string="Create and Print Label" type="object" name="create_print_label"
+                        default_focus="1" class="oe_link"/>
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
 			</form>
 		</field>
 	</record>
