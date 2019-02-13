@@ -10,13 +10,43 @@
 				<field name="order_id"/>
 				<field name="product_id"/>
 				<field name="product_uom_qty" string="Qty"/>
-				<button name="create_print_label" class="oe_button oe_form_button oe_highlight" type="button" string="Print Label"></button>
+				<button name="create_print_label" class="oe_button oe_form_button oe_highlight" type="object" string="Print Label"></button>
 				<button name="validation" class="oe_button oe_form_button" type="button" string="Done"></button>
 			</tree>
 		</field>
 	</record>
 	
-	
+	<record id="create_print_label_packing_preparation">
+		<field name="name">hubi.print.label.packing.preparation.form</field>
+		<field name="model">wiz_create_print_label</field>
+		<field name="arch" type="xml">
+			<form string="Print Label">
+				<div class="oe_title">
+					<group>  
+                        <group>                  
+                            <label class="oe_edit_only" for="category_id" string="Category"/>
+                            <field name="category_id" class="oe_edit_only" nolabel="1"/>
+                            <label class="oe_edit_only" for="caliber_id" string="Caliber"/>
+                            <field name="caliber_id" class="oe_edit_only" nolabel="1"/>
+                            <label class="oe_edit_only" for="packaging_id" string="Packaging"/>
+                            <field name="packaging_id" class="oe_edit_only" nolabel="1"/>
+                    
+                            <field name="product_id" />
+                        </group>
+                        <group>
+                            <field name="code_barre"  />
+                            
+                            <field name="pds"  />
+                            <field name="nb_mini"  />
+                            <field name="numlot"  />
+                                                    
+                        </group>
+                    </group>
+				</div>
+			</form>
+		</field>
+	</record>
+
 	
 	<record id="action_hubi_packing_preparation" model="ir.actions.act_window">
         <field name="name">Packing Preparation</field>
@@ -26,6 +56,16 @@
         <!--<field name="view_id" ref="view_hubi_saleorder_daily_report_pivot"/>-->
         <field name="view_ids" eval="[(5, 0),
                 (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hubi_packing_preparation_tree')})]"/>
+    </record> 
+	
+	<record id="action_hubi_create_print_label" model="ir.actions.act_window">
+        <field name="name">Create Print Label</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">wiz_create_print_label</field>
+        <field name="view_type">form</field>            
+        <field name="view_id" ref="create_print_label_packing_preparation"/>        
+        <field name="view_mode">tree,form</field>
+        <field name="target">new</field>
     </record> 
 	
 	</data>
