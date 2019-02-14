@@ -3,7 +3,8 @@
 	<data>
 	<record id="view_hubi_packing_preparation_tree" model="ir.ui.view">
 		<field name="name">hubi.packing.preparation.tree</field>
-		<field name="model">sale.order.line</field> 
+		<field name="model">sale.order.line</field>
+		<field name="model">wiz_create_print_label</field>
 		<field name="arch" type="xml">
 			<tree string="Packing Preparation" import="false" create="false" default_order="order_id, product_id">
 				<field name="order_partner_id"/>
