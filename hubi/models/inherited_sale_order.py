@@ -110,6 +110,60 @@ class HubiSaleOrderLine(models.Model):
         return invoice_line_vals 
 		
     @api.multi
+    def create_print_label_old(self):  
+        self.env.cr.commit()
+        query = """SELECT to_char(sl.packaging_date,'DD/MM/YYYY'), to_char(sl.sending_date,'DD/MM/YYYY'), pt.etiq_description, hfc.name, hfp.name,
+                    pt.etiq_mention, 
+                    sl.code_barre, sl.qte, sl.pds, sl.nb_mini, p.realname, p.adressip,l.file,
+                    t.customer_name_etiq, t.customer_city_etiq, etab.health_number, etab.company_name_etiq, etab.company_city_etiq, 
+                    sl.numlot, sl.color_etiq, pt.etiq_latin, pt.etiq_spanish
+                    FROM wiz_create_print_label sl
+                    LEFT JOIN hubi_printer p ON sl.printer_id = p.id 
+                    LEFT JOIN hubi_labelmodel l ON sl.label_id = l.id
+                    INNER JOIN res_partner t ON t.id = sl.partner_id
+                    LEFT JOIN res_partner etab ON etab.id = sl.etabexp_id
+                    INNER JOIN product_product prod ON prod.id = sl.product_id
+                    INNER JOIN product_template pt ON prod.product_tmpl_id = pt.id
+                    INNER JOIN hubi_family AS hfc ON pt.caliber_id = hfc.id 
+                    INNER JOIN hubi_family AS hfp ON pt.packaging_id = hfp.id 
+                    WHERE sl.id=""" + str(self.id)
+        self.env.cr.execute(query)
+        
+        result = [(r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10], r[11], r[12], r[13], r[14], r[15], r[16], r[17], r[18], r[19], r[20], r[21]) for r in self.env.cr.fetchall()]
+        
+        for packaging_date,sending_date,product_name,caliber_name,packaging_name,etiq_mention,code_barre,qte,pds,nb_mini,printerName,adressip,labelFile,clientname1,clientname2,numsanitaire,etabexp1,etabexp2, lot, color, etiq_latin, etiq_spanish in result:
+            informations = [
+                ("dateemb",packaging_date),
+                ("dateexp",sending_date),
+                ("produit",product_name),
+                ("calibre",caliber_name),
+                ("conditionnement",packaging_name),
+                ("mention",etiq_mention),
+                ("latin",etiq_latin),
+                ("spanish",etiq_spanish),
+                ("codebarre",code_barre),
+                ("qte",int(qte)),
+                ("pds",pds),
+                ("nb",int(nb_mini)),
+                ("numsanitaire",numsanitaire),
+                ("client1", clientname1),
+                ("client2", clientname2),
+                ("etab1", etabexp1),
+                ("etab2", etabexp2),
+                ("lot", lot),
+                ("color", color)]
+            
+            if(printerName is not None and printerName != "" and labelFile is not None and labelFile != ""):
+                if (adressip is not None and adressip != ""):
+                    printer = "\\\\" + adressip + "\\" + printerName
+                else:
+                    printer = printerName
+                    
+                ctrl_print.printlabelonwindows(printer,labelFile,'[',informations)    
+
+        return {'type': 'ir.actions.act_window_close'} 
+		
+    @api.multi
     def create_print_label(self):  
         self.env.cr.commit()
         no_id = self.id
