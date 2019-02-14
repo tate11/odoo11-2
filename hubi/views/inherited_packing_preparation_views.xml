@@ -17,7 +17,7 @@
 	</record>
 	
 	<record id="wiz_create_print_label" model="ir.ui.view">
-        <field name="name">wiz.createprintlabel.form1</field>
+        <field name="name">wiz.createprintlabel.packing.preparation.form1</field>
         <field name="model">wiz_create_print_label</field>
         <field name="arch" type="xml">
             <form string="Create Print Label">
