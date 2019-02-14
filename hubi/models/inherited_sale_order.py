@@ -106,25 +106,22 @@ class HubiSaleOrderLine(models.Model):
             'comment': self.comment,
             #'no_lot': self.no_lot
         })
-        return invoice_line_vals  
+        return invoice_line_vals 
 		
-    #@api.onchange('sale_order_id')
-    #def new_packing_preparation(self):
-        #Lors d'un ajout d'une commande, extraire les lignes des commandes vers la page
-		#Bien vérifier d'extraire les données qui ne sont pas déjà présentes
-		#Voir pour détecter l'ajout d'une ligne de commande
-    #    new_packing_preparation = super(HubiSaleOrderLine, self)
-    
-		
-		
+    @api.multi
+    def create_print_label(self):  
+        self.env.cr.commit()
+        no_id = self.id
+        nom_table = "wiz_create_print_label"
+        tools_hubi.prepareprintlabel(self, nom_table, no_id)
+        return {'type': 'ir.actions.act_window_close'} 
 		
     #@api.multi
     #def transfer_packing_preparation(self):
-        #Lorsque l'on appuie sur le bouton la ligne est envoyé vers la page effectué
+        #Lorsque l'on appuie sur le bouton la ligne est envoyé vers la page affecté
     #    for product_id in packing:
     #        if validation != null:
     #            transfer_packing_preparation = super(HubiSaleOrderLine, self)
-    #            new_packing_preparation.execute("""
 		
 class HubiSaleOrder(models.Model):
     _inherit = "sale.order"
