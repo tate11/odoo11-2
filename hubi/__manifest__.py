@@ -8,7 +8,7 @@
 Gestion HUBI
 """,
     
-    'depends' : ['base','base_setup','product','mail','hubi_bom','sale','delivery'],
+    'depends' : ['base','base_setup','product','mail','hubi_bom','sale','delivery','web'],
     'data': ["data/hubi_template_email.xml",
              "views/module_option_views.xml",
              "wizard/wiz_confirm_dialog_views.xml",
@@ -42,6 +42,7 @@ Gestion HUBI
              "wizard/wiz_general_settings_views.xml",
              "views/label_model_views.xml",
              "miadi_etiquette_menu.xml",
+             "views/web_export_view_view.xml",
              "hubi_menu.xml",
              "reports/partner_list_report.xml",
              "reports/partner_sheet_report.xml",
@@ -54,7 +55,8 @@ Gestion HUBI
              "security/ir.model.access.csv"
              
     ],
-    'qweb': ['static/src/xml/qweb.xml'],
+    'qweb': [#'static/src/xml/qweb.xml'
+			"static/src/xml/web_export_view_template.xml",],
     'installable': True,
     'application': False,
     'auto_install': False,
