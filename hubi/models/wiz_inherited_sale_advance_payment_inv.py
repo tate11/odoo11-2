@@ -101,6 +101,8 @@ class Wizard_create_invoice_period(models.TransientModel):
         
         if self.periodicity_invoice == "Weekly":
             finish = datetime.today() + timedelta(days=-7)
+        if self.periodicity_invoice == "Decade":
+            finish = datetime.today() + timedelta(days=-10)
         if self.periodicity_invoice == "Fortnight":
             finish = datetime.today() + timedelta(days=-14)
         if self.periodicity_invoice == "Monthly":
@@ -112,7 +114,7 @@ class Wizard_create_invoice_period(models.TransientModel):
         self.date_start = finish
     
     
-    periodicity_invoice = fields.Selection([("Daily", "Daily"),("Weekly", "Weekly"),
+    periodicity_invoice = fields.Selection([("Daily", "Daily"),("Weekly", "Weekly"),("Decade", "Decade"),
                     ("Fortnight", "Fortnight"),("Monthly", "Monthly")], string="Invoice Period", default='Daily')
     #date_start = fields.Date('Start Date', help="Starting date for the creation of invoices",default=_default_finish)
     date_start = fields.Date('Start Date', help="Starting date for the creation of invoices",default=lambda self: fields.Date.today())
