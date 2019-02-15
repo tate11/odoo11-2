@@ -202,7 +202,65 @@ class HubiAccountInvoice(models.Model):
     @api.multi
     def button_dummy(self):
         self.supply_rate()
-        return True 
+        return True
+    
+    @api.multi
+    def invoice_send_email(self):
+        attachments_ids = []
+        Envoi = False
+        NbLig = len(self.ids)
+        CodePartner=999999
+        CptLig = 0
+        for ligne in self.sorted(key=lambda r: (r.partner_id.id, r.id)):
+            CptLig = CptLig + 1
+           
+            if ((ligne.partner_id.id != CodePartner) and (CodePartner != 999999)) or (CptLig == NbLig):
+                self.send_email(ligne,attachments_ids)
+                Envoi = False
+                attachments_ids = []
+        
+            CodePartner = ligne.partner_id.id
+            Envoi = True
+ 
+            pdf = self.env.ref('account.account_invoices').sudo().render_qweb_pdf([ligne.id])[0]
+            
+            id_w = self.env['ir.attachment'].create({
+                    'name': 'Invoice'+(ligne.display_name),
+                    'type': 'binary', 
+                    'res_id':ligne.id,
+                    'res_model':'account.invoice',
+                    'datas':base64.b64encode(pdf),
+                    'mimetype': 'application/x-pdf',
+                    'datas_fname':"" +(ligne.display_name)+".pdf"
+                    })
+            attachments_ids.append(id_w.id)
+            
+        if (Envoi):
+            self.send_email(ligne,attachments_ids)   
+                    
+
+    def send_email(self,ligne,attachments_ids):    
+        
+                if not ligne.partner_id.email:
+                    raise UserError(_("Cannot send email: partner %s has no email address.") % ligne.partner_id.name)
+                su_id = self.env['res.partner'].browse(SUPERUSER_ID)
+                template_id = self.env['ir.model.data'].get_object_reference('hubi',  'email_template_invoice')[1]
+                template_browse = self.env['mail.template'].browse(template_id)
+                email_to =  ligne.partner_id.email    #self.env['res.partner'].browse(ligne.partner_id).email
+                if template_browse:
+                    values = template_browse.generate_email(ligne.id, fields=None)
+                    values['email_to'] = email_to
+                    values['email_from'] = 'adinfo.be@groupeadinfo.com' #su_id.email
+                    values['res_id'] = ligne.id   #False
+                    if not values['email_to'] and not values['email_from']:
+                        pass
+                
+                    values['attachment_ids'] = [(6, 0, attachments_ids)] #attachments_ids
+                                
+                    mail_mail_obj = self.env['mail.mail']
+                    msg_id = mail_mail_obj.create(values)
+                    if msg_id:
+                        mail_mail_obj.send(msg_id)
         
 class HubiAccountInvoiceLine(models.Model):
     _inherit = "account.invoice.line"
