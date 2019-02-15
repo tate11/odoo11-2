@@ -55,7 +55,7 @@ class HubiInheritedResPartner(models.Model):
     edit_price_kg = fields.Boolean(string='Edit price kg', default=False)
     valued_delivery = fields.Boolean(string='Valued delivery', default=False)
     amount_com_kg = fields.Float(string='Amount commission kg')  
-    periodicity_invoice = fields.Selection([("Daily", "Daily"),("Weekly", "Weekly"),
+    periodicity_invoice = fields.Selection([("Daily", "Daily"),("Weekly", "Weekly"),("Decade", "Decade"),
                               ("Fortnight", "Fortnight"),("Monthly", "Monthly")], string="Invoice Period")
     edit_weight = fields.Boolean(string='Edit weight', default=False)
     auxiliary_account_customer = fields.Char(string='Auxiliary Account Customer')
