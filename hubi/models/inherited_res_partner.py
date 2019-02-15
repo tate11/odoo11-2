@@ -108,6 +108,8 @@ class HubiInheritedResPartner(models.Model):
     statistics_num_4 = fields.Float(string='statistics numerical 4')
     statistics_num_5 = fields.Float(string='statistics numerical 5')
 
+    over_credit = fields.Boolean('Allow Over Credit?', default=True)
+
     is_frs=fields.Boolean(string='is_FRS', compute='_is_Visible', default=lambda self: self._default_is_Visible('REF_FRS'))
     is_ifls=fields.Boolean(string='is_IFLS', compute='_is_Visible', default=lambda self: self._default_is_Visible('GESTION_IFLS'))
     is_edi_facture=fields.Boolean(string='is_EDI_FACTURE', compute='_is_Visible', default=lambda self: self._default_is_Visible('EDI_FACTURE'))
