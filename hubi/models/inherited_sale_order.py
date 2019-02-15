@@ -4,6 +4,8 @@ from odoo.exceptions import UserError, AccessError
 from odoo.tools import float_is_zero, float_compare, DEFAULT_SERVER_DATETIME_FORMAT
 from . import tools_hubi
 import time
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
+from datetime import date, timedelta, datetime   
    
 class HubiSaleOrderLine(models.Model):
     _inherit = "sale.order.line"
@@ -427,3 +429,36 @@ class HubiSaleOrder(models.Model):
 
         return action
         #return {'type': 'ir.actions.act_window_close'} 
+	
+    @api.multi
+    def check_limit(self):
+        self.ensure_one()
+        partner = self.partner_id
+        moveline_obj = self.env['account.move.line']
+        movelines = moveline_obj.search(
+            [('partner_id', '=', partner.id),
+             ('account_id.user_type_id.name', 'in', ['Receivable', 'Payable']),
+             ('full_reconcile_id', '=', False)]
+        )
+        debit, credit = 0.0, 0.0
+        today_dt = datetime.strftime(datetime.now().date(), DF)
+        for line in movelines:
+            if line.date_maturity < today_dt:
+                credit += line.debit
+                debit += line.credit
+
+        if (credit - debit + self.amount_total) > partner.credit_limit:
+            if not partner.over_credit:
+                msg = 'Can not confirm Sale Order,Total mature due Amount ' \
+                      '%s as on %s !\nCheck Partner Accounts or Credit ' \
+                      'Limits !' % (credit - debit, today_dt)
+                raise UserError(_('Credit Over Limits !\n' + msg))
+            partner.write({'credit_limit': credit - debit + self.amount_total})
+        return True
+
+    @api.multi
+    def action_confirm(self):
+        res = super(HubiSaleOrder, self).action_confirm()
+        for order in self:
+            order.check_limit()
+        return res  
