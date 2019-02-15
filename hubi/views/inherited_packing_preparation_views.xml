@@ -2,16 +2,6 @@
 <odoo>
 	<data>
 	
-	<template id="report_header">
-		<t t-extend="sale.action_report_saleorder">
-			<xpath expr="t[@t-call='web.external_layout']" position="replace">
-				<t t-call="abc.external_layout__standard_abc">
-					<t t-call="abc.report_invoice_document_abc_body"/>
-				</t>
-			</xpath>
-		</t>
-	</template>
-	
 	<record id="view_hubi_packing_preparation_tree" model="ir.ui.view">
 		<field name="name">hubi.packing.preparation.tree</field>
 		<field name="model">sale.order.line</field>
@@ -21,7 +11,7 @@
 				<field name="order_id"/>
 				<field name="product_id"/>
 				<field name="product_uom_qty" string="Qty"/>
-				<button name="print_label" class="oe_button oe_form_button oe_highlight" type="object" string="Print Label"></button>
+				<button name="print_label" class="o_sale_print" states="sent,sale" type="object" string="Print Label"></button>
 				<button name="validation" class="oe_button oe_form_button" type="button" string="Done"></button>
 			</tree>
 		</field>
