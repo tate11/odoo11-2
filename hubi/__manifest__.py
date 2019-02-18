@@ -42,7 +42,7 @@ Gestion HUBI
              "wizard/wiz_general_settings_views.xml",
              "views/label_model_views.xml",
              "miadi_etiquette_menu.xml",
-             "views/web_export_view_view.xml",
+             #"views/web_export_view_view.xml",
              "hubi_menu.xml",
              "reports/partner_list_report.xml",
              "reports/partner_sheet_report.xml",
