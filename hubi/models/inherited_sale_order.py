@@ -5,7 +5,8 @@ from odoo.tools import float_is_zero, float_compare, DEFAULT_SERVER_DATETIME_FOR
 from . import tools_hubi
 import time
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
-from datetime import date, timedelta, datetime   
+from datetime import date, timedelta, datetime  
+from ..controllers import ctrl_print
    
 class HubiSaleOrderLine(models.Model):
     _inherit = "sale.order.line"
