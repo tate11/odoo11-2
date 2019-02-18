@@ -114,7 +114,7 @@ class HubiSaleOrderLine(models.Model):
     @api.multi
     def print_label(self):
         self.filtered(lambda s: s.state == 'draft').write({'state': 'sent'})
-        return self.env.ref('sale.action_report_saleorder').report_action(self)
+        return self.env.ref('hubi.action_hubi_packing_preparation').report_action(self)
 		
     #@api.multi
     #def transfer_packing_preparation(self):
