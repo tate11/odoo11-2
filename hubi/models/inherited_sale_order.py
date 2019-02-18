@@ -114,7 +114,7 @@ class HubiSaleOrderLine(models.Model):
     @api.multi
     def print_label(self):
         self.filtered(lambda s: s.state == 'draft').write({'state': 'sent'})
-        return {'type': 'ir.actions.report','report_name': 'report_saleorder_hubi_document','report_type':"qweb-pdf",'data': self}
+        return {'type': 'ir.actions.report','report_name': 'report_saleorder_hubi_document','report_type':"qweb-pdf"}
 		
     #@api.multi
     #def transfer_packing_preparation(self):
