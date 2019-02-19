@@ -12,7 +12,7 @@
 				<field name="product_id"/>
 				<field name="product_uom_qty" string="Qty"/>
 				<button name="print_label" type="object" string="Print Label"></button>
-				<button name="validation" class="oe_button oe_form_button" type="submit" string="Done"></button>
+				<button name="validation" type="submit" string="Done"></button>
 			</tree>
 		</field>
 	</record>
@@ -25,6 +25,19 @@
         <field name="view_ids" eval="[(5, 0),
                 (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hubi_packing_preparation_tree')})]"/>
     </record> 
+	
+	<act_window
+		id="print_label"
+		multi="True"
+		key2="client_action_multi"
+		name="Print label from order line"
+		res_model="wiz.confirm.dialog"
+		src_model="sale.order.line"
+		view_mode="form"
+		view_type="form"
+		target="new"
+		view_id="view_hubi_packing_preparation_tree">
+	</act_window>
 	
 	</data>
 </odoo>
