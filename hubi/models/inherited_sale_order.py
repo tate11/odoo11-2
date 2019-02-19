@@ -100,7 +100,6 @@ class HubiSaleOrderLine(models.Model):
     comment = fields.Char(string='Comment')
     no_lot = fields.Char(string='Batch number')
     partner_id = fields.Many2one("res.partner", string='Customer')
-    label_model_id =  fields.Many2one('hubi.labelmodel', string='Label model')
 
     @api.multi
     def invoice_line_create(self, invoice_id, qty):
@@ -117,12 +116,13 @@ class HubiSaleOrderLine(models.Model):
         self.filtered(lambda s: s.state == 'draft').write({'state': 'sent'})
         return self.env.ref('hubi.action_hubi_packing_preparation').report_action(self)
 		
-    #@api.multi
-    #def transfer_packing_preparation(self):
-        #Lorsque l'on appuie sur le bouton la ligne est envoyé vers la page affecté
-    #    for product_id in packing:
-    #        if validation != null:
-    #            transfer_packing_preparation = super(HubiSaleOrderLine, self)
+    @api.multi
+    def validation(self):
+        #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché
+        if validation == True:
+            query = """DELETE FROM sale_order_line WHERE id=%s"""
+            self.execute(query)
+        
 		
 class HubiSaleOrder(models.Model):
     _inherit = "sale.order"
