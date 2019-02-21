@@ -7,7 +7,6 @@ import time
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
 from datetime import date, timedelta, datetime  
 from ..controllers import ctrl_print
-from tkinter import *
    
 class HubiSaleOrderLine(models.Model):
     _inherit = "sale.order.line"
@@ -121,10 +120,10 @@ class HubiSaleOrderLine(models.Model):
     @api.multi
     def validation(self):
         #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché
-        query = """DELETE FROM sale_order_line WHERE id=%s"""
-        master = Tk()
-        validation = Button(master, text="Done", command=query)
-        validation.pack()
+        validation =
+        if validation == True:
+            query = """DELETE FROM sale_order_line WHERE id=%s"""
+            execute(query)
         
 		
 class HubiSaleOrder(models.Model):
