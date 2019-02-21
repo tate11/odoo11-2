@@ -120,7 +120,7 @@ class HubiSaleOrderLine(models.Model):
     @api.multi
     def validation(self):
         #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché
-        validation =
+        validation = True
         if validation == True:
             query = """DELETE FROM sale_order_line WHERE id=%s"""
             execute(query)
