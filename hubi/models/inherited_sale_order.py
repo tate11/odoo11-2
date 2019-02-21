@@ -7,7 +7,7 @@ import time
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT as DF
 from datetime import date, timedelta, datetime  
 from ..controllers import ctrl_print
-from Tkinter import *
+from tkinter import *
    
 class HubiSaleOrderLine(models.Model):
     _inherit = "sale.order.line"
