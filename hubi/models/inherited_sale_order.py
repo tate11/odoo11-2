@@ -122,7 +122,7 @@ class HubiSaleOrderLine(models.Model):
         #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché
         validation = True
         if validation == True:
-            query = """DELETE FROM sale_order_line WHERE id=%s"""
+            query = """DELETE FROM sale_order_line WHERE product_id=%(product_id)s AND order_id=%(order_id)s"""
             self.env.cr.execute(query)
         
 		
