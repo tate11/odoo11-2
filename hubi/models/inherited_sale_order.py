@@ -123,7 +123,7 @@ class HubiSaleOrderLine(models.Model):
         validation = True
         if validation == True:
             query = """DELETE FROM sale_order_line WHERE id=%s"""
-            execute(query)
+            self.execute(query)
         
 		
 class HubiSaleOrder(models.Model):
