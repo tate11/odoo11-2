@@ -114,7 +114,7 @@ class HubiSaleOrderLine(models.Model):
     @api.multi
     def print_label(self):
         self.filtered(lambda s: s.state == 'draft').write({'state': 'sent'})
-        return self.env.ref('hubi.action_hubi_packing_preparation').report_action(self)
+        return self.env.ref('hubi.report_orderline_label').report_action(self)
         #return {'type': 'ir.actions.report','report_name': 'report_saleorder_hubi_document','report_type':"qweb-pdf"}
 		
     @api.multi
@@ -122,9 +122,7 @@ class HubiSaleOrderLine(models.Model):
         #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché
         validation = True
         if validation == True:
-            query = """DELETE FROM sale_order_line 
-                       WHERE (product_id = %s)AND (order_id = %s)"""
-            self.env.cr.execute(query)
+            self._cr.execute("DELETE FROM sale_order_line WHERE product_id=%s AND order_id=%s", (product_id, order_id))
         
 		
 class HubiSaleOrder(models.Model):
