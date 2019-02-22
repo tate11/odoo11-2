@@ -7,12 +7,14 @@
 		<field name="model">sale.order.line</field>
 		<field name="arch" type="xml">
 			<tree string="Packing Preparation" import="false" create="false" default_order="order_id, product_id">
+				<report id="report_orderline_label">
 				<field name="order_partner_id"/>
 				<field name="order_id"/>
 				<field name="product_id"/>
 				<field name="product_uom_qty" string="Qty"/>
 				<button name="print_label" type="object" string="Print Label"/>
 				<button name="validation" type="object" string="Done"/>
+				</report>
 			</tree>
 		</field>
 	</record>
