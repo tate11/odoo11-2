@@ -119,7 +119,7 @@ class HubiSaleOrderLine(models.Model):
 		
     @api.multi
     def validation(self):
-        #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché
+        #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché sur la page
         product_id = self.product_id
         order_id = self.order_id
         validation = True
