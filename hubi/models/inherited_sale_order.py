@@ -100,8 +100,6 @@ class HubiSaleOrderLine(models.Model):
     comment = fields.Char(string='Comment')
     no_lot = fields.Char(string='Batch number')
     partner_id = fields.Many2one("res.partner", string='Customer')
-    product_id = fields.Char(string='Product')
-    order_id = fields.Char(string='Order Reference')
 
     @api.multi
     def invoice_line_create(self, invoice_id, qty):
