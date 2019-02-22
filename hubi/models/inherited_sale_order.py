@@ -120,8 +120,8 @@ class HubiSaleOrderLine(models.Model):
     @api.multi
     def validation(self):
         #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché sur la page
-        product_id = self.product_id
-        order_id = self.order_id
+        product_id = self.product_id.id
+        order_id = self.order_id.id
         validation = True
         if validation == True:
             self._cr.execute("DELETE FROM sale_order_line WHERE product_id=%s AND order_id=%s", (product_id, order_id))
