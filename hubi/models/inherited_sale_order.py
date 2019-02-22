@@ -100,7 +100,7 @@ class HubiSaleOrderLine(models.Model):
     comment = fields.Char(string='Comment')
     no_lot = fields.Char(string='Batch number')
     partner_id = fields.Many2one("res.partner", string='Customer')
-    done = fields.Boolean(string='Done', compute="validation")
+    validation = fields.Boolean(string='Done', compute="validation")
 
 
     @api.multi
@@ -122,13 +122,14 @@ class HubiSaleOrderLine(models.Model):
     @api.multi
     def validation(self):
         #Lorsque l'on appuie sur le bouton la ligne n'est plus affiché sur la page
-        #product_id = self.product_id.id
-        #order_id = self.order_id.id
+        product_id = self.product_id.id
+        order_id = self.order_id.id
         hide = True
-        if self.hide == True:
-            self.done = True
-        else:
-            self.done = False
+        if hide == True:
+            #self.validation = True
+			self._cr.execute("DELETE FROM sale_order_line WHERE product_id=%s AND order_id=%s", (product_id, order_id))
+        #else:
+            #self.validation = False
         
 		
 class HubiSaleOrder(models.Model):
