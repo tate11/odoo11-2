@@ -123,7 +123,7 @@ class HubiSaleOrderLine(models.Model):
         validation = True
         if validation == True:
             query = """DELETE FROM sale_order_line 
-                       WHERE (product_id = %(product_id)s)AND (order_id = %(order_id)s)"""
+                       WHERE (product_id = %s)AND (order_id = %s)"""
             self.env.cr.execute(query)
         
 		
