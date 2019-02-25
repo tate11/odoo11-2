@@ -20,7 +20,7 @@
 	
 	<report
 		id="report_orderline_label"
-		model="sale.report.carrier"
+		model="sale.order"
 		string="Order Lines"
 		report_type="qweb-pdf"
 		name="sale.report_saleorder"
