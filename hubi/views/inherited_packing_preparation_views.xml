@@ -23,8 +23,8 @@
 		model="sale.report.carrier"
 		string="Order Lines"
 		report_type="qweb-pdf"
-		name="sale.report_orderline"
-		file="sale.report_orderline"
+		name="sale.report_saleorder"
+		file="sale.report_saleorder"
 		attachment_use="True"
 		attachment="(object.state in ('open','paid')) and
         ('INV'+(object.number or '').replace('/','')+'.pdf')"
