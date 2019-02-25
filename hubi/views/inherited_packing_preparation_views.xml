@@ -18,6 +18,18 @@
 		</field>
 	</record>
 	
+	<report
+		id="report_orderline_label"
+		model="sale.report.carrier"
+		string="Order Lines"
+		report_type="qweb-pdf"
+		name="sale.report_orderline"
+		file="sale.report_orderline"
+		attachment_use="True"
+		attachment="(object.state in ('open','paid')) and
+        ('INV'+(object.number or '').replace('/','')+'.pdf')"
+	/>
+	
 	<record id="action_hubi_packing_preparation" model="ir.actions.act_window">
         <field name="name">Packing Preparation</field>
         <field name="res_model">sale.order.line</field>
