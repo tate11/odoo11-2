@@ -23,8 +23,8 @@
 		model="sale.report"
 		string="Order Lines"
 		report_type="qweb-pdf"
-		name="hubi.saleorder.report.daily.tree"
-		file="hubi.saleorder.report.daily.tree"
+		name="hubi.report_saleorder_hubi_document"
+		file="hubi.report_saleorder_hubi_document"
 		attachment_use="True"
 		attachment="(object.state in ('open','paid')) and
         ('INV'+(object.number or '').replace('/','')+'.pdf')"
