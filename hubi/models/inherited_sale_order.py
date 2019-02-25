@@ -127,7 +127,7 @@ class HubiSaleOrderLine(models.Model):
         hide = True
         if hide == True:
             #self.validation = True
-			self._cr.execute("DELETE FROM sale_order_line WHERE product_id=%s AND order_id=%s", (product_id, order_id))
+            self._cr.execute("DELETE FROM sale_order_line WHERE product_id=%s AND order_id=%s", (product_id, order_id))
         #else:
             #self.validation = False
         
