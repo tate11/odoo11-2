@@ -37,20 +37,7 @@
         <field name="context">{'search_default_Sales':1}</field>
         <field name="view_ids" eval="[(5, 0),
                 (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hubi_packing_preparation_tree')})]"/>
-    </record> 
-	
-	<!--<act_window
-		id="print_label"
-		multi="True"
-		key2="client_action_multi"
-		name="Print label from order line"
-		res_model="wiz.confirm.dialog"
-		src_model="sale.order.line"
-		view_mode="form"
-		view_type="form"
-		target="new"
-		view_id="view_hubi_packing_preparation_tree">
-	</act_window>-->
+    </record>
 	
 	</data>
 </odoo>
