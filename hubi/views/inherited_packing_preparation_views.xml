@@ -39,7 +39,7 @@
                 (0, 0, {'view_mode': 'tree', 'view_id': ref('view_hubi_packing_preparation_tree')})]"/>
     </record> 
 	
-	<act_window
+	<!--<act_window
 		id="print_label"
 		multi="True"
 		key2="client_action_multi"
@@ -50,7 +50,7 @@
 		view_type="form"
 		target="new"
 		view_id="view_hubi_packing_preparation_tree">
-	</act_window>
+	</act_window>-->
 	
 	</data>
 </odoo>
