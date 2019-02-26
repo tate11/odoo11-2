@@ -100,7 +100,7 @@ class HubiSaleOrderLine(models.Model):
     comment = fields.Char(string='Comment')
     no_lot = fields.Char(string='Batch number')
     partner_id = fields.Many2one("res.partner", string='Customer')
-    validation = fields.Boolean(string='Done', compute="validation")
+    done = fields.Boolean(string='Done', compute="validation")
 
 
     @api.multi
