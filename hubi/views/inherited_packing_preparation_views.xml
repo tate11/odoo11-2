@@ -13,7 +13,6 @@
 				<field name="product_uom_qty" string="Qty"/> <!--attrs="{'invisible':[('done', '=', False)]}"-->
 				<button name="print_label" type="object" string="Print Label"/>
 				<button name="validation" type="object" string="Done"/>
-				<!--<report id="report_orderline_label"/>-->
 			</tree>
 		</field>
 	</record>
