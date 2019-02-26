@@ -23,8 +23,8 @@
 		model="sale.report"
 		string="Order Lines"
 		report_type="qweb-pdf"
-		name="web.external_layout"
-		file="web.external_layout"
+		name="web.html_container"
+		file="web.html_container"
 		attachment_use="True"
 		attachment="(object.state in ('open','paid')) and
         ('INV'+(object.number or '').replace('/','')+'.pdf')"
